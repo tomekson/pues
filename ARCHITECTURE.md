@@ -76,8 +76,14 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
   - **Evropská komise presscorner RSS** (`?language=es` a `?language=cs`) — tiskové zprávy s
     **oficiálním** překladem do španělštiny a češtiny, DeepL/MyMemory jen jako fallback pro
     nepřeložené položky
+  - **The Guardian Open Platform** (`content.guardianapis.com`, sekce business/technology/money) —
+    volitelný `GUARDIAN_API_KEY` repo secret; bez klíče se zdroj potichu přeskočí, pipeline nespadne.
+    Sekce v appce "Prensa"
   - **Wikipedia "Did you know"** (EN) — denní pozitivní kuriozita, sekce "¿Sabías qué?"
   - Approfondimento → **"A fondo"**: úvod wiki článku k první zprávě, která má přiřazené téma
+- Filtr témat `data/news-filter.json`: blokuje válku/konflikty/sport/katastrofy a nehody (sekce i
+  klíčová slova EN+CZ), preferuje ekonomiku/EU/tech/Španělsko — platí pro všechny zdroje kromě EU
+  (tam se blokuje jen `block`, ne sekce) a Guardian
 - Překlad: **DeepL API Free** (`DEEPL_API_KEY` repo secret), auto-fallback na **MyMemory** bez klíče
   nebo při chybě/limitu — pipeline nikdy nespadne, jen změní `translator` pole ve výstupu
 - Commit z workflow zároveň drží scheduled cron naživu (60denní auto-disable při neaktivitě repa)
@@ -86,8 +92,9 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
 
 Žádné taby, žádný router. `renderNoticias()` je jediná view funkce:
 
-- **Desde Chequia** / **Desde la Unión Europea** / **Desde el mundo** / **¿Sabías qué?** — skupiny
-  denních zpráv, tap na položku rozbalí českou verzi (`cz-line`), 🔊 tlačítko přehraje španělský text
+- **Desde Chequia** / **Prensa** / **Desde el mundo** / **Desde la Unión Europea** / **¿Sabías qué?** —
+  skupiny denních zpráv (v tomto pořadí), tap na položku rozbalí českou verzi (`cz-line`), 🔊 tlačítko
+  přehraje španělský text
 - **A fondo** — delší článek k dnešnímu tématu, stejné tap-to-translate + TTS
 - **TTS:** `speechSynthesis`, `lang: es-ES`, hlas preferuje `es-ES` variantu před ostatními `es-*`
   (viz `pickVoice()` v `app.js`). iOS: `speak()` musí běžet z tap handleru (WebKit), jinak potichu selže.

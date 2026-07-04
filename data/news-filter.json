@@ -9,11 +9,13 @@
     "6. PŘÍKLADY: chci blokovat tenis -> do block přidej \"tennis\", \"tenis\". Chci preferovat kryptoměny -> do prefer \"crypto\", \"kryptoměn\", \"bitcoin\". Chci blokovat zkratku UFC -> \"\\\\bUFC\\\\b\".",
     "7. Změna platí od dalšího běhu: ráno ~6:30, nebo hned přes GitHub Actions -> fetch-news -> Run workflow."
   ],
-  "blockSections": ["Armed conflicts", "Sport"],
+  "blockSections": ["Armed conflicts", "Sport", "Disasters and accidents"],
   "preferSections": ["Business and econom", "Science and technology", "Law and crime"],
   "block": [
     "\\bwar\\b", "military", "missile", "air ?strike", "drone strike", "offensive", "ceasefire",
     "hostage", "troops", "shelling", "bombard", "front ?line", "invasion",
+    "killed", "\\bdeath", "\\bdied\\b", "\\bdead\\b", "casualt", "crash", "disaster", "wildfire", "earthquake", "flood",
+    "nehod", "katastrof", "zemřel", "zahynul", "požár", "povodn",
     "Gaza", "Hamas", "Hezbollah", "Ukrain", "Russia", "Kyiv", "Kremlin", "Israel",
     "\\bdefen[cs]e\\b", "obrann",
     "válk", "útok", "raket", "armád", "ostřelování", "mrtv", "smrt", "vojensk", "Ukrajin", "Rusk", "Izrael",

@@ -68,6 +68,7 @@ async function renderNoticias(el) {
 
   const groups = [
     { title: 'Desde Chequia', items: daily.stories.filter(n => n.origin === 'cz') },
+    { title: 'Prensa', items: daily.stories.filter(n => n.origin === 'guardian') },
     { title: 'Desde el mundo', items: daily.stories.filter(n => n.origin === 'world' || !n.origin) },
     { title: 'Desde la Unión Europea', items: daily.stories.filter(n => n.origin === 'eu') },
     { title: '¿Sabías qué?', items: daily.stories.filter(n => n.origin === 'dyk') },
@@ -100,7 +101,7 @@ async function renderNoticias(el) {
     </div>`;
   }
 
-  html += `<p class="fonte">Zdroje: <a href="${esc(daily.sourceUrl)}">Wikipedia</a> (CC BY-SA) · <a href="https://ec.europa.eu/commission/presscorner/">Evropská komise</a> · překlad ${esc(daily.translator || 'automatický')}</p>`;
+  html += `<p class="fonte">Zdroje: <a href="${esc(daily.sourceUrl)}">Wikipedia</a> (CC BY-SA) · <a href="https://ec.europa.eu/commission/presscorner/">Evropská komise</a>${daily.stories.some(s => s.origin === 'guardian') ? ' · <a href="https://www.theguardian.com/">The Guardian</a> (Open Platform)' : ''} · překlad ${esc(daily.translator || 'automatický')}</p>`;
 
   el.innerHTML = html;
 

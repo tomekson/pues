@@ -1,5 +1,5 @@
 /* ¡pues! service worker — verze CACHE drž synchronně s APP_VERSION (index.html) a version.json */
-const CACHE = 'pues-v1.02';
+const CACHE = 'pues-v1.10';
 
 const SHELL = [
   './',

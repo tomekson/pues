@@ -21,6 +21,7 @@ jobs:
       - name: Fetch + translate news
         env:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+          GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
         run: node scripts/fetch-news.mjs
 
       - name: Commit daily.json

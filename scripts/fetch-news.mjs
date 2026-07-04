@@ -190,6 +190,34 @@ const euRaw = await fetchEu();
 const euOfficial = euRaw.filter(e => e.es && e.cz).length;
 console.log(`Desde la UE: ${euRaw.length} zpráv, z toho ${euOfficial} s oficiálním překladem ES+CS.`);
 
+/* ---- 2c3. Prensa — The Guardian Open Platform (developer key, nekomerční, zdarma)
+   Bez GUARDIAN_API_KEY se přeskočí, nic nespadne. Registrace: https://bonobo.capi.gutools.co.uk/register/developer */
+const GUARDIAN_KEY = process.env.GUARDIAN_API_KEY || '';
+async function fetchGuardian() {
+  if (!GUARDIAN_KEY) return [];
+  try {
+    const sections = ['business', 'technology', 'money'];
+    const u = `https://content.guardianapis.com/search?section=${sections.join('|')}&order-by=newest&page-size=15&show-fields=trailText&api-key=${GUARDIAN_KEY}`;
+    const r = await fetch(u);
+    const j = await r.json();
+    const results = (j.response && j.response.results) || [];
+    const out = [];
+    for (const item of results) {
+      const trail = (item.fields && item.fields.trailText || '').replace(/<[^>]*>/g, '').trim();
+      const text = trail ? `${item.webTitle}. ${trail}` : item.webTitle;
+      if (anyMatch(FILTER.block, text)) continue;
+      out.push(text);
+      if (out.length >= 3) break;
+    }
+    return out;
+  } catch (e) {
+    console.log('Guardian API selhal:', e.message);
+    return [];
+  }
+}
+const guardianItems = await fetchGuardian();
+console.log(`Prensa (Guardian): ${guardianItems.length} zpráv${GUARDIAN_KEY ? '' : ' (bez klíče, přeskočeno)'}.`);
+
 /* ---- 2d. ¿Sabías qué? — Did you know z Wikipedie (CC BY-SA), pozitivní kuriozity ---- */
 async function fetchDyk() {
   const u = 'https://en.wikipedia.org/w/api.php?action=parse&page=' + encodeURIComponent('Template:Did you know') + '&format=json&prop=wikitext&formatversion=2';
@@ -315,7 +343,7 @@ async function translate(texts, source, target) {
 const worldTexts = stories.map(s => s.text);
 const euNeedEs = euRaw.filter(e => !e.es).map(e => e.en);
 const euNeedCz = euRaw.filter(e => !e.cz).map(e => e.en);
-const [es, cz, czEs, artEs, artCz, dykEs, dykCz, euEsMt, euCzMt] = await Promise.all([
+const [es, cz, czEs, artEs, artCz, dykEs, dykCz, euEsMt, euCzMt, guardianEs, guardianCz] = await Promise.all([
   translate(worldTexts, 'EN', 'ES'),
   translate(worldTexts, 'EN', 'CS'),
   translate(czItems.map(i => i.text), 'CS', 'ES'),
@@ -325,6 +353,8 @@ const [es, cz, czEs, artEs, artCz, dykEs, dykCz, euEsMt, euCzMt] = await Promise
   translate(dykItems, 'EN', 'CS'),
   translate(euNeedEs, 'EN', 'ES'),
   translate(euNeedCz, 'EN', 'CS'),
+  translate(guardianItems, 'EN', 'ES'),
+  translate(guardianItems, 'EN', 'CS'),
 ]);
 let esIdx = 0, czIdx = 0;
 const euItems = euRaw.map(e => ({
@@ -342,6 +372,7 @@ const out = {
   stories: [
     ...czItems.map((item, i) => ({ es: czEs[i], cz: item.text, origin: 'cz' })),
     ...euItems.map(e => ({ en: e.en, es: e.es, cz: e.cz, origin: 'eu' })),
+    ...guardianItems.map((en, i) => ({ en, es: guardianEs[i], cz: guardianCz[i], origin: 'guardian' })),
     ...stories.map((s, i) => ({ en: s.text, es: es[i], cz: cz[i], origin: 'world' })),
     ...dykItems.map((en, i) => ({ en, es: dykEs[i], cz: dykCz[i], origin: 'dyk' })),
   ],
