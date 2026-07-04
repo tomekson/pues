@@ -1,0 +1,36 @@
+name: fetch-news
+
+on:
+  schedule:
+    - cron: "30 4 * * *"   # denně ~06:30 Prahy (letní čas)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch + translate news
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        run: node scripts/fetch-news.mjs
+
+      - name: Commit daily.json
+        run: |
+          git config user.name "pues-bot"
+          git config user.email "actions@github.com"
+          git add data/news/daily.json || true
+          if git diff --cached --quiet; then
+            echo "Beze změn."
+          else
+            git commit -m "noticias del día $(date -u +%F)"
+            git push
+          fi

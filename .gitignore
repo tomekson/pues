@@ -1,0 +1,10 @@
+# Claude Code lokální nastavení
+.claude/settings.local.json
+
+# Security reporty — nikdy necommitovat
+security-report*.md
+security-scan-manifest*.md
+SECURITY_REPORT*.md
+
+# macOS
+.DS_Store

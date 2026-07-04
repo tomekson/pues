@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>¡pues!</title>
+<meta name="description" content="¡pues! Osobní aplikace na učení španělštiny — denní zprávy s překladem a audiem.">
+<meta name="theme-color" content="#C60B1E">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="¡pues!">
+<link rel="stylesheet" href="style.css">
+<script>const APP_VERSION = '1.00';</script>
+</head>
+<body>
+<div id="ptr" class="ptr hidden">↓ přetáhni pro obnovení</div>
+<div class="bandera"></div>
+
+<header>
+  <h1><a href="./" title="Na úvod"><span class="marca">¡</span>pues<span class="marca">!</span></a></h1>
+</header>
+
+<div id="update-banner" class="update-banner hidden">
+  <span id="update-text">Je k dispozici nová verze</span>
+  <button id="update-btn">Obnovit</button>
+</div>
+
+<main id="main"></main>
+
+<footer class="site-footer">
+  <img src="icon.svg" alt="" class="footer-logo"><span>¡pues! <span id="footer-version"></span></span>
+</footer>
+
+<button id="to-top" class="to-top hidden" aria-label="Zpět nahoru">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 14.5l6-6 6 6"/></svg>
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>

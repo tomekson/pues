@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="104" fill="#C60B1E"/>
+  <text x="256" y="335" font-family="Georgia, 'Times New Roman', serif" font-style="italic"
+        font-size="220" font-weight="700" text-anchor="middle" fill="#FFFFFF"><tspan fill="#FFC400">&#161;</tspan>p<tspan fill="#FFC400">!</tspan></text>
+</svg>
