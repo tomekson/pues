@@ -68,8 +68,8 @@ async function renderNoticias(el) {
 
   const groups = [
     { title: 'Desde Chequia', items: daily.stories.filter(n => n.origin === 'cz') },
-    { title: 'Desde la Unión Europea', items: daily.stories.filter(n => n.origin === 'eu') },
     { title: 'Desde el mundo', items: daily.stories.filter(n => n.origin === 'world' || !n.origin) },
+    { title: 'Desde la Unión Europea', items: daily.stories.filter(n => n.origin === 'eu') },
     { title: '¿Sabías qué?', items: daily.stories.filter(n => n.origin === 'dyk') },
   ].filter(g => g.items.length);
 
