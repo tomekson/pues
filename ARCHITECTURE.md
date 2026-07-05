@@ -57,10 +57,13 @@ taky má".
 ```
 data/
 ├── news/
-│   └── daily.json         ← denní fetch+překlad (Actions)
-│       {date, source, sourceUrl, translator,
-│        stories: [{es, cz, origin: cz|eu|world|dyk, en?}],
-│        article: {topic, url, en, es, cz} | null}
+│   ├── daily.json         ← denní fetch+překlad (Actions), přepisuje se každý den
+│   │   {date, source, sourceUrl, translator,
+│   │    stories: [{es, cz, origin: cz|eu|world|dyk|guardian, en?}],
+│   │    article: {topic, url, en, es, cz} | null}
+│   └── archive/           ← trvalá historie, nikdy se nepřepisuje
+│       ├── index.json     ← [{date, count}], nejnovější první
+│       └── <YYYY-MM-DD>.json  ← {date, stories, article} — stejný tvar jako daily.json
 └── news-filter.json       ← editovatelný filtr témat (block/prefer), stejný formát jako allora
 ```
 
@@ -68,7 +71,8 @@ data/
 
 GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news.mjs`:
 
-- **cron denně 04:30 UTC** (~06:30 Prahy) + `workflow_dispatch` pro ruční spuštění
+- **cron denně 04:30 UTC** (~06:30 Prahy) + **záložní 07:00 UTC** (GitHub scheduled runs mívají
+  hodiny zpoždění) + `workflow_dispatch` pro ruční spuštění
 - Zdroje (stejné jako allora, jen cílový jazyk ES místo IT):
   - **Wikipedia Portal:Current_events** (EN, CC BY-SA) — světové zprávy, filtr `data/news-filter.json`
     (blokuje válku/konflikty/sport, preferuje ekonomiku/EU/tech/Španělsko)
@@ -86,16 +90,21 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
   (tam se blokuje jen `block`, ne sekce) a Guardian
 - Překlad: **DeepL API Free** (`DEEPL_API_KEY` repo secret), auto-fallback na **MyMemory** bez klíče
   nebo při chybě/limitu — pipeline nikdy nespadne, jen změní `translator` pole ve výstupu
+- Archiv: po zápisu `daily.json` se stejná data uloží i do `data/news/archive/<datum>.json` a
+  upsertnou do `archive/index.json` — `daily.json` se dál přepisuje denně, archiv ne
 - Commit z workflow zároveň drží scheduled cron naživu (60denní auto-disable při neaktivitě repa)
 
-## App (statická PWA, jediná obrazovka)
+## App (statická PWA, dva pohledy: Noticias + Archivo)
 
-Žádné taby, žádný router. `renderNoticias()` je jediná view funkce:
+Minimální hash router (`views`/`show()`/`viewFromHash()` v `app.js`) — žádný tabbar, **Archivo** je
+dostupné jen přes odkaz na konci Noticias, ne přes menu (appka menu vůbec nemá):
 
 - **Desde Chequia** / **Prensa** / **Desde el mundo** / **Desde la Unión Europea** / **¿Sabías qué?** —
   skupiny denních zpráv (v tomto pořadí), tap na položku rozbalí českou verzi (`cz-line`), 🔊 tlačítko
   přehraje španělský text
 - **A fondo** — delší článek k dnešnímu tématu, stejné tap-to-translate + TTS
+- **Archivo** (`#archivo`) — historie dnů z `archive/index.json`, stránkovaná po 14, kliknutím na den
+  se lazy-loadne `archive/<datum>.json` a zprávy se zobrazí stejným stylem (tap-to-translate + TTS)
 - **TTS:** `speechSynthesis`, `lang: es-ES`, hlas preferuje `es-ES` variantu před ostatními `es-*`
   (viz `pickVoice()` v `app.js`). iOS: `speak()` musí běžet z tap handleru (WebKit), jinak potichu selže.
 - Update banner (`version.json` polling), pull-to-refresh, scroll-to-top, offline cache přes `sw.js` —
@@ -125,7 +134,7 @@ stejnou typografickou kostru (serif wordmark, systémový sans obsah).
 
 ```
 pues/
-├── index.html          ← celá SPA (jedna obrazovka)
+├── index.html          ← celá SPA (Noticias + Archivo, hash router)
 ├── app.js / style.css
 ├── sw.js                ← service worker (offline cache)
 ├── manifest.json         ← PWA manifest
@@ -133,9 +142,10 @@ pues/
 ├── icon.svg / icon-180.png / icon-512.png
 ├── data/
 │   ├── news/daily.json
+│   ├── news/archive/    ← trvalá historie (index.json + <datum>.json)
 │   └── news-filter.json
 ├── scripts/
-│   └── fetch-news.mjs   ← Wikipedia+EU → DeepL/MyMemory → JSON (běží v Actions)
+│   └── fetch-news.mjs   ← Wikipedia+EU+Guardian → DeepL/MyMemory → JSON (běží v Actions)
 ├── .github/workflows/fetch-news.yml
 ├── CLAUDE.md            ← instrukce pro Opus/Sonnet
 └── ARCHITECTURE.md      ← tento soubor
