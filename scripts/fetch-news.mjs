@@ -388,3 +388,21 @@ const out = {
 mkdirSync('data/news', { recursive: true });
 writeFileSync('data/news/daily.json', JSON.stringify(out, null, 2) + '\n');
 console.log(`Zapsáno data/news/daily.json (${out.stories.length} zpráv, ${praha}).`);
+
+/* ---- 5. archiv — trvale ukládat každý den, aby se nepřepisoval ---- */
+mkdirSync('data/news/archive', { recursive: true });
+const archiveEntry = {
+  date: out.date,
+  stories: out.stories,
+  article: out.article,
+};
+writeFileSync(`data/news/archive/${praha}.json`, JSON.stringify(archiveEntry, null, 2) + '\n');
+
+const indexPath = 'data/news/archive/index.json';
+let archiveIndex = [];
+try { archiveIndex = JSON.parse(readFileSync(indexPath, 'utf8')); } catch (e) { /* první běh */ }
+archiveIndex = archiveIndex.filter(d => d.date !== praha);
+archiveIndex.push({ date: praha, count: out.stories.length });
+archiveIndex.sort((a, b) => b.date.localeCompare(a.date));
+writeFileSync(indexPath, JSON.stringify(archiveIndex, null, 2) + '\n');
+console.log(`Archiv: uloženo ${praha}.json, index má ${archiveIndex.length} dnů.`);

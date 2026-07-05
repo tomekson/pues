@@ -101,7 +101,8 @@ async function renderNoticias(el) {
     </div>`;
   }
 
-  html += `<p class="fonte">Zdroje: <a href="${esc(daily.sourceUrl)}">Wikipedia</a> (CC BY-SA) · <a href="https://ec.europa.eu/commission/presscorner/">Evropská komise</a>${daily.stories.some(s => s.origin === 'guardian') ? ' · <a href="https://www.theguardian.com/">The Guardian</a> (Open Platform)' : ''} · překlad ${esc(daily.translator || 'automatický')}</p>`;
+  html += `<p class="fonte">Zdroje: <a href="${esc(daily.sourceUrl)}">Wikipedia</a> (CC BY-SA) · <a href="https://ec.europa.eu/commission/presscorner/">Evropská komise</a>${daily.stories.some(s => s.origin === 'guardian') ? ' · <a href="https://www.theguardian.com/">The Guardian</a> (Open Platform)' : ''} · překlad ${esc(daily.translator || 'automatický')}</p>
+    <p style="text-align:center;margin-top:14px"><a href="#" id="archivo-link">📚 Archivo — días anteriores</a></p>`;
 
   el.innerHTML = html;
 
@@ -119,6 +120,109 @@ async function renderNoticias(el) {
     $('#art-tts').onclick = e => { e.stopPropagation(); speak(daily.article.es); };
     $('#art-cz').onclick = e => { e.stopPropagation(); artToggle(); };
   }
+  $('#archivo-link').onclick = e => { e.preventDefault(); show('archivo'); };
+}
+
+/* ---------------- Archivo (historie denních zpráv) ---------------- */
+
+const ARCHIVE_PAGE_SIZE = 14;
+let archivoPage = 0;
+
+async function renderArchivo(el) {
+  let index = [];
+  try { index = await fetchJson('data/news/archive/index.json', { cache: 'no-cache' }); } catch (e) { /* archiv zatím prázdný */ }
+  index.sort((a, b) => b.date.localeCompare(a.date));
+
+  if (!index.length) {
+    el.innerHTML = `
+      <h2>Archivo</h2>
+      <p class="muted"><a href="#" id="archivo-back">← Noticias</a></p>
+      <div class="card"><p class="muted">Archiv se teprve začíná plnit. Vrať se zítra.</p></div>`;
+    $('#archivo-back').onclick = e => { e.preventDefault(); show('noticias'); };
+    return;
+  }
+
+  const pages = Math.ceil(index.length / ARCHIVE_PAGE_SIZE);
+  archivoPage = Math.min(Math.max(archivoPage, 0), pages - 1);
+  const slice = index.slice(archivoPage * ARCHIVE_PAGE_SIZE, (archivoPage + 1) * ARCHIVE_PAGE_SIZE);
+
+  let html = `
+    <h2>Archivo</h2>
+    <p class="muted"><a href="#" id="archivo-back">← Noticias</a> · ${index.length} dní, stránka ${archivoPage + 1}/${pages}</p>
+    <div class="card" style="padding:4px 2px" id="archivo-list">`;
+  for (const d of slice) {
+    html += `
+      <div class="archivo-day" data-date="${d.date}">
+        <span class="fecha">${esc(d.date)}</span>
+        <span class="count">${d.count} zpráv</span>
+      </div>
+      <div class="archivo-day-content hidden" data-date-content="${d.date}"></div>`;
+  }
+  html += `</div>
+    <div class="btn-row">
+      <button class="btn" id="archivo-prev" ${archivoPage <= 0 ? 'disabled' : ''}>← Novější</button>
+      <button class="btn" id="archivo-next" ${archivoPage >= pages - 1 ? 'disabled' : ''}>Starší →</button>
+    </div>`;
+
+  el.innerHTML = html;
+  $('#archivo-back').onclick = e => { e.preventDefault(); show('noticias'); };
+  $('#archivo-prev').onclick = () => { archivoPage--; renderArchivo(el); };
+  $('#archivo-next').onclick = () => { archivoPage++; renderArchivo(el); };
+
+  el.querySelectorAll('.archivo-day').forEach(row => {
+    row.onclick = async () => {
+      const date = row.dataset.date;
+      const content = el.querySelector(`[data-date-content="${date}"]`);
+      const isOpen = !content.classList.contains('hidden');
+      el.querySelectorAll('.archivo-day-content').forEach(c => c.classList.add('hidden'));
+      if (isOpen) return;
+      content.classList.remove('hidden');
+      if (!content.dataset.loaded) {
+        content.innerHTML = '<p class="muted" style="padding:8px">Cargando…</p>';
+        try {
+          const day = await fetchJson(`data/news/archive/${date}.json`);
+          let dh = '';
+          day.stories.forEach((n, i) => {
+            dh += `
+            <div class="digest-item archivo-item" data-idx="${i}">
+              <button class="tts-mini" title="Escuchar">🔊</button>
+              <div class="digest-text">
+                <p class="testo">${esc(n.es)}</p>
+                <p class="cz-line hidden">${esc(n.cz)}</p>
+              </div>
+              <span class="chev" aria-hidden="true">🇨🇿</span>
+            </div>`;
+          });
+          if (day.article) {
+            dh += `
+            <div class="card article" style="margin-top:8px">
+              <h3>A fondo</h3>
+              <p class="testo">${esc(day.article.es)}</p>
+              <button class="tts-btn" data-art-tts>🔊 Escuchar</button>
+              <button class="cz-toggle" data-art-cz>🇨🇿 česky</button>
+              <div class="cz-text hidden">${esc(day.article.cz)}</div>
+            </div>`;
+          }
+          content.innerHTML = dh;
+          content.dataset.loaded = '1';
+          content.querySelectorAll('.archivo-item').forEach(row2 => {
+            const n = day.stories[+row2.dataset.idx];
+            row2.querySelector('.tts-mini').onclick = e => { e.stopPropagation(); speak(n.es); };
+            row2.onclick = () => row2.querySelector('.cz-line').classList.toggle('hidden');
+          });
+          const artBox = content.querySelector('.article');
+          if (artBox) {
+            const toggle = () => artBox.querySelector('.cz-text').classList.toggle('hidden');
+            artBox.onclick = toggle;
+            artBox.querySelector('[data-art-tts]').onclick = e => { e.stopPropagation(); speak(day.article.es); };
+            artBox.querySelector('[data-art-cz]').onclick = e => { e.stopPropagation(); toggle(); };
+          }
+        } catch (e) {
+          content.innerHTML = `<p class="muted" style="padding:8px">Nepodařilo se načíst.</p>`;
+        }
+      }
+    };
+  });
 }
 
 /* ---------------- update banner + SW ---------------- */
@@ -168,7 +272,7 @@ async function ptrRefresh() {
     const r = await fetch('version.json?t=' + Date.now(), { cache: 'no-store' });
     const j = await r.json();
     if (j.v !== APP_VERSION) { await applyUpdate(); return; }
-    await show();
+    await show(currentView);
   } catch (e) { /* offline, nevadí */ }
   ptr.classList.add('hidden');
 }
@@ -211,23 +315,38 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 toTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-/* ---------------- router (jediná obrazovka) ---------------- */
+/* ---------------- router (noticias + archivo, bez tabbaru) ---------------- */
 
-async function show() {
+const views = { noticias: renderNoticias, archivo: renderArchivo };
+let currentView = 'noticias';
+
+function viewFromHash() {
+  const v = (location.hash || '').replace(/^#\/?/, '');
+  return views[v] ? v : 'noticias';
+}
+
+async function show(view) {
+  currentView = view;
+  if (viewFromHash() !== view) location.hash = view === 'noticias' ? '' : view;
   const el = $('#main');
   el.innerHTML = '<p class="muted" style="padding:20px">Cargando…</p>';
   try {
-    await renderNoticias(el);
+    await views[view](el);
   } catch (e) {
     el.innerHTML = `<div class="card"><strong>Chyba načítání dat</strong><p class="muted">${esc(e.message)}</p></div>`;
   }
   window.scrollTo(0, 0);
 }
 
+window.addEventListener('hashchange', () => {
+  const v = viewFromHash();
+  if (v !== currentView) show(v);
+});
+
 /* ---------------- init ---------------- */
 
 (async function init() {
   $('#footer-version').textContent = 'v' + APP_VERSION;
-  show();
+  show(viewFromHash());
   checkVersion();
 })();
