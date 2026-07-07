@@ -4,12 +4,23 @@
 /* ---------------- TTS (Web Speech API, es-ES) ----------------
    iOS: speak() musí běžet z tap handleru — všechna volání jsou onclick. */
 
+/* jména skutečných (ne "žertovných" postavových — Eddy/Flo/Grandma/Grandpa/Reed/Rocko/Sandy/Shelley
+   existují stejné ve všech jazycích a znějí roboticky) hlasů na macOS/iOS/Windows, v pořadí kvality */
+const VOICE_PREFER = [/mónica|monica/i, /paulina/i, /elvira/i, /[aá]lvaro/i, /helena/i, /laura/i, /pablo/i];
+
 let esVoice = null;
 function pickVoice() {
   const voices = speechSynthesis.getVoices().filter(v => v.lang.toLowerCase().startsWith('es'));
-  esVoice = voices.find(v => v.lang.toLowerCase() === 'es-es' && v.localService)
-    || voices.find(v => v.lang.toLowerCase() === 'es-es')
-    || voices.find(v => v.localService) || voices[0] || null;
+  esVoice = null;
+  for (const pattern of VOICE_PREFER) {
+    const hit = voices.find(v => pattern.test(v.name) && v.localService);
+    if (hit) { esVoice = hit; break; }
+  }
+  if (!esVoice) {
+    esVoice = voices.find(v => v.lang.toLowerCase() === 'es-es' && v.localService)
+      || voices.find(v => v.lang.toLowerCase() === 'es-es')
+      || voices.find(v => v.localService) || voices[0] || null;
+  }
   // bez nainstalovaného španělského hlasu si TTS engine tiše vezme systémový výchozí (často česky) —
   // nejde to opravit z JS (chybí engine), jen na to upozornit
   document.getElementById('voice-note')?.classList.toggle('hidden', voices.length > 0);
