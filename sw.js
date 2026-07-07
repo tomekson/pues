@@ -1,5 +1,5 @@
 /* ¡pues! service worker — verze CACHE drž synchronně s APP_VERSION (index.html) a version.json */
-const CACHE = 'pues-v2.02';
+const CACHE = 'pues-v2.03';
 
 const SHELL = [
   './',
@@ -13,7 +13,14 @@ const SHELL = [
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())
+    caches.open(CACHE).then(async c => {
+      // cache: 'reload' — obchází HTTP cache prohlížeče (GitHub Pages posílá Cache-Control),
+      // jinak addAll() klidně naplní novou Cache Storage bucketu starým obsahem ze staré HTTP cache
+      await Promise.all(SHELL.map(async url => {
+        const r = await fetch(url, { cache: 'reload' });
+        await c.put(url, r);
+      }));
+    }).then(() => self.skipWaiting())
   );
 });
 
@@ -29,22 +36,22 @@ self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
 
-  // version.json + data/ → network-first (čerstvost), fallback cache (offline)
-  if (url.pathname.endsWith('version.json') || url.pathname.includes('/data/')) {
-    e.respondWith(
-      fetch(e.request)
-        .then(r => {
-          const copy = r.clone();
-          caches.open(CACHE).then(c => c.put(e.request, copy));
-          return r;
-        })
-        .catch(() => caches.match(e.request))
-    );
+  // ikony → cache-first (statické, není důvod je pořád stahovat)
+  if (/\.(png|svg)$/.test(url.pathname)) {
+    e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request)));
     return;
   }
 
-  // app shell → cache-first
+  // HTML/JS/CSS/JSON — network-first (čerstvost), fallback cache (offline).
+  // Dřív byl shell (index.html/app.js/style.css) cache-first, což umožnilo nekonzistentní
+  // stav — nové index.html vedle starého app.js ze stejné SW instalace.
   e.respondWith(
-    caches.match(e.request).then(hit => hit || fetch(e.request))
+    fetch(e.request)
+      .then(r => {
+        const copy = r.clone();
+        caches.open(CACHE).then(c => c.put(e.request, copy));
+        return r;
+      })
+      .catch(() => caches.match(e.request))
   );
 });
