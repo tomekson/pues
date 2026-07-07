@@ -10,6 +10,9 @@ function pickVoice() {
   esVoice = voices.find(v => v.lang.toLowerCase() === 'es-es' && v.localService)
     || voices.find(v => v.lang.toLowerCase() === 'es-es')
     || voices.find(v => v.localService) || voices[0] || null;
+  // bez nainstalovaného španělského hlasu si TTS engine tiše vezme systémový výchozí (často česky) —
+  // nejde to opravit z JS (chybí engine), jen na to upozornit
+  document.getElementById('voice-note')?.classList.toggle('hidden', voices.length > 0);
 }
 if ('speechSynthesis' in window) {
   pickVoice();
