@@ -34,12 +34,15 @@ let ttsCurrent = null; // text, který právě hraje: druhý klik = pauza, třet
 
 function speak(text, rate = 0.9) {
   if (!('speechSynthesis' in window)) return;
+  if (player.items.length) playerStop(); // jednotlivé přehrání má přednost před frontou
   const ss = speechSynthesis;
   if (ttsCurrent === text && (ss.speaking || ss.paused)) {
     if (ss.paused) ss.resume();
     else ss.pause();
     return;
   }
+  // iOS PWA občas nespustí "voiceschanged" — znovu zkontrolovat těsně před přehráním
+  if (!esVoice) pickVoice();
   ss.cancel();
   ttsCurrent = text;
   const u = new SpeechSynthesisUtterance(text);
@@ -48,6 +51,112 @@ function speak(text, rate = 0.9) {
   u.rate = rate;
   u.onend = () => { if (ttsCurrent === text) ttsCurrent = null; };
   ss.speak(u);
+}
+
+/* ---------------- Escucha: fronta vět + plovoucí přehrávač ----------------
+   Pasivní poslech celých Noticias (i dne z Archiva), rychlost 0.7 až 1.0.
+   iOS: start vždy z tapnutí; navazující věty jedou z onend už povoleného hlasu. */
+
+const player = { items: [], i: 0, rate: 0.85, playing: false, label: '' };
+const PLAYER_RATES = [0.7, 0.85, 1.0];
+let plUtter = null;
+
+function playerUI() {
+  const bar = $('#player');
+  if (!bar) return;
+  if (!player.items.length) {
+    bar.classList.add('hidden');
+    document.body.classList.remove('player-open');
+    return;
+  }
+  bar.classList.remove('hidden');
+  document.body.classList.add('player-open');
+  $('#pl-ic-play').classList.toggle('hidden', player.playing);
+  $('#pl-ic-pause').classList.toggle('hidden', !player.playing);
+  $('#pl-label').innerHTML = `<b>${esc(player.label)}</b> · ${player.i + 1}/${player.items.length}`;
+  $('#pl-rate').textContent = player.rate + '×';
+}
+
+function playerSpeakCurrent() {
+  const ss = speechSynthesis;
+  ss.cancel();
+  ttsCurrent = null;
+  if (!esVoice) pickVoice();
+  const u = new SpeechSynthesisUtterance(player.items[player.i]);
+  u.lang = 'es-ES';
+  if (esVoice) u.voice = esVoice;
+  u.rate = player.rate;
+  u.onend = () => {
+    if (plUtter !== u || !player.playing) return;
+    if (player.i < player.items.length - 1) {
+      player.i++;
+      playerUI();
+      playerSpeakCurrent();
+    } else {
+      playerStop();
+    }
+  };
+  plUtter = u;
+  ss.speak(u);
+}
+
+function playerStart(items, label) {
+  if (!('speechSynthesis' in window) || !items.length) return;
+  player.items = items;
+  player.i = 0;
+  player.label = label;
+  player.playing = true;
+  playerUI();
+  playerSpeakCurrent();
+}
+
+function playerStop() {
+  player.items = [];
+  player.playing = false;
+  plUtter = null;
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  playerUI();
+}
+
+function splitSentences(text) {
+  return (String(text).match(/[^.!?]+[.!?]+["»”']?|[^.!?]+$/g) || [String(text)])
+    .map(s => s.trim()).filter(Boolean);
+}
+
+function initPlayerControls() {
+  if (!$('#player')) return;
+  $('#pl-play').onclick = () => {
+    if (!player.items.length) return;
+    const ss = speechSynthesis;
+    if (player.playing) {
+      ss.pause();
+      player.playing = false;
+    } else {
+      player.playing = true;
+      if (ss.paused) ss.resume();
+      else playerSpeakCurrent();
+    }
+    playerUI();
+  };
+  $('#pl-next').onclick = () => {
+    if (!player.items.length) return;
+    if (player.i < player.items.length - 1) {
+      player.i++;
+      playerUI();
+      if (player.playing) playerSpeakCurrent();
+      else speechSynthesis.cancel();
+    } else {
+      playerStop();
+    }
+  };
+  $('#pl-rate').onclick = () => {
+    if (!player.items.length) return;
+    player.rate = PLAYER_RATES[(PLAYER_RATES.indexOf(player.rate) + 1) % PLAYER_RATES.length];
+    playerUI();
+    if (player.playing) playerSpeakCurrent();
+    else speechSynthesis.cancel();
+  };
+  $('#pl-stop').onclick = playerStop;
 }
 
 /* ---------------- helpers ---------------- */
@@ -60,6 +169,37 @@ async function fetchJson(path, opts) {
   if (!r.ok) throw new Error(path + ' → ' + r.status);
   return r.json();
 }
+
+/* klikatelný řádek ovladatelný i z klávesnice */
+function keyable(el) {
+  el.tabIndex = 0;
+  el.setAttribute('role', 'button');
+  el.onkeydown = e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+  };
+}
+
+/* ---------------- den / noc ---------------- */
+
+const THEME_KEY = 'pues-theme';
+const sysDark = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null;
+const storedTheme = () => { try { return localStorage.getItem(THEME_KEY); } catch (e) { return null; } };
+
+function applyTheme(t) {
+  document.documentElement.dataset.theme = t;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = t === 'dark' ? '#191412' : '#C60B1E';
+  const btn = $('#theme-toggle');
+  if (btn) {
+    const lbl = t === 'dark' ? 'Přepnout na světlý režim' : 'Přepnout na tmavý režim';
+    btn.setAttribute('aria-label', lbl);
+    btn.title = lbl;
+  }
+}
+
+if (sysDark) sysDark.addEventListener('change', () => {
+  if (!storedTheme()) applyTheme(sysDark.matches ? 'dark' : 'light');
+});
 
 /* ---------------- Noticias ---------------- */
 
@@ -78,7 +218,8 @@ async function renderNoticias(el) {
       <h2>Noticias del día</h2>
       <span class="muted">${esc(daily.date)}</span>
     </div>
-    <p class="muted">Každé ráno čerstvé. Tapnutím na zprávu rozbalíš češtinu.</p>`;
+    <p class="muted">Každé ráno čerstvé. Tapnutím na zprávu rozbalíš češtinu.</p>
+    ${'speechSynthesis' in window ? '<p style="margin:2px 0 10px"><button class="tts-btn" id="escuchar-todo">🎧 Escuchar todo</button></p>' : ''}`;
 
   const groups = [
     { title: 'Desde Chequia', items: daily.stories.filter(n => n.origin === 'cz') },
@@ -93,9 +234,9 @@ async function renderNoticias(el) {
     g.items.forEach((n, i) => {
       html += `
       <div class="digest-item" data-g="${gi}" data-i="${i}">
-        <button class="tts-mini" title="Escuchar">🔊</button>
+        <button class="tts-mini" title="Escuchar" aria-label="Přečíst španělsky">🔊</button>
         <div class="digest-text">
-          <p class="testo">${esc(n.es)}</p>
+          <p class="testo" lang="es">${esc(n.es)}</p>
           <p class="cz-line hidden">${esc(n.cz)}</p>
         </div>
         <span class="chev" aria-hidden="true">🇨🇿</span>
@@ -108,7 +249,7 @@ async function renderNoticias(el) {
     html += `
     <div class="card article">
       <h3>A fondo</h3>
-      <p class="testo">${esc(daily.article.es)}</p>
+      <p class="testo" lang="es">${esc(daily.article.es)}</p>
       <button class="tts-btn" id="art-tts">🔊 Escuchar</button>
       <button class="cz-toggle" id="art-cz">🇨🇿 česky</button>
       <div class="cz-text hidden">${esc(daily.article.cz)}</div>
@@ -127,7 +268,14 @@ async function renderNoticias(el) {
       row.querySelector('.cz-line').classList.toggle('hidden');
       row.classList.toggle('open');
     };
+    keyable(row);
   });
+  const todo = $('#escuchar-todo');
+  if (todo) todo.onclick = () => {
+    const items = groups.flatMap(g => g.items.map(n => n.es));
+    if (daily.article) items.push(...splitSentences(daily.article.es));
+    playerStart(items, 'Noticias');
+  };
   if (daily.article) {
     const artToggle = () => el.querySelector('.article .cz-text').classList.toggle('hidden');
     el.querySelector('.article').onclick = artToggle;
@@ -184,6 +332,7 @@ async function renderArchivo(el) {
   $('#archivo-next').onclick = () => { archivoPage++; renderArchivo(el); };
 
   el.querySelectorAll('.archivo-day').forEach(row => {
+    keyable(row);
     row.onclick = async () => {
       const date = row.dataset.date;
       const content = el.querySelector(`[data-date-content="${date}"]`);
@@ -195,13 +344,14 @@ async function renderArchivo(el) {
         content.innerHTML = '<p class="muted" style="padding:8px">Cargando…</p>';
         try {
           const day = await fetchJson(`data/news/archive/${date}.json`);
-          let dh = '';
+          let dh = 'speechSynthesis' in window
+            ? `<p style="margin:4px 0 2px"><button class="tts-btn" data-day-play>🎧 Escuchar todo</button></p>` : '';
           day.stories.forEach((n, i) => {
             dh += `
             <div class="digest-item archivo-item" data-idx="${i}">
-              <button class="tts-mini" title="Escuchar">🔊</button>
+              <button class="tts-mini" title="Escuchar" aria-label="Přečíst španělsky">🔊</button>
               <div class="digest-text">
-                <p class="testo">${esc(n.es)}</p>
+                <p class="testo" lang="es">${esc(n.es)}</p>
                 <p class="cz-line hidden">${esc(n.cz)}</p>
               </div>
               <span class="chev" aria-hidden="true">🇨🇿</span>
@@ -211,7 +361,7 @@ async function renderArchivo(el) {
             dh += `
             <div class="card article" style="margin-top:8px">
               <h3>A fondo</h3>
-              <p class="testo">${esc(day.article.es)}</p>
+              <p class="testo" lang="es">${esc(day.article.es)}</p>
               <button class="tts-btn" data-art-tts>🔊 Escuchar</button>
               <button class="cz-toggle" data-art-cz>🇨🇿 česky</button>
               <div class="cz-text hidden">${esc(day.article.cz)}</div>
@@ -223,7 +373,15 @@ async function renderArchivo(el) {
             const n = day.stories[+row2.dataset.idx];
             row2.querySelector('.tts-mini').onclick = e => { e.stopPropagation(); speak(n.es); };
             row2.onclick = () => row2.querySelector('.cz-line').classList.toggle('hidden');
+            keyable(row2);
           });
+          const dayPlay = content.querySelector('[data-day-play]');
+          if (dayPlay) dayPlay.onclick = e => {
+            e.stopPropagation();
+            const items = day.stories.map(n => n.es);
+            if (day.article) items.push(...splitSentences(day.article.es));
+            playerStart(items, date);
+          };
           const artBox = content.querySelector('.article');
           if (artBox) {
             const toggle = () => artBox.querySelector('.cz-text').classList.toggle('hidden');
@@ -327,7 +485,10 @@ const toTop = $('#to-top');
 window.addEventListener('scroll', () => {
   toTop.classList.toggle('hidden', window.scrollY < 400);
 }, { passive: true });
-toTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+toTop.onclick = () => window.scrollTo({
+  top: 0,
+  behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+});
 
 /* ---------------- router (noticias + archivo, bez tabbaru) ---------------- */
 
@@ -361,6 +522,13 @@ window.addEventListener('hashchange', () => {
 
 (async function init() {
   $('#footer-version').textContent = 'v' + APP_VERSION;
+  applyTheme(document.documentElement.dataset.theme || (sysDark && sysDark.matches ? 'dark' : 'light'));
+  $('#theme-toggle').onclick = () => {
+    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) { }
+    applyTheme(next);
+  };
+  initPlayerControls();
   show(viewFromHash());
   checkVersion();
 })();

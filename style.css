@@ -13,13 +13,33 @@
   --gris: #756F62;
   --linea: #E8DFC9;
   --ombra: 0 1px 3px rgba(43, 33, 28, 0.08);
+  --rojo-wash: rgba(198, 11, 30, 0.06);
+  --hover-wash: rgba(43, 33, 28, 0.04);
   --radius: 14px;
   --serif: ui-serif, "New York", Georgia, "Times New Roman", serif;
 }
 
+/* noche: teplý tmavý inkoust (odvozený z tinta), bandera zůstává — amarillo je podle
+   teorie barev (viz ARCHITECTURE.md) čitelné právě jen na tmavém podkladu */
+[data-theme=dark] {
+  --rojo: #D9434E;
+  --rojo-oscuro: #F0908E;
+  --amarillo: #FFC400;
+  --turquesa: #3FB8AA;
+  --crema: #191412;
+  --papel: #241D1A;
+  --tinta: #F2E9DC;
+  --gris: #A89C8D;
+  --linea: #3A302B;
+  --ombra: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --rojo-wash: rgba(217, 67, 78, 0.13);
+  --hover-wash: rgba(255, 255, 255, 0.05);
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; color-scheme: light; }
+html[data-theme=dark] { color-scheme: dark; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -318,6 +338,159 @@ h2 {
 .hidden { display: none !important; }
 
 :focus-visible { outline: 2px solid var(--rojo); outline-offset: 2px; }
+
+/* ---------- přepínač den/noc ---------- */
+.theme-toggle {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: none;
+  border-radius: 12px;
+  color: var(--gris);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -8px;
+  transition: color 0.15s, background 0.15s, transform 0.1s;
+}
+
+.theme-toggle svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle:active { transform: scale(0.9); }
+html[data-theme=dark] .theme-toggle .ic-moon { display: none; }
+html:not([data-theme=dark]) .theme-toggle .ic-sun { display: none; }
+
+/* ---------- escucha: plovoucí přehrávač (bandera pruh 1:2:1 jako nahoře) ---------- */
+.player {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  width: min(600px, calc(100vw - 20px));
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  border-radius: 999px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px 6px 6px;
+  z-index: 35;
+}
+
+.player::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 22px;
+  right: 22px;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: linear-gradient(90deg,
+    var(--rojo) 0 25%,
+    var(--amarillo) 25% 75%,
+    var(--rojo) 75% 100%);
+  opacity: 0.9;
+}
+
+.player button {
+  border: none;
+  background: none;
+  color: var(--rojo-oscuro);
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.player button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  stroke: none;
+}
+
+.player .pl-play {
+  background: var(--rojo);
+  color: #fff;
+}
+
+.player .pl-play:active { background: var(--rojo-oscuro); }
+
+.player .pl-rate {
+  width: auto;
+  min-width: 52px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1.5px solid var(--linea);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gris);
+  padding: 0 10px;
+}
+
+.player .pl-label {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gris);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.player .pl-label b { color: var(--tinta); font-weight: 700; }
+
+body.player-open { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
+body.player-open .to-top { bottom: calc(84px + env(safe-area-inset-bottom)); }
+
+@media (min-width: 700px) {
+  .player { bottom: 20px; }
+  body.player-open .to-top { bottom: 88px; }
+}
+
+/* ---------- hover jen na zařízeních s myší ---------- */
+@media (hover: hover) {
+  .btn:hover:not(:disabled),
+  .tts-btn:hover,
+  .tts-mini:hover { background: var(--rojo-wash); }
+  .cz-toggle:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .digest-item:hover,
+  .archivo-day:hover { background: var(--hover-wash); }
+  .to-top:hover { background: var(--rojo-oscuro); }
+  .update-banner button:hover { filter: brightness(0.94); }
+  .theme-toggle:hover { color: var(--tinta); background: var(--hover-wash); }
+  .player button:hover { background: var(--rojo-wash); }
+  .player .pl-play:hover { background: var(--rojo-oscuro); color: #fff; }
+  .player .pl-rate:hover { border-color: var(--rojo); color: var(--rojo-oscuro); }
+  #archivo-link:hover, .fonte a:hover, h1 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+}
+
+/* ---------- větší dotykové plochy na mobilu ---------- */
+@media (pointer: coarse) {
+  .tts-mini { width: 40px; height: 40px; font-size: 1rem; }
+  .tts-btn { padding: 8px 15px; }
+  .cz-toggle { padding: 9px 8px; margin: -5px 0; }
+  #archivo-link { display: inline-block; padding: 9px 10px; }
+  .btn-row .btn { padding: 11px 4px; }
+  .archivo-day { padding: 14px; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }

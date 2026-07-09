@@ -107,6 +107,15 @@ dostupné jen přes odkaz na konci Noticias, ne přes menu (appka menu vůbec ne
   se lazy-loadne `archive/<datum>.json` a zprávy se zobrazí stejným stylem (tap-to-translate + TTS)
 - **TTS:** `speechSynthesis`, `lang: es-ES`, hlas preferuje `es-ES` variantu před ostatními `es-*`
   (viz `pickVoice()` v `app.js`). iOS: `speak()` musí běžet z tap handleru (WebKit), jinak potichu selže.
+- **Escucha** — plovoucí přehrávač (fronta vět): „🎧 Escuchar todo" v Noticias i u rozbaleného dne
+  v Archivu, play/pauza, další věta, rychlost 0.7/0.85/1.0×. Jednotlivé 🔊 má přednost — zastaví frontu.
+  Pruh na přehrávači = bandera 1:2:1 (stejně jako lišta nahoře).
+- **Noche (tmavý režim)** — přepínač v hlavičce, klíč `localStorage: pues-theme`, výchozí podle
+  `prefers-color-scheme` (a sleduje jeho změny, dokud uživatel ručně nepřepne). Inline bootstrap
+  skript v `<head>` nastaví `data-theme` před CSS (žádný flash), přepíná i `meta theme-color`.
+- **Desktop + mobil:** hover stavy jen `@media (hover: hover)`, větší dotykové plochy
+  `@media (pointer: coarse)`; řádky zpráv a dnů ovladatelné klávesnicí (`role=button`, Enter/mezerník),
+  španělský text má `lang="es"` (screen readery, správná výslovnost)
 - Update banner (`version.json` polling), pull-to-refresh, scroll-to-top, offline cache přes `sw.js` —
   převzato z allory beze změny (infrastruktura, ne "lekce/slovíčka/progress", takže v rámci zadání OK)
 
@@ -122,6 +131,11 @@ stejnou typografickou kostru (serif wordmark, systémový sans obsah).
 - `--amarillo` — jen na tmavém podkladu (ikona, bandera pruh) — na krémovém pozadí má nedostatečný kontrast pro text
 - `--turquesa` — doplňkový akcent: odkazy, cz-line border, cz-toggle text
 - `--crema` / `--papel` / `--tinta` / `--gris` / `--linea` — pozadí, karty, text, šedá, linky (paralelní k allořině latte/carta/inchiostro/grigio/linea)
+
+**Noche (dark) varianta** (`[data-theme=dark]` v `style.css`): teplý tmavý inkoust odvozený z tinty
+(`--crema: #191412`, `--papel: #241D1A`, `--tinta: #F2E9DC`), rojo a turquesa zesvětlené kvůli kontrastu
+(`#D9434E` / `#F0908E` / `#3FB8AA`), `--amarillo` beze změny — právě na tmavém podkladu funguje
+(viz poznámka výše). Bandera zůstává v obou režimech.
 
 ## Verzování a deploy (převzato z allory)
 
