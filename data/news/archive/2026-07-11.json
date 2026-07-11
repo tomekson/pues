@@ -20,26 +20,26 @@
     },
     {
       "en": "Commission approves Baker Hughes' acquisition of Chart Industries, subject to conditions. The European Commission has approved, under the EU Merger Regulation, the proposed acquisition by Baker Hughes Company (‘Baker Hughes') of Chart Industries, Inc. (‘Chart'), both headquartered in the US.",
-      "es": "La Comisión aprueba la adquisición de Chart Industries por parte de Baker Hughes, sujeta a determinadas condiciones. La Comisión Europea ha aprobado, al amparo del Reglamento de concentraciones de la UE, la adquisición propuesta por Baker Hughes Company («Baker Hughes») de Chart Industries, Inc. («Chart»), ambas con sede en EE. UU.",
+      "es": "La Comisión aprueba la adquisición de Chart Industries por parte de Baker Hughes, sujeta a determinadas condiciones. La Comisión Europea ha aprobado, al amparo del Reglamento de concentraciones de la UE, la adquisición propuesta por Baker Hughes Company («Baker Hughes») de Chart Industries, Inc. («Chart»), ambas con sede en Estados Unidos.",
       "cz": "Komise schválila akvizici společnosti Chart Industries společností Baker Hughes, a to za určitých podmínek. Evropská komise schválila v souladu s nařízením EU o fúzích navrhovanou akvizici společnosti Chart Industries, Inc. („Chart“) společností Baker Hughes Company („Baker Hughes“), přičemž obě společnosti mají sídlo v USA.",
       "origin": "eu"
     },
     {
+      "en": "World Cup quarter-final expected to generate £500m sales boost for UK economy. As England prepare to take on Norway on Saturday, sales of pints, takeaways and new TVs continue to surge",
+      "es": "Se prevé que los cuartos de final del Mundial supongan un impulso de 500 millones de libras en las ventas para la economía del Reino Unido. Mientras Inglaterra se prepara para enfrentarse a Noruega este sábado, las ventas de pintas, comida para llevar y televisores nuevos siguen disparándose.",
+      "cz": "Čtvrtfinále mistrovství světa by mělo britské ekonomice přinést nárůst tržeb o 500 milionů liber. Zatímco se Anglie připravuje na sobotní zápas s Norskem, tržby z prodeje piva, jídla s sebou a nových televizorů nadále prudce rostou",
+      "origin": "guardian"
+    },
+    {
+      "en": "‘A new consumer’: how weight-loss drugs are shaking up clothes shopping. As they slim down, UK and US users of GLP-1 jabs and pills are changing their spending habits – and their wardrobes",
+      "es": "«Un nuevo tipo de consumidor»: cómo los medicamentos para adelgazar están revolucionando la compra de ropa. A medida que pierden peso, los usuarios de inyecciones y pastillas de GLP-1 del Reino Unido y Estados Unidos están cambiando sus hábitos de consumo… y su vestuario.",
+      "cz": "„Nový typ spotřebitele“: jak léky na hubnutí mění způsob nakupování oblečení. Jak uživatelé injekcí a tablet s GLP-1 ve Velké Británii a USA hubnou, mění své nákupní zvyky – i svůj šatník",
+      "origin": "guardian"
+    },
+    {
       "en": "‘People could have lost their lives’: Telstra’s apologies fail to quell outage anger. Fallout over the telco’s latest national outage continues, with executives called to front a snap meeting of a triple-zero parliamentary inquiry",
-      "es": "«Podría haber habido víctimas mortales»: las disculpas de Telstra no logran calmar la indignación por el corte de servicio. Continúan las repercusiones del último corte de servicio a nivel nacional de la empresa de telecomunicaciones, y se ha convocado a los directivos a una reunión extraordinaria de una comisión parlamentaria sobre el «triple cero».",
+      "es": "«Podría haber habido víctimas mortales»: las disculpas de Telstra no logran calmar la indignación por el corte de servicio. Continúan las repercusiones por el último corte de servicio a nivel nacional de la empresa de telecomunicaciones, y se ha convocado a los directivos a una reunión de urgencia de una comisión parlamentaria sobre el «triple cero».",
       "cz": "„Mohlo dojít ke ztrátám na životech“: Omluvy společnosti Telstra nedokázaly utišit rozhořčení nad výpadkem. Došlo k další vlně kritiky v souvislosti s nejnovějším celostátním výpadkem této telekomunikační společnosti, přičemž její vedoucí pracovníci byli předvoláni na mimořádné zasedání parlamentní vyšetřovací komise „triple-zero“.",
-      "origin": "guardian"
-    },
-    {
-      "en": "Use of VPNs to bypass age checks on porn sites to be investigated by Australia’s eSafety watchdog. Online safety regulator monitoring compliance of top 30 adult sites after age verification laws introduced in March",
-      "es": "El organismo regulador de seguridad digital de Australia investigará el uso de redes privadas virtuales (VPN) para eludir los controles de edad en sitios web pornográficos. El regulador de seguridad en línea supervisa el cumplimiento de la normativa por parte de los 30 principales sitios web para adultos tras la entrada en vigor, en marzo, de las leyes sobre verificación de edad.",
-      "cz": "Australský regulační úřad pro online bezpečnost (eSafety) bude vyšetřovat využívání VPN k obcházení ověřování věku na pornografických stránkách. Regulační orgán pro online bezpečnost sleduje dodržování předpisů u 30 nejnavštěvovanějších stránek pro dospělé po zavedení zákonů o ověřování věku v březnu.",
-      "origin": "guardian"
-    },
-    {
-      "en": "Apple sues OpenAI, alleging artificial intelligence company stole trade secrets. Suit claims OpenAI poached Apple workers, coaxing them to share confidential material in bid to create hardware",
-      "es": "Apple demanda a OpenAI, alegando que la empresa de inteligencia artificial le ha sustraído secretos comerciales. La demanda afirma que OpenAI ha captado a empleados de Apple, convenciéndolos de que compartieran material confidencial con el fin de crear hardware.",
-      "cz": "Společnost Apple podala žalobu na OpenAI s tvrzením, že tato firma zabývající se umělou inteligencí ukradla obchodní tajemství. V žalobě se uvádí, že OpenAI přetáhla zaměstnance společnosti Apple a přemluvila je, aby s ní sdíleli důvěrné materiály s cílem vyvinout hardware.",
       "origin": "guardian"
     },
     {
@@ -57,13 +57,13 @@
     {
       "en": "China becomes the second country to achieve the controlled recovery of an orbital-class rocket booster, after successfully launching the Long March 10B.",
       "es": "China se convierte en el segundo país en lograr la recuperación controlada de un propulsor de cohete de clase orbital, tras el lanzamiento con éxito del Long March 10B.",
-      "cz": "Čína se po úspěšném vypuštění rakety „Dlouhý pochod 10B“ stala druhou zemí, které se podařilo provést řízené přistání nosného stupně rakety orbitální třídy.",
+      "cz": "Čína se po úspěšném vypuštění rakety „Dlouhý pochod 10B“ stala druhou zemí, které se podařilo provést řízené přistání nosné rakety orbitální třídy.",
       "origin": "world"
     },
     {
       "en": "Algeria says its ambassador will return to Mali, while both countries reopen their respective airspaces to each other, easing a diplomatic dispute that began after Algeria shot down a Malian drone in April 2025.",
       "es": "Argelia afirma que su embajador regresará a Malí, al tiempo que ambos países reabren mutuamente sus respectivos espacios aéreos, lo que alivia la disputa diplomática que se desencadenó después de que Argelia derribara un dron maliense en abril de 2025.",
-      "cz": "Alžírsko oznámilo, že jeho velvyslanec se vrátí do Mali, přičemž obě země si navzájem znovu otevřely vzdušný prostor, čímž došlo ke zmírnění diplomatického sporu, který vypukl poté, co Alžírsko v dubnu 2025 sestřelilo malijský dron.",
+      "cz": "Alžírsko oznámilo, že jeho velvyslanec se vrátí do Mali, přičemž obě země si navzájem znovu otevřely svůj vzdušný prostor, čímž došlo ke zmírnění diplomatického sporu, který vypukl poté, co Alžírsko v dubnu 2025 sestřelilo malijský dron.",
       "origin": "world"
     },
     {
