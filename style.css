@@ -316,6 +316,21 @@ h2 {
   margin-right: 6px;
 }
 
+.footer-sep {
+  margin: 0 6px;
+  opacity: 0.6;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
+}
+
 /* ---------- pull-to-refresh ---------- */
 .ptr {
   position: fixed;
