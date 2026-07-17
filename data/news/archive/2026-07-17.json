@@ -2,7 +2,7 @@
   "date": "2026-07-17",
   "stories": [
     {
-      "es": "En la cuenca del río Meziříčí, entre Lomami y el Congo, se ha descrito una nueva especie de mono, el gueréza del Congo (Colobus congoensis), conocido popularmente como «Likweli».",
+      "es": "En la cuenca del río Meziříčí, entre Lomami y el Congo, se ha descrito una nueva especie de mono, el colobo del Congo (Colobus congoensis), conocido popularmente como «Likweli».",
       "cz": "Z&nbsp;meziříčí Lomami a Konga byl popsán nový druh opice, gueréza konžská (Colobus congoensis) neboli lidově „Likweli“.",
       "origin": "cz"
     },
@@ -25,27 +25,27 @@
       "origin": "eu"
     },
     {
+      "en": "Global tech stocks fall as chip sell-off deepens; mortgage rates rise amid renewed Middle East tensions - business live. Rolling coverage of the latest economic and financial news",
+      "es": "Las acciones tecnológicas mundiales caen a medida que se agrava la venta masiva de chips; suben los tipos hipotecarios en medio de las renovadas tensiones en Oriente Medio - Noticias económicas en directo. Cobertura continua de las últimas noticias económicas y financieras",
+      "cz": "Ceny akcií globálních technologických společností klesají v důsledku prohlubujícího se výprodeje akcií výrobců čipů; úrokové sazby hypoték rostou v souvislosti s obnoveným napětím na Blízkém východě – business live. Průběžné zpravodajství o nejnovějších ekonomických a finančních zprávách",
+      "origin": "guardian"
+    },
+    {
+      "en": "‘I don’t think I’ll ever retire’: the workers struggling to save for old age. Almost half of working-age adults in the UK do not save into a pension. Four readers explain why they fear for the future",
+      "es": "«No creo que me jubile nunca»: los trabajadores que luchan por ahorrar para la jubilación. Casi la mitad de los adultos en edad laboral del Reino Unido no ahorra para la jubilación. Cuatro lectores explican por qué temen por su futuro.",
+      "cz": "„Myslím, že nikdy nepůjdu do důchodu“: pracovníci, kteří se snaží spořit na stáří. Téměř polovina dospělých v produktivním věku ve Velké Británii si na důchod nespoří. Čtyři čtenáři vysvětlují, proč se obávají o budoucnost",
+      "origin": "guardian"
+    },
+    {
       "en": "‘How’s this joker got my details?’: BrewDog founder faces complaints over emails to ‘equity punks’. Exclusive: Watchdog asked to look into how James Watt got data of ex-crowdfunders he invited to join buy-back bid",
       "es": "«¿Cómo ha conseguido este payaso mis datos?»: El fundador de BrewDog se enfrenta a denuncias por los correos electrónicos enviados a los «equity punks». Exclusiva: Se ha solicitado a un organismo regulador que investigue cómo James Watt obtuvo los datos de antiguos participantes en la financiación colectiva a los que invitó a sumarse a la oferta de recompra.",
       "cz": "„Jak ten vtipálek získal moje údaje?“: Zakladatel BrewDog čelí stížnostem kvůli e-mailům zaslaným „equity punks“. Exkluzivně: Dozorový orgán byl požádán, aby prošetřil, jak James Watt získal údaje o bývalých účastnících crowdfundingu, které pozval k účasti na nabídce na zpětný odkup akcií",
       "origin": "guardian"
     },
     {
-      "en": "No deposit, no problem: the new 100% mortgages for first-time buyers. Banks and building societies have started relaxing affordability rules and becoming more creative with products",
-      "es": "Sin entrada, sin problema: las nuevas hipotecas al 100 % para quienes compran su primera vivienda. Los bancos y las sociedades de crédito hipotecario han empezado a flexibilizar las normas de solvencia y a ofrecer productos más creativos.",
-      "cz": "Žádná záloha, žádný problém: nové hypotéky s 100 % financováním pro první kupce. Banky a stavební spořitelny začaly uvolňovat pravidla týkající se finanční dostupnosti a přicházejí s kreativnějšími produkty",
-      "origin": "guardian"
-    },
-    {
-      "en": "Gina Rinehart’s estimated A$700m profit from SpaceX IPO wiped out as stock price dips. Analyst says mining billionaire unlikely to be worried by lost paper profits after Elon Musk’s company dipped below its debut share price",
-      "es": "Los beneficios estimados de Gina Rinehart, que ascendían a 700 millones de dólares australianos gracias a la salida a bolsa de SpaceX, se han esfumado al caer el precio de las acciones. Según un analista, es poco probable que a la multimillonaria del sector minero le preocupe la pérdida de beneficios contables después de que la empresa de Elon Musk cayera por debajo del precio de salida a bolsa.",
-      "cz": "Odhadovaný zisk Giny Rinehartové ve výši 700 milionů australských dolarů z primární emise akcií společnosti SpaceX se rozplynul v důsledku poklesu ceny akcií. Analytik tvrdí, že miliardářka z těžebního průmyslu se pravděpodobně nebude trápit ztrátou účetních zisků poté, co cena akcií společnosti Elona Muska klesla pod úroveň, za kterou se akcie při debutu prodávaly.",
-      "origin": "guardian"
-    },
-    {
-      "en": "Ernesto Ruffo Appel, former governor of Baja California, Mexico (1989–1995), is arrested on charges related to organized crime and fuel smuggling.",
-      "es": "Ernesto Ruffo Appel, exgobernador de Baja California (México) entre 1989 y 1995, ha sido detenido por cargos relacionados con el crimen organizado y el contrabando de combustible.",
-      "cz": "Ernesto Ruffo Appel, bývalý guvernér mexického státu Baja California (1989–1995), byl zatčen na základě obvinění souvisejících s organizovaným zločinem a pašováním pohonných hmot.",
+      "en": "Ernesto Ruffo Appel, former governor of Baja California, Mexico, is arrested on charges related to organized crime and fuel smuggling.",
+      "es": "Ernesto Ruffo Appel, exgobernador de Baja California (México), ha sido detenido por cargos relacionados con el crimen organizado y el contrabando de combustible.",
+      "cz": "Ernesto Ruffo Appel, bývalý guvernér mexického státu Baja California, byl zatčen na základě obvinění souvisejících s organizovaným zločinem a pašováním pohonných hmot.",
       "origin": "world"
     },
     {
@@ -86,10 +86,10 @@
     }
   ],
   "article": {
-    "topic": "War crimes during the Sudanese civil war (2023–present)",
-    "url": "https://en.wikipedia.org/wiki/War_crimes_during_the_Sudanese_civil_war_(2023–present)",
-    "en": "The civil war in Sudan, which started on 15 April 2023, has seen widespread war crimes committed by both the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF), with the RSF being singled out by Human Rights Watch, and the United Kingdom and United States governments for committing genocide, ethnic cleansing and crimes against humanity.\nThe conflict has been marked by heavy indiscriminate shelling, gunfire, and airstrikes on markets and populated residential neighbourhoods, causing a high number of fatalities. Hospitals were targeted during aerial bombings and artillery fire, and medical supplies were looted.",
-    "es": "La guerra civil en Sudán, que comenzó el 15 de abril de 2023, ha estado marcada por la comisión generalizada de crímenes de guerra tanto por parte de las Fuerzas Armadas de Sudán (SAF) como de las Fuerzas de Apoyo Rápido (RSF), habiendo sido señaladas estas últimas por Human Rights Watch y por los Gobiernos del Reino Unido y de Estados Unidos por cometer genocidio, limpieza étnica y crímenes contra la humanidad.\nEl conflicto se ha caracterizado por intensos bombardeos indiscriminados, tiroteos y ataques aéreos contra mercados y barrios residenciales poblados, lo que ha provocado un elevado número de víctimas mortales. Los hospitales fueron blanco de bombardeos aéreos y fuego de artillería, y se saquearon los suministros médicos.",
-    "cz": "V občanské válce v Súdánu, která vypukla 15. dubna 2023, dochází k rozsáhlým válečným zločinům páchaným jak Súdánskými ozbrojenými silami (SAF), tak Rychlými podpůrnými silami (RSF), přičemž právě RSF byly organizací Human Rights Watch a vládami Spojeného království a Spojených států označeny za pachatele genocidy, etnické čistky a zločiny proti lidskosti.\nKonflikt se vyznačuje intenzivním a nevybíravým ostřelováním, střelbou a leteckými údery na tržiště a obydlené čtvrti, což má za následek vysoký počet obětí. Během leteckých bombardování a dělostřelecké palby se terčem útoků staly i nemocnice a došlo k rabování zdravotnického materiálu."
+    "topic": "Huachicol fiscal",
+    "url": "https://en.wikipedia.org/wiki/Huachicol_fiscal",
+    "en": "Huachicol fiscal is a term in Mexico for a form of fuel fraud in which gasoline and diesel are imported into the country under incorrect tariff classifications to evade taxes and excise duties. The misclassification is done by declaring the fuel in customs declarations as different products with lower or no tax liability. The scheme benefits from the fact that domestic fuel prices in Mexico, which include tax, are at times higher than international fuel prices, providing smugglers with a financial incentive to import and sell it in the country. This criminal activity gained prominence in 2018 and has been tied to corruption cases in ports and government agencies. The term derives from huachicol, a Mexican Spanish slang word originally referring to an adulterated drink and stolen fuel.",
+    "es": "El «huachicol fiscal» es un término utilizado en México para referirse a una forma de fraude en el sector de los combustibles, en la que se importan gasolina y gasóleo al país bajo clasificaciones arancelarias incorrectas con el fin de evadir impuestos y gravámenes especiales. La clasificación errónea se lleva a cabo declarando el combustible en las declaraciones de aduana como productos distintos con una carga fiscal menor o nula. Este esquema se beneficia del hecho de que los precios internos del combustible en México, que incluyen impuestos, son en ocasiones más elevados que los precios internacionales, lo que proporciona a los contrabandistas un incentivo económico para importarlo y venderlo en el país. Esta actividad delictiva cobró relevancia en 2018 y se ha relacionado con casos de corrupción en puertos y organismos gubernamentales. El término deriva de «huachicol», una palabra del argot mexicano que originalmente hacía referencia a una bebida adulterada y al combustible robado.",
+    "cz": "„Huachicol fiscal“ je mexický termín označující formu podvodu s palivem, při kterém se benzín a nafta dovážejí do země pod nesprávnou celní klasifikací s cílem vyhnout se daním a spotřebním daním. K nesprávné klasifikaci dochází tím, že se palivo v celních prohlášeních vykazuje jako jiné produkty s nižší daňovou povinností nebo bez ní. Tento podvod těží ze skutečnosti, že domácí ceny pohonných hmot v Mexiku, které zahrnují daně, jsou někdy vyšší než mezinárodní ceny pohonných hmot, což pašerákům poskytuje finanční motivaci k jejich dovozu a prodeji v zemi. Tato trestná činnost se dostala do popředí v roce 2018 a byla spojována s korupčními kauzami v přístavech a vládních agenturách. Termín je odvozen od slova „huachicol“, což je slangový výraz v mexické španělštině, který původně označoval zfalšovaný nápoj a ukradené palivo."
   }
 }
