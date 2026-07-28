@@ -2,12 +2,12 @@
   "date": "2026-07-28",
   "stories": [
     {
-      "es": "Se inauguró el puente internacional Gordie Howe, de 2,5 km de longitud, que une Windsor y Detroit, entre Canadá y Estados Unidos.",
+      "es": "Se ha inaugurado el puente internacional Gordie Howe, de 2,5 km de longitud, que une Windsor y Detroit, entre Canadá y Estados Unidos.",
       "cz": "Mezi Kanadou a Spojenými státy byl otevřen 2,5&nbsp;km dlouhý most Mezinárodní most Gordieho Howea spojující Windsor a Detroit.",
       "origin": "cz"
     },
     {
-      "es": "El Comité del Patrimonio Mundial ha inscrito en la Lista del Patrimonio Mundial de la UNESCO, entre otros, las playas normandas de Francia, el monte Olimpo griego y los yacimientos arqueológicos de Asuka y Fujiwara en Japón.",
+      "es": "El Comité del Patrimonio Mundial ha incluido en la Lista del Patrimonio Mundial de la UNESCO, entre otros, las playas normandas de Francia, el monte Olimpo griego y los yacimientos arqueológicos de Asuka y Fujiwara en Japón.",
       "cz": "Výbor pro světové dědictví zapsal na seznam světového dědictví UNESCO mimo jiné normandské pláže ve Francii, řecké pohoří Olymp a archeologická naleziště Asuka a Fudžiwara v Japonsku.",
       "origin": "cz"
     },
@@ -17,7 +17,7 @@
       "origin": "cz"
     },
     {
-      "es": "A causa del tifón Noul, las autoridades de la provincia china de Guangdong han evacuado a más de 715 000 personas. El fenómeno natural ha provocado inundaciones, interrupciones en el transporte y cortes en el suministro eléctrico.",
+      "es": "A causa del tifón Noul, las autoridades de la provincia china de Guangdong han evacuado a más de 715 000 personas. La catástrofe natural ha provocado inundaciones, interrupciones en el transporte y cortes en el suministro eléctrico.",
       "cz": "Kvůli tajfunu Noul úřady v čínské provincii Kuang-tung evakuovaly více než 715&nbsp;000 lidí. Živel způsobil záplavy, přerušení dopravy a výpadky dodávek elektřiny.",
       "origin": "cz"
     },
@@ -42,20 +42,26 @@
     {
       "en": "AI sell-off deepens as chip stocks slump in market retreat - business live. Rolling coverage of the latest economic and financial news",
       "es": "Se agrava la caída de las acciones de IA ante el desplome de los valores del sector de los chips en el retroceso del mercado - Noticias económicas en directo. Cobertura continua de las últimas noticias económicas y financieras",
-      "cz": "Výprodej v sektoru umělé inteligence se prohlubuje, zatímco akcie výrobců čipů klesají v rámci celkového poklesu trhu – Business Live. Průběžné zpravodajství o nejnovějších ekonomických a finančních událostech",
+      "cz": "Výprodej v sektoru umělé inteligence se prohlubuje, zatímco akcie výrobců čipů klesají v rámci celkového poklesu trhu – Business Live. Průběžné zpravodajství o nejnovějších ekonomických a finančních zprávách",
       "origin": "guardian"
     },
     {
-      "en": "We booked a Travelodge but were forced to move hotel after 1am. We told it of our 11pm arrival time but when we got there our room was no longer available as it had ‘overbooked’",
-      "es": "Reservamos una habitación en el Travelodge, pero nos vimos obligados a cambiar de hotel después de la 1 de la madrugada. Les habíamos comunicado que llegaríamos a las 23:00, pero cuando llegamos, nuestra habitación ya no estaba disponible porque se había producido un «sobreventa».",
-      "cz": "Rezervovali jsme si pokoj v hotelu Travelodge, ale po 1. hodině ráno jsme byli nuceni přestěhovat se do jiného hotelu. Uvedli jsme, že dorazíme ve 23:00, ale když jsme dorazili na místo, náš pokoj už nebyl k dispozici, protože došlo k „přeplnění rezervací“.",
+      "en": "AI sell-off intensifies as investors ditch chip stocks. Samsung and SK Hynix fall by more than 10% amid renewed fears over AI spending and Chinese competition",
+      "es": "Se intensifica la caída de las acciones del sector de la IA, ya que los inversores se deshacen de los valores de las empresas de semiconductores. Samsung y SK Hynix caen más de un 10 % ante los renovados temores sobre el gasto en IA y la competencia china.",
+      "cz": "Výprodej akcií v odvětví umělé inteligence se prohlubuje, protože investoři se zbavují akcií výrobců čipů. Akcie společností Samsung a SK Hynix klesly o více než 10 % v důsledku obnovených obav ohledně výdajů na umělou inteligenci a čínské konkurence",
       "origin": "guardian"
     },
     {
-      "en": "Blow to NHS as Royal Mail raises prices for bulk users by a third. Average 25% increase for letters such as marketing, bills and medical appointment notices from 5 October",
-      "es": "Golpe para el NHS: Royal Mail sube un tercio las tarifas para los grandes usuarios. A partir del 5 de octubre, se aplicará un incremento medio del 25 % a las cartas, como las de marketing, las facturas y las notificaciones de citas médicas.",
-      "cz": "Rána pro NHS: Royal Mail zvyšuje ceny pro hromadné odesílatele o třetinu. Od 5. října dojde k průměrnému 25% zvýšení cen za dopisy, jako jsou marketingové zásilky, účty a oznámení o lékařských prohlídkách.",
+      "en": "Security firm linked to ICE crackdown in US reports UK revenue slump after asylum centre contract ends. MTC provided security at heavily criticised Manston centre in Kent and could now make £500m managing the site",
+      "es": "Una empresa de seguridad vinculada a la campaña de ICE en EE. UU. informa de una caída de sus ingresos en el Reino Unido tras la finalización del contrato con un centro de asilo. MTC se encargaba de la seguridad en el centro de Manston, en Kent, que fue objeto de duras críticas, y ahora podría obtener 500 millones de libras esterlinas gestionando las instalaciones.",
+      "cz": "Bezpečnostní firma spojená s represivními opatřeními ICE v USA hlásí propad tržeb ve Velké Británii po skončení smlouvy na provoz azylového centra. Společnost MTC zajišťovala bezpečnost v silně kritizovaném centru Manston v hrabství Kent a nyní by mohla na správě tohoto areálu vydělat 500 milionů liber.",
       "origin": "guardian"
+    },
+    {
+      "en": "The Seoul Central District Court gives former South Korean president Yoon Suk Yeol an 18-month suspended sentence for false statements made during his 2022 election campaign. If upheld, the ruling may void his victory and require Yoon's People Power Party to repay campaign funds.",
+      "es": "El Tribunal del Distrito Central de Seúl ha condenado al expresidente surcoreano Yoon Suk Yeol a 18 meses de prisión condicional por declaraciones falsas realizadas durante su campaña electoral de 2022. Si se confirma la sentencia, esta podría anular su victoria y obligar al Partido del Poder Popular de Yoon a devolver los fondos de la campaña.",
+      "cz": "Centrální okresní soud v Soulu uložil bývalému jihokorejskému prezidentovi Yoon Suk Yeolovi 18měsíční podmíněný trest za nepravdivá prohlášení učiněná během jeho volební kampaně v roce 2022. Pokud bude tento rozsudek potvrzen, může to znamenat zrušení jeho vítězství a povinnost Yoonovy Strany lidové síly vrátit prostředky vynaložené na volební kampaň.",
+      "origin": "world"
     },
     {
       "en": "Three women are wounded in a mass stabbing near the Porte de Clichy station in Paris, France. The perpetrator is detained.",
@@ -82,12 +88,6 @@
       "origin": "world"
     },
     {
-      "en": "The Lithuanian government registers a resolution to open an embassy in Brasilia, Brazil, in October. The country currently has a consulate-general in São Paulo.",
-      "es": "El Gobierno lituano aprueba en octubre una resolución para abrir una embajada en Brasilia (Brasil). Actualmente, el país cuenta con un consulado general en São Paulo.",
-      "cz": "Litevská vláda v říjnu přijala usnesení o zřízení velvyslanectví v brazilském městě Brasília. V současné době má země generální konzulát v São Paulu.",
-      "origin": "world"
-    },
-    {
       "en": "Did you know that Swedish DJ Avicii was featured on a postage stamp in January&nbsp;2015?",
       "es": "¿Sabías que el DJ sueco Avicii apareció en un sello postal en enero de 2015?",
       "cz": "Věděli jste, že švédský DJ Avicii se v lednu 2015 objevil na poštovní známce?",
@@ -96,7 +96,7 @@
     {
       "en": "Did you know that a roadside sandbox full of mostly nude Barbie dolls was the subject of an art gallery exhibit and a documentary?",
       "es": "¿Sabías que un arenero al borde de la carretera lleno de muñecas Barbie casi desnudas fue el tema central de una exposición en una galería de arte y de un documental?",
-      "cz": "Věděli jste, že pískoviště u silnice, plné převážně nahých panenek Barbie, bylo tématem výstavy v umělecké galerii i dokumentárního filmu?",
+      "cz": "Věděli jste, že pískoviště u silnice plné převážně nahých panenek Barbie bylo tématem výstavy v umělecké galerii i dokumentárního filmu?",
       "origin": "dyk"
     }
   ],
@@ -104,7 +104,7 @@
     "topic": "2026 Victorian Labor Party leadership election",
     "url": "https://en.wikipedia.org/wiki/2026_Victorian_Labor_Party_leadership_election",
     "en": "On 28 July 2026, a leadership election for the Victorian Labor Party was initiated following the resignation of premier Jacinta Allan. Deputy leader Ben Carroll announced on 27 July that he would contest the leadership; he was elected party leader after running unopposed, while Gabrielle Williams was elected deputy leader.",
-    "es": "El 28 de julio de 2026 se convocaron elecciones a la presidencia del Partido Laborista de Victoria tras la dimisión de la presidenta del Gobierno, Jacinta Allan. El vicepresidente, Ben Carroll, anunció el 27 de julio que se presentaría a las elecciones; fue elegido presidente del partido al presentarse sin oposición, mientras que Gabrielle Williams fue elegida vicepresidenta.",
+    "es": "El 28 de julio de 2026 se convocaron elecciones a la presidencia del Partido Laborista de Victoria tras la dimisión de la presidenta del Gobierno, Jacinta Allan. El vicepresidente Ben Carroll anunció el 27 de julio que se presentaría a las elecciones; fue elegido presidente del partido al presentarse sin oposición, mientras que Gabrielle Williams fue elegida vicepresidenta.",
     "cz": "Dne 28. července 2026 byly po rezignaci premiérky Jacinty Allanové vyhlášeny volby předsedy Viktoriánské labouristické strany. Místopředseda Ben Carroll oznámil 27. července, že se o tuto funkci uchází; jelikož neměl žádného protikandidáta, byl zvolen předsedou strany, zatímco Gabrielle Williamsová byla zvolena místopředsedkyní."
   }
 }
