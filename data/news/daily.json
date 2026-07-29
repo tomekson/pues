@@ -20,7 +20,7 @@
       "origin": "cz"
     },
     {
-      "es": "A causa del tifón Noul, las autoridades de la provincia china de Guangdong han evacuado a más de 715 000 personas. La catástrofe natural ha provocado inundaciones, interrupciones en el transporte y cortes en el suministro eléctrico.",
+      "es": "A causa del tifón Noul, las autoridades de la provincia china de Guangdong han evacuado a más de 715 000 personas. El fenómeno natural ha provocado inundaciones, interrupciones en el transporte y cortes en el suministro eléctrico.",
       "cz": "Kvůli tajfunu Noul úřady v čínské provincii Kuang-tung evakuovaly více než 715&nbsp;000 lidí. Živel způsobil záplavy, přerušení dopravy a výpadky dodávek elektřiny.",
       "origin": "cz"
     },
@@ -45,19 +45,19 @@
     {
       "en": "Oil jumps after Iran attempts ‘surprise attack’; chip stocks slump further as AI sell-off continues – business live. Rolling coverage of the latest economic and financial news",
       "es": "El petróleo se dispara tras el intento de «ataque sorpresa» de Irán; las acciones del sector de los chips caen aún más mientras continúa la ola de ventas en el sector de la IA – Noticias económicas en directo. Cobertura continua de las últimas noticias económicas y financieras",
-      "cz": "Cena ropy prudce stoupá poté, co Írán podnikl „překvapivý útok“; akcie výrobců čipů dále klesají, protože výprodej v souvislosti s umělou inteligencí pokračuje – business live. Průběžné zpravodajství o nejnovějších ekonomických a finančních zprávách",
+      "cz": "Cena ropy prudce vzrostla poté, co Írán podnikl „překvapivý útok“; akcie výrobců čipů dále klesají, protože výprodej v souvislosti s umělou inteligencí pokračuje – business live. Průběžné zpravodajství o nejnovějších ekonomických a finančních zprávách",
+      "origin": "guardian"
+    },
+    {
+      "en": "Shares in Asian chip firms plunge further as AI sell-off continues. Drop comes after South Korean company SK Hynix’s results undershoot investors’ expectations",
+      "es": "Las acciones de las empresas asiáticas de semiconductores siguen cayendo en picado mientras continúa la ola de ventas provocada por la IA. La caída se produce después de que los resultados de la empresa surcoreana SK Hynix no hayan cumplido las expectativas de los inversores.",
+      "cz": "Akcie asijských výrobců čipů dále prudce klesají, protože výprodej v souvislosti s umělou inteligencí pokračuje. Pokles následuje poté, co výsledky jihokorejské společnosti SK Hynix zaostaly za očekáváními investorů.",
       "origin": "guardian"
     },
     {
       "en": "‘Dodged a bullet’: inflation eases to 3.8%, reducing chances of interest rate rise for Australia’s mortgage holders. ABS data shows inflation still too high but tracking lower than anticipated",
-      "es": "«Se ha evitado lo peor»: la inflación desciende al 3,8 %, lo que reduce las posibilidades de una subida de los tipos de interés para los titulares de hipotecas en Australia. Los datos de la Oficina Australiana de Estadística (ABS) muestran que la inflación sigue siendo demasiado alta, pero que evoluciona a la baja, por debajo de lo previsto.",
-      "cz": "„Vyhnuli se nejhoršímu“: inflace klesla na 3,8 %, čímž se snížila pravděpodobnost zvýšení úrokových sazeb pro australské držitele hypoték. Údaje australského statistického úřadu (ABS) ukazují, že inflace je sice stále příliš vysoká, ale vyvíjí se lépe, než se očekávalo.",
-      "origin": "guardian"
-    },
-    {
-      "en": "Apple becomes second $5tn company as investors flee AI stocks. Share price rally driven by strong product demand as well as decision to sit out AI spending race, amid wider tech sell-off",
-      "es": "Apple se convierte en la segunda empresa en alcanzar los 5 billones de dólares mientras los inversores huyen de las acciones relacionadas con la inteligencia artificial. La subida del precio de las acciones se debe a la fuerte demanda de productos, así como a la decisión de mantenerse al margen de la carrera por el gasto en inteligencia artificial, en medio de una venta masiva generalizada en el sector tecnológico.",
-      "cz": "Apple se stává druhou společností s tržní hodnotou 5 bilionů dolarů, zatímco investoři opouštějí akcie společností zabývajících se umělou inteligencí. Růst ceny akcií je poháněn silnou poptávkou po produktech i rozhodnutím nezapojit se do závodu o výdaje na umělou inteligenci, a to na pozadí rozsáhlého výprodeje technologických akcií.",
+      "es": "«Se ha evitado lo peor»: la inflación desciende al 3,8 %, lo que reduce las posibilidades de una subida de los tipos de interés para los titulares de hipotecas en Australia. Los datos de la Oficina Australiana de Estadística (ABS) muestran que la inflación sigue siendo demasiado alta, pero se sitúa por debajo de lo previsto.",
+      "cz": "„Vyhnuli se nejhoršímu“: inflace klesla na 3,8 %, čímž se snížila pravděpodobnost zvýšení úrokových sazeb pro australské držitele hypoték. Údaje australského statistického úřadu (ABS) ukazují, že inflace je sice stále příliš vysoká, ale vyvíjí se mírněji, než se očekávalo.",
       "origin": "guardian"
     },
     {
@@ -69,7 +69,7 @@
     {
       "en": "The gunman convicted of carrying out a school shooting at Apalachee High School in Winder, Georgia, United States, in 2024, receives four sentences of life in prison without the possibility of parole.",
       "es": "El autor del tiroteo en el instituto Apalachee High School de Winder (Georgia, Estados Unidos) en 2024 ha sido condenado a cuatro penas de cadena perpetua sin posibilidad de libertad condicional.",
-      "cz": "Střelec, který byl odsouzen za spáchání střelby ve škole Apalachee High School ve městě Winder v americkém státě Georgia v roce 2024, byl odsouzen ke čtyřem doživotním trestům odnětí svobody bez možnosti podmínečného propuštění.",
+      "cz": "Střelec, který byl odsouzen za spáchání střelby ve škole Apalachee High School ve městě Winder v americkém státě Georgie v roce 2024, byl odsouzen ke čtyřem doživotním trestům odnětí svobody bez možnosti podmínečného propuštění.",
       "origin": "world"
     },
     {
@@ -101,7 +101,7 @@
     "topic": "2024 Apalachee High School shooting",
     "url": "https://en.wikipedia.org/wiki/2024_Apalachee_High_School_shooting",
     "en": "On September 4, 2024, a school shooting occurred at Apalachee High School near Winder, Georgia, United States. The perpetrator, 14-year-old Colt Gray, fatally shot four people. Two students and two teachers were killed, while seven others were injured by gunfire. The shooting is the deadliest act of school violence in the history of the U.S. state of Georgia.\nColt's father, Colin Gray, bought a rifle for his son despite his knowledge of a previous police investigation regarding alleged school shooting threats made by him, as well as his own history of mental health crises.\nColt Gray was taken into police custody and charged with four counts of felony murder.",
-    "es": "El 4 de septiembre de 2024 se produjo un tiroteo en el instituto Apalachee High School, cerca de Winder, en Georgia (Estados Unidos). El autor, Colt Gray, de 14 años, mató a tiros a cuatro personas. Dos alumnos y dos profesores perdieron la vida, mientras que otras siete personas resultaron heridas por los disparos. Este tiroteo es el acto de violencia escolar más mortífero de la historia del estado estadounidense de Georgia.\nEl padre de Colt, Colin Gray, compró un rifle para su hijo a pesar de saber que había sido objeto de una investigación policial previa por supuestas amenazas de tiroteo en el colegio, así como de su propio historial de crisis de salud mental.\nColt Gray fue detenido por la policía y acusado de cuatro delitos de homicidio con agravantes.",
+    "es": "El 4 de septiembre de 2024 se produjo un tiroteo en el instituto Apalachee High School, cerca de Winder (Georgia, Estados Unidos). El autor, Colt Gray, de 14 años, mató a tiros a cuatro personas. Dos alumnos y dos profesores perdieron la vida, mientras que otras siete personas resultaron heridas por los disparos. Este tiroteo es el acto de violencia escolar más mortífero de la historia del estado estadounidense de Georgia.\nEl padre de Colt, Colin Gray, compró un rifle para su hijo a pesar de saber que la policía había investigado anteriormente unas supuestas amenazas de tiroteo en el colegio proferidas por él, así como de su propio historial de crisis de salud mental.\nColt Gray fue detenido por la policía y acusado de cuatro delitos de homicidio con agravantes.",
     "cz": "4. září 2024 došlo ke střelbě na střední škole Apalachee High School nedaleko města Winder ve státě Georgia v USA. Pachatel, čtrnáctiletý Colt Gray, smrtelně postřelil čtyři osoby. Zahynuli dva žáci a dva učitelé, dalších sedm osob bylo při střelbě zraněno. Tato střelba je nejtragičtějším případem školního násilí v historii amerického státu Georgie.\nColtův otec, Colin Gray, koupil svému synovi pušku, přestože věděl o předchozím policejním vyšetřování týkajícím se údajných výhrůžek střelbou ve škole, které jeho syn vyslovil, a také o jeho vlastní historii psychických problémů.\nColt Gray byl vzat do policejní vazby a obviněn ze čtyř případů vraždy spáchané při páchání trestného činu."
   }
 }
