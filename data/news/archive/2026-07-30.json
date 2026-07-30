@@ -2,7 +2,12 @@
   "date": "2026-07-30",
   "stories": [
     {
-      "es": "El ex primer ministro polaco Mateusz Morawiecki anunció, tras la escisión en el partido Derecho y Justicia, la creación de un nuevo grupo parlamentario, «Desarrollo Plus», formado por 39 diputados y un senador.",
+      "es": "El Comité del Patrimonio Mundial, en su 48.ª sesión celebrada en Busan, añadió veinticinco sitios a la Lista del Patrimonio Mundial de la UNESCO.",
+      "cz": "Výbor pro světové dědictví na 48.&nbsp;zasedání v&nbsp;Pusanu přidal dvacet pět&nbsp;památek na seznam Světového dědictví UNESCO.",
+      "origin": "cz"
+    },
+    {
+      "es": "El ex primer ministro polaco Mateusz Morawiecki, tras la escisión en el partido Derecho y Justicia, anunció la creación de un nuevo grupo parlamentario, «Desarrollo Plus», formado por 39 diputados y un senador.",
       "cz": "Bývalý polský premiér Mateusz Morawiecki po rozkolu ve straně Právo a spravedlnost oznámil vznik nové parlamentní frakce Rozvoj Plus, kterou vytvořilo 39 poslanců a jeden senátor.",
       "origin": "cz"
     },
@@ -30,9 +35,15 @@
       "origin": "eu"
     },
     {
-      "en": "FTSE 100 dips from record high after Fed holds interest rates and Iran attacks; Rolls-Royce expects higher profits – business live. Live, rolling coverage of business, economics and financial markets as global stock markets drop after US central bank keeps interest rates steady",
-      "es": "El FTSE 100 cae desde su máximo histórico tras la decisión de la Fed de mantener los tipos de interés y los ataques de Irán; Rolls-Royce prevé un aumento de sus beneficios – Noticias económicas en directo. Cobertura en directo y continua de la actualidad empresarial, económica y de los mercados financieros, mientras las bolsas mundiales caen tras la decisión del banco central estadounidense de mantener estables los tipos de interés.",
-      "cz": "Index FTSE 100 klesá z rekordního maxima poté, co Fed ponechal úrokové sazby beze změny a došlo k útokům v Íránu; společnost Rolls-Royce očekává vyšší zisky – živé zpravodajství z oblasti byznysu. Živé a průběžné zpravodajství o byznysu, ekonomice a finančních trzích v době, kdy globální akciové trhy klesají poté, co americká centrální banka ponechala úrokové sazby beze změny",
+      "en": "US borrowing costs hit 19-year high as Fed holds interest rates. Bank’s chair pledges to keep up fight against inflation but decision brings fears of a failure to keep pace",
+      "es": "Los costes de financiación en EE. UU. alcanzan su máximo en 19 años mientras la Fed mantiene los tipos de interés. El presidente de la entidad se compromete a seguir luchando contra la inflación, pero la decisión suscita temores de que no se pueda seguir el ritmo.",
+      "cz": "Náklady na půjčky v USA dosáhly 19letého maxima, zatímco Fed ponechal úrokové sazby beze změny. Předseda centrální banky slíbil, že bude pokračovat v boji proti inflaci, avšak toto rozhodnutí vyvolává obavy, že se nepodaří udržet tempo.",
+      "origin": "guardian"
+    },
+    {
+      "en": "Shell’s profits more than double after jump in oil and gas prices. Environmental groups renew calls for windfall tax to support households following Q2 earnings rise to $9.84bn",
+      "es": "Los beneficios de Shell se duplican con creces tras el repunte de los precios del petróleo y el gas. Las organizaciones ecologistas vuelven a reclamar un impuesto sobre los beneficios extraordinarios para ayudar a los hogares, tras el aumento de los beneficios del segundo trimestre hasta los 9.84 mil millones de dólares.",
+      "cz": "Zisky společnosti Shell se po prudkém nárůstu cen ropy a zemního plynu více než zdvojnásobily. Ekologické organizace znovu vyzývají k zavedení mimořádné daně na podporu domácností poté, co zisky za druhé čtvrtletí vzrostly na 9,84 mld. USD.",
       "origin": "guardian"
     },
     {
@@ -42,15 +53,9 @@
       "origin": "guardian"
     },
     {
-      "en": "Meta misses earnings forecasts after Zuckerberg media push to promote AI. Stock tumbles nearly 8% after weaker-than-expected results, despite CEO’s blitz to tout positive effects of AI",
-      "es": "Meta no cumple las previsiones de beneficios tras la campaña mediática de Zuckerberg para promover la IA. Las acciones se desploman casi un 8 % tras unos resultados peores de lo esperado, a pesar de la intensa campaña del director ejecutivo para destacar los efectos positivos de la IA.",
-      "cz": "Společnost Meta nesplnila prognózy zisku poté, co se Zuckerberg v médiích snažil propagovat umělou inteligenci. Akcie se po zveřejnění výsledků, které byly horší, než se očekávalo, propadly o téměř 8 %, a to navzdory intenzivní kampani generálního ředitele zaměřené na zdůrazňování pozitivních dopadů umělé inteligence.",
-      "origin": "guardian"
-    },
-    {
       "en": "Bolivian prosecutors issue an arrest warrant for former president Evo Morales for allegedly organizing protests and roadblocks across the country in May and June. The investigation follows complaints alleging armed uprising and terrorism.",
       "es": "La Fiscalía boliviana ha dictado una orden de detención contra el expresidente Evo Morales por su presunta organización de manifestaciones y cortes de carretera en todo el país durante los meses de mayo y junio. La investigación se deriva de denuncias por presunto levantamiento armado y terrorismo.",
-      "cz": "Bolivijská prokuratura vydala zatykač na bývalého prezidenta Eva Moralese za to, že údajně organizoval protesty a silniční blokády po celé zemi v květnu a červnu. Vyšetřování navazuje na stížnosti týkající se údajného ozbrojeného povstání a terorismu.",
+      "cz": "Bolivijská prokuratura vydala zatykač na bývalého prezidenta Eva Moralese za to, že údajně v květnu a červnu organizoval protesty a silniční blokády po celé zemi. Vyšetřování navazuje na stížnosti týkající se údajného ozbrojeného povstání a terorismu.",
       "origin": "world"
     },
     {
@@ -76,7 +81,7 @@
     "topic": "2026 Bolivian protests",
     "url": "https://en.wikipedia.org/wiki/2026_Bolivian_protests",
     "en": "The 2026 Bolivian protests were a series of mass protests that occurred in Bolivia in May and June involving widespread demonstrations, blockades, and strikes in multiple regions across Bolivia targeting major cities. They were led and participated predominantly by indigenous groups. Led largely by miners, they were joined by teachers, farmers, and other workers. The protests were sparked by Law 1720, a law allowing land to be used as collateral for loans, against the backdrop of a wider economic downturn in Bolivia. Although President Rodrigo Paz annulled the law on 13 May, protests continued to spread. The scope of the protests also expanded, with workers demanding higher wages, labour reform, and Paz's resignation.",
-    "es": "Las protestas bolivianas de 2026 fueron una serie de manifestaciones masivas que tuvieron lugar en Bolivia en mayo y junio, con manifestaciones generalizadas, bloqueos y huelgas en múltiples regiones de todo el país, dirigidas contra las principales ciudades. Estuvieron lideradas y contaron con la participación predominante de grupos indígenas. Lideradas en gran medida por mineros, a ellas se sumaron docentes, agricultores y otros trabajadores. Las protestas se desencadenaron a raíz de la Ley 1720, una ley que permitía utilizar la tierra como garantía para obtener préstamos, en un contexto de crisis económica generalizada en Bolivia. Aunque el presidente Rodrigo Paz derogó la ley el 13 de mayo, las protestas continuaron extendiéndose. El alcance de las protestas también se amplió, y los trabajadores exigieron salarios más altos, una reforma laboral y la dimisión de Paz.",
-    "cz": "Bolivijské protesty v roce 2026 představovaly sérii masových protestů, k nimž došlo v Bolívii v květnu a červnu a které zahrnovaly rozsáhlé demonstrace, blokády a stávky v mnoha regionech po celé Bolívii zaměřené na hlavní města. V čele těchto protestů stály a účastnily se jich převážně domorodé skupiny. K protestům, které vedli především horníci, se připojili učitelé, zemědělci a další pracovníci. Protesty vyvolal zákon č. 1720, který umožňoval používat půdu jako záruku za úvěry, a to na pozadí širšího hospodářského útlumu v Bolívii. Ačkoli prezident Rodrigo Paz tento zákon 13. května zrušil, protesty se nadále šířily. Rozsah protestů se rovněž rozšířil a pracovníci požadovali vyšší mzdy, reformu pracovního práva a Pazovu rezignaci."
+    "es": "Las protestas bolivianas de 2026 fueron una serie de manifestaciones masivas que tuvieron lugar en Bolivia en mayo y junio, y que incluyeron manifestaciones generalizadas, bloqueos y huelgas en múltiples regiones de todo el país, dirigidas contra las principales ciudades. Estuvieron lideradas y contaron con la participación predominante de grupos indígenas. Lideradas en gran medida por mineros, a ellas se sumaron docentes, agricultores y otros trabajadores. Las protestas se desencadenaron a raíz de la Ley 1720, una ley que permitía utilizar la tierra como garantía para obtener préstamos, en un contexto de crisis económica generalizada en Bolivia. Aunque el presidente Rodrigo Paz derogó la ley el 13 de mayo, las protestas continuaron extendiéndose. El alcance de las protestas también se amplió, y los trabajadores exigieron salarios más altos, una reforma laboral y la dimisión de Paz.",
+    "cz": "Bolivijské protesty v roce 2026 představovaly sérii masových protestů, k nimž došlo v Bolívii v květnu a červnu a které zahrnovaly rozsáhlé demonstrace, blokády a stávky v mnoha regionech po celé Bolívii zaměřené na hlavní města. V čele těchto protestů stály a účastnily se jich převážně domorodé skupiny. K protestům, které vedli především horníci, se připojili učitelé, zemědělci a další pracovníci. Protesty vyvolal zákon č. 1720, který umožňoval používat půdu jako záruku za úvěry, a to na pozadí širšího hospodářského útlumu v Bolívii. Ačkoli prezident Rodrigo Paz tento zákon 13. května zrušil, protesty se dále šířily. Rozsah protestů se rovněž rozšířil a pracovníci požadovali vyšší mzdy, reformu pracovního práva a Pazovu rezignaci."
   }
 }
