@@ -30,6 +30,12 @@
       "origin": "eu"
     },
     {
+      "en": "Stock market turmoil sheds stark light on the opaque AI economy. Investors scramble to make sense of a shock Chinese challenge to the dominance of western chipmakers",
+      "es": "La agitación en los mercados bursátiles pone de manifiesto la opacidad de la economía de la inteligencia artificial. Los inversores se apresuran a entender el inesperado desafío chino al dominio de los fabricantes occidentales de chips.",
+      "cz": "Otřesy na akciových trzích jasně odhalují netransparentní ekonomiku umělé inteligence. Investoři se snaží pochopit, co znamená šokující výzva ze strany Číny vůči dominanci západních výrobců čipů.",
+      "origin": "guardian"
+    },
+    {
       "en": "‘You owe parking fees’: experts warn of fake RingGo text scam. Criminals hope by using threats of enforcement action, people will panic and click link to bogus parking app site",
       "es": "«Tienes que pagar las tasas de aparcamiento»: los expertos advierten de una estafa mediante mensajes de texto falsos de RingGo. Los delincuentes esperan que, al amenazar con medidas coercitivas, la gente entre en pánico y haga clic en el enlace que lleva a la página web falsa de la aplicación de aparcamiento.",
       "cz": "„Dlužíte poplatky za parkování“: odborníci varují před podvodnými SMS zprávami od RingGo. Zločinci doufají, že díky výhrůžkám vymáhacími opatřeními lidé zpanikaří a kliknou na odkaz vedoucí na falešnou stránku parkovací aplikace.",
@@ -39,12 +45,6 @@
       "en": "UK’s state investments agency hit by data breach . Security lapse leaves sensitive information and contact details of 51 government officials exposed for 40 hours",
       "es": "La agencia de inversiones estatales del Reino Unido, víctima de una filtración de datos. Un fallo de seguridad dejó al descubierto, durante 40 horas, información confidencial y datos de contacto de 51 funcionarios públicos.",
       "cz": "Britská státní investiční agentura se stala obětí úniku dat. V důsledku selhání bezpečnostních opatření byly citlivé informace a kontaktní údaje 51 vládních úředníků po dobu 40 hodin vystaveny riziku zneužití.",
-      "origin": "guardian"
-    },
-    {
-      "en": "‘More than just objects’: Australian booksellers raise alarm over ‘horrific’ destruction of rare titles to feed AI. Secondhand booksellers believe they may have been caught up in the AI supply chain that sees old books scanned then destroyed",
-      "es": "«Más que simples objetos»: los libreros australianos dan la voz de alarma ante la «horrible» destrucción de títulos raros para alimentar la IA. Los libreros de segunda mano creen que pueden haberse visto envueltos en la cadena de suministro de la IA, en la que los libros antiguos se escanean y luego se destruyen.",
-      "cz": "„Víc než jen předměty“: Australští knihkupci bijí na poplach kvůli „hrůznému“ ničení vzácných titulů za účelem krmení umělé inteligence. Prodejci použitých knih se domnívají, že se možná stali součástí dodavatelského řetězce umělé inteligence, v jehož rámci se staré knihy naskenují a poté zničí.",
       "origin": "guardian"
     },
     {
@@ -60,8 +60,14 @@
       "origin": "world"
     },
     {
+      "en": "Four men are fatally shot in Nyanga, Western Cape, South Africa, after they were attacked while repairing a flat tyre.",
+      "es": "Cuatro hombres han fallecido por disparos en Nyanga, en la provincia del Cabo Occidental (Sudáfrica), tras sufrir un ataque mientras reparaban un pinchazo.",
+      "cz": "V Nyanze v provincii Západní Kapsko v Jižní Africe byli smrtelně postřeleni čtyři muži poté, co byli napadeni při opravě prázdné pneumatiky.",
+      "origin": "world"
+    },
+    {
       "en": "Amidst a heat wave reported by the in Sudan's Red Sea State, protesters block parts of the main highway connecting Port Sudan and Khartoum in Suakin and Jubayt over severe power cuts.",
-      "es": "En medio de una ola de calor registrada en el estado sudanés del Mar Rojo, los manifestantes bloquean en Suakin y Jubayt algunos tramos de la carretera principal que une Puerto Sudán y Jartum, en protesta por los graves cortes de electricidad.",
+      "es": "En medio de una ola de calor registrada en el estado sudanés del Mar Rojo, los manifestantes bloquean algunos tramos de la carretera principal que une Puerto Sudán y Jartum, concretamente en Suakin y Jubayt, para protestar por los graves cortes de electricidad.",
       "cz": "V souvislosti s vlnou veder, o které informují ze súdánského státu Rudé moře, blokují demonstranti v Suakinu a Jubaytu části hlavní dálnice spojující Port Sudan a Chartúm kvůli závažným výpadkům elektřiny.",
       "origin": "world"
     },
@@ -83,6 +89,6 @@
     "url": "https://en.wikipedia.org/wiki/2026_Morocco–Spain_border_incident",
     "en": "In late July 2026, an estimated 60,000 people, predominantly young men, crossed the border from Morocco into the Spanish autonomous city of Ceuta, located in North Africa, with smaller numbers attempting to cross into Melilla, overwhelming local reception facilities and prompting the government of Ceuta to request that the Spanish government declare a national emergency. Most entered by swimming around the Tarajal and Benzú breakwaters or by crossing on foot along the shoreline. By 31 July, Spanish officials said about 50,000 people had voluntarily returned to Morocco. By 1 August, at least 67 were reported to have died as a result of the incident, mostly associated with attempts to cross by sea.",
     "es": "A finales de julio de 2026, unas 60 000 personas, en su mayoría hombres jóvenes, cruzaron la frontera desde Marruecos hacia la ciudad autónoma española de Ceuta, situada en el norte de África, mientras que un número menor intentó cruzar hacia Melilla, lo que desbordó las instalaciones de acogida locales y llevó al Gobierno de Ceuta a solicitar al Gobierno español que declarara el estado de emergencia nacional. La mayoría entró nadando por los rompeolas de Tarajal y Benzú o cruzando a pie por la costa. A 31 de julio, las autoridades españolas afirmaron que unas 50 000 personas habían regresado voluntariamente a Marruecos. A 1 de agosto, se informó de que al menos 67 personas habían fallecido como consecuencia del incidente, en su mayoría relacionadas con los intentos de cruzar por mar.",
-    "cz": "Na konci července 2026 překročilo hranici z Maroka do španělského autonomního města Ceuta, ležícího v severní Africe, odhadem 60 000 lidí, převážně mladých mužů; menší počet se pokusil překročit hranici do Melilly, čímž došlo k přetížení místních přijímacích zařízení a vláda Ceuty byla nucena požádat španělskou vládu o vyhlášení stavu národní nouze. Většina z nich se dostala dovnitř plaváním kolem vlnolamů Tarajal a Benzú nebo pěším přechodem podél pobřeží. Do 31. července španělské úřady uvedly, že se asi 50 000 lidí dobrovolně vrátilo do Maroka. Do 1. srpna bylo hlášeno nejméně 67 úmrtí v souvislosti s touto událostí, většinou v důsledku pokusů o překročení hranice po moři."
+    "cz": "Na konci července 2026 překročilo hranici z Maroka do španělského autonomního města Ceuta, ležícího v severní Africe, odhadem 60 000 lidí, převážně mladých mužů, přičemž menší počet se pokusil překročit hranici do Melilly, což přetížilo místní přijímací zařízení a přimělo vládu Ceuty požádat španělskou vládu o vyhlášení národního stavu nouze. Většina z nich se dostala dovnitř plaváním kolem vlnolamů Tarajal a Benzú nebo pěším přechodem podél pobřeží. Do 31. července španělské úřady uvedly, že se asi 50 000 lidí dobrovolně vrátilo do Maroka. Do 1. srpna bylo hlášeno nejméně 67 úmrtí v souvislosti s touto událostí, většinou v důsledku pokusů o překročení hranice po moři."
   }
 }
