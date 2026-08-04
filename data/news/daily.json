@@ -5,6 +5,12 @@
   "translator": "DeepL",
   "stories": [
     {
+      "en": "Scaleup Europe Fund to start making investments. Today, the European Commission completed the final legal steps to establish the Scaleup Europe Fund, which will start boosting Europe's scaleup companies to grow faster and compete globally with an initial target of €5 billion.",
+      "es": "Escala del Fondo Europa para empezar a realizar inversiones. La Comisión Europea ha completado hoy los pasos legales finales para establecer el Fondo Scaleup Europe, que comenzará a impulsar a las empresas europeas en expansión para que crezcan más rápido y compitan a nivel mundial con un objetivo inicial de 5.",
+      "cz": "Rozšiřte fond Evropa a začněte investovat. Evropská komise dnes dokončila poslední právní kroky ke zřízení fondu Scaleup Europe, který začne podporovat evropské rozvíjející se společnosti, aby rostly rychleji a konkurovaly v celosvětovém měřítku s počátečním cílem ve výši 5 miliard EUR.",
+      "origin": "eu"
+    },
+    {
       "en": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August. From 2 August 2026, the European Commission's AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act. On the same date, new transparency rules will start to apply.",
       "es": "La Comisión comienza a hacer cumplir las normas de la Ley de IA y los nuevos requisitos de transparencia el 2 de agosto. A partir del 2 de agosto de 2026, la Oficina de IA de la Comisión Europea, junto con las autoridades nacionales, comenzará a hacer cumplir la Ley de Inteligencia Artificial (IA).",
       "cz": "Komise začne dne 2. srpna prosazovat pravidla aktu o umělé inteligenci a nové požadavky na transparentnost. Od 2. srpna 2026 začne Úřad Evropské komise pro umělou inteligenci společně s vnitrostátními orgány prosazovat akt o umělé inteligenci. Ve stejný den začnou platit nová pravidla transparentnosti.",
@@ -17,33 +23,27 @@
       "origin": "eu"
     },
     {
-      "en": "Statement by President von der Leyen, Executive Vice-President Mînzatu, and Commissioner Lahbib ahead of European Roma Holocaust Memorial Day.",
-      "es": "Declaración de la presidenta Von der Leyen, la vicepresidenta ejecutiva Mînzatu y el comisario Lahbib antes del Día Europeo de Conmemoración del Holocausto de los Gitanos.",
-      "cz": "Prohlášení předsedkyně von der Leyenové, výkonného místopředsedy Mînzatua a komisaře Lahbiba před Evropským dnem památky obětí romského holocaustu. Před Evropským dnem památky romského holocaustu 2.",
-      "origin": "eu"
+      "en": "Calls for UK bank tax to fund cost of living help as HSBC profits hit £7.5bn. Levy could raise £19bn to help pay for Andy Burnham’s support for those struggling with bills, say campaigners",
+      "es": "Se pide un impuesto a los bancos del Reino Unido para financiar las ayudas al coste de la vida, mientras los beneficios de HSBC alcanzan los 7.5 mil millones de libras. Según los activistas, este gravamen podría recaudar 19 mil millones de libras para ayudar a financiar las ayudas de Andy Burnham destinadas a quienes tienen dificultades para pagar sus facturas.",
+      "cz": "Zaznívají výzvy k zavedení bankovní daně ve Velké Británii, která by financovala pomoc s náklady na živobytí, zatímco zisky HSBC dosáhly 7,5 mld. liber. Podle aktivistů by tato daň mohla přinést 19 mld. liber, které by pomohly financovat program Andyho Burnhama na podporu těch, kteří mají potíže s placením účtů.",
+      "origin": "guardian"
     },
     {
       "en": "Metro Bank customer fights for £14,000 refund after AI-linked fraud. Lender was told money was being taken without authorisation, with cash used to buy credits for Claude chatbot",
-      "es": "Un cliente de Metro Bank reclama el reembolso de 14 000 libras tras sufrir un fraude relacionado con la inteligencia artificial. Se informó a la entidad de que se estaba retirando dinero sin autorización, y que ese dinero se utilizaba para comprar créditos para el chatbot Claude.",
+      "es": "Un cliente de Metro Bank reclama el reembolso de 14 000 libras tras sufrir un fraude relacionado con la inteligencia artificial. Se informó a la entidad de que se estaba retirando dinero sin autorización y que ese dinero se utilizaba para comprar créditos para el chatbot Claude.",
       "cz": "Zákazník Metro Bank bojuje o vrácení 14 000 liber po podvodu spojeném s umělou inteligencí. Úvěrová instituce byla informována, že dochází k neoprávněnému čerpání peněz, přičemž tyto prostředky byly použity na nákup kreditů pro chatbota Claude.",
       "origin": "guardian"
     },
     {
       "en": "Secondhand EV leasing hits the fast lane as more UK drivers explore ways to cut motoring costs. Numbers using finance rises 170% in a year as leasing firms boom alongside leapin secondhand vehicle supply and surging fuel prices",
-      "es": "El alquiler de vehículos eléctricos de segunda mano se dispara a medida que más conductores del Reino Unido buscan formas de reducir los gastos de conducción. El número de personas que recurren a la financiación aumenta un 170 % en un año, a medida que las empresas de alquiler experimentan un auge, junto con el aumento de la oferta de vehículos de segunda mano y la subida de los precios del combustible.",
+      "es": "El alquiler de vehículos eléctricos de segunda mano se dispara, a medida que cada vez más conductores del Reino Unido buscan formas de reducir los gastos de conducción. El número de personas que recurren a la financiación aumenta un 170 % en un año, mientras las empresas de alquiler experimentan un auge, junto con el aumento de la oferta de vehículos de segunda mano y la subida de los precios del combustible.",
       "cz": "Leasing ojetých elektromobilů se dostává do rychlého pruhu, protože stále více britských řidičů hledá způsoby, jak snížit náklady na provoz vozidla. Počet lidí využívajících financování vzrostl za rok o 170 %, přičemž leasingové společnosti zažívají boom díky prudkému nárůstu nabídky ojetých vozidel a rostoucím cenám pohonných hmot.",
       "origin": "guardian"
     },
     {
-      "en": "UK plastic manufacturer could face legal action over toxic emissions. Exclusive: Environment Agency is considering whether to prosecute Huntsman Polyurethanes over emissions of carcinogenic benzene",
-      "es": "Un fabricante británico de plásticos podría enfrentarse a acciones legales por emisiones tóxicas. Exclusiva: La Agencia de Medio Ambiente está estudiando la posibilidad de emprender acciones legales contra Huntsman Polyurethanes por las emisiones de benceno, una sustancia cancerígena.",
-      "cz": "Britskému výrobci plastů hrozí právní kroky kvůli toxickým emisím. Exkluzivně: Agentura pro životní prostředí zvažuje, zda podá žalobu na společnost Huntsman Polyurethanes kvůli emisím karcinogenního benzenu",
-      "origin": "guardian"
-    },
-    {
       "en": "Poland's health ministry appeals a Brussels court ruling ordering the country to accept and pay approximately €1.3 billion for unwanted COVID-19 vaccine doses produced by Pfizer and BioNTech.",
-      "es": "El Ministerio de Sanidad de Polonia recurre una sentencia de un tribunal de Bruselas que obliga al país a aceptar y pagar aproximadamente 1.300 millones de euros por las dosis de vacunas contra la COVID-19 no deseadas fabricadas por Pfizer y BioNTech.",
-      "cz": "Polské ministerstvo zdravotnictví se odvolává proti rozhodnutí bruselského soudu, který zemi nařídil převzít a zaplatit přibližně 1,3 miliardy eur za nevyžádané dávky vakcíny proti COVID-19 vyrobené společnostmi Pfizer a BioNTech.",
+      "es": "El Ministerio de Sanidad de Polonia recurre una sentencia de un tribunal de Bruselas que obliga al país a aceptar y pagar aproximadamente 1.300 millones de euros por las dosis de vacunas contra la COVID-19 no solicitadas fabricadas por Pfizer y BioNTech.",
+      "cz": "Polské ministerstvo zdravotnictví se odvolalo proti rozhodnutí bruselského soudu, který zemi nařídil převzít a zaplatit přibližně 1,3 miliardy eur za nevyžádané dávky vakcíny proti COVID-19 vyrobené společnostmi Pfizer a BioNTech.",
       "origin": "world"
     },
     {
@@ -70,6 +70,6 @@
     "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Poland",
     "en": "The COVID-19 pandemic in Poland was part of the COVID-19 pandemic. COVID-19 is caused by  SARS-CoV-2. As of 8 June 2025, Poland had a cumulative total of 6,780,272 confirmed cases (17,862 per 100,000 population), and 120,980 deaths (319 per 100,000 population) due to COVID-19.\nThe first COVID-19 vaccine product was introduced on 23 December 2020. Since then, a total of 58.63 million vaccine doses have been administered, with 60% of the population having received a complete primary series and 34% having received at least one booster dose as of 31 December 2023.\nIn February and March 2020, health authorities in Poland carried out laboratory testing of suspected cases of infection by SARS-CoV-2, as well as home quarantine and monitoring.",
     "es": "La pandemia de COVID-19 en Polonia formó parte de la pandemia mundial de COVID-19. La COVID-19 está causada por el SARS-CoV-2. A fecha de 8 de junio de 2025, Polonia registraba un total acumulado de 6 780 272 casos confirmados (17 862 por cada 100 000 habitantes) y 120 980 fallecimientos (319 por cada 100 000 habitantes) a causa de la COVID-19.\nLa primera vacuna contra la COVID-19 se introdujo el 23 de diciembre de 2020. Desde entonces, se han administrado un total de 58,63 millones de dosis de vacuna; a 31 de diciembre de 2023, el 60 % de la población había recibido la serie primaria completa y el 34 % había recibido al menos una dosis de refuerzo.\nEn febrero y marzo de 2020, las autoridades sanitarias de Polonia llevaron a cabo pruebas de laboratorio en casos sospechosos de infección por el SARS-CoV-2, así como medidas de cuarentena domiciliaria y seguimiento.",
-    "cz": "Pandemie COVID-19 v Polsku byla součástí celosvětové pandemie COVID-19. Onemocnění COVID-19 je způsobeno virem SARS-CoV-2. K 8. červnu 2025 v Polsku bylo zaznamenáno celkem 6 780 272 potvrzených případů (17 862 na 100 000 obyvatel) a 120 980 úmrtí (319 na 100 000 obyvatel) v důsledku COVID-19.\nPrvní vakcína proti COVID-19 byla zavedena 23. prosince 2020. Od té doby bylo podáno celkem 58,63 milionu dávek vakcíny, přičemž k 31. prosinci 2023 absolvovalo kompletní základní očkovací sérii 60 % obyvatelstva a alespoň jednu posilovací dávku obdrželo 34 % obyvatelstva.\nV únoru a březnu 2020 prováděly polské zdravotnické orgány laboratorní testování podezřelých případů infekce virem SARS-CoV-2, jakož i domácí karanténu a monitorování."
+    "cz": "Pandemie COVID-19 v Polsku byla součástí celosvětové pandemie COVID-19. Onemocnění COVID-19 je způsobeno virem SARS-CoV-2. K 8. červnu 2025 v Polsku bylo zaznamenáno celkem 6 780 272 potvrzených případů (17 862 na 100 000 obyvatel) a 120 980 úmrtí (319 na 100 000 obyvatel) v důsledku COVID-19.\nPrvní vakcína proti COVID-19 byla zavedena 23. prosince 2020. Od té doby bylo podáno celkem 58,63 milionu dávek vakcíny; k 31. prosinci 2023 absolvovalo kompletní základní očkovací sérii 60 % obyvatelstva a alespoň jednu posilovací dávku obdrželo 34 % obyvatelstva.\nV únoru a březnu 2020 prováděly polské zdravotnické orgány laboratorní testování podezřelých případů infekce virem SARS-CoV-2, jakož i domácí karanténu a monitorování."
   }
 }
