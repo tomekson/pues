@@ -30,21 +30,21 @@
       "origin": "eu"
     },
     {
-      "en": "German factory orders rise faster than expected; Asian shares fall on tech pullback – business live. Germany’s biggest arms maker Rheinmetall slashes outlook after cancelled government contract; crude oil prices hold below $80 a barrel",
-      "es": "Los pedidos a las fábricas alemanas crecen más rápido de lo esperado; las bolsas asiáticas caen ante el retroceso del sector tecnológico – noticias económicas en directo. Rheinmetall, el mayor fabricante de armamento de Alemania, recorta drásticamente sus previsiones tras la cancelación de un contrato con el Gobierno; los precios del crudo se mantienen por debajo de los 80 dólares el barril.",
-      "cz": "Německé průmyslové objednávky rostou rychleji, než se očekávalo; asijské akcie klesají kvůli propadu technologického sektoru – ekonomické zprávy v přímém přenosu. Největší německý výrobce zbraní Rheinmetall výrazně snižuje výhled po zrušení vládní zakázky; ceny ropy se drží pod hranicí 80 dolarů za barel",
+      "en": "Restaurants, pubs and theatres ban Meta’s ‘spy glasses’ over privacy fears. Meta says safeguards are in place to prevent surreptitious filming, but some UK venues now prohibit them from being worn at all",
+      "es": "Restaurantes, bares y teatros prohíben las «gafas espía» de Meta por temores relacionados con la privacidad. Meta afirma que cuenta con medidas de seguridad para evitar las grabaciones clandestinas, pero algunos locales del Reino Unido prohíben ahora su uso por completo.",
+      "cz": "Restaurace, hospody a divadla zakazují „špionážní brýle“ společnosti Meta kvůli obavám o ochranu soukromí. Společnost Meta tvrdí, že jsou zavedena bezpečnostní opatření, která zabraňují skrytému natáčení, ale některá britská zařízení nyní jejich nošení zcela zakazují",
+      "origin": "guardian"
+    },
+    {
+      "en": "UK construction sector ‘stabilises’ as builders see economic rebound ahead – business live. Eurozone construction downturn also eases while in financial markets, European shares rise and Brent crude holds below $80 a barrel",
+      "es": "El sector de la construcción del Reino Unido se «estabiliza» mientras las empresas constructoras prevén una recuperación económica – Business Live. La caída del sector de la construcción en la zona del euro también se modera, mientras que, en los mercados financieros, las acciones europeas suben y el crudo Brent se mantiene por debajo de los 80 dólares el barril.",
+      "cz": "Britský stavební sektor se „stabilizuje“, protože stavební firmy očekávají oživení ekonomiky – Business Live. Pokles ve stavebnictví eurozóny se rovněž zmírňuje, zatímco na finančních trzích rostou evropské akcie a cena ropy Brent se drží pod hranicí 80 dolarů za barel.",
       "origin": "guardian"
     },
     {
       "en": "Healey urged to be bold on borrowing in first test of Burnham’s growth pledge. Some want the chancellor to exploit newly flexible fiscal rules – others want a more creative approach, such as borrowing from markets",
-      "es": "Se insta a Healey a mostrarse audaz en materia de endeudamiento en la primera prueba de la promesa de crecimiento de Burnham. Algunos quieren que el ministro de Hacienda aproveche las nuevas normas fiscales más flexibles; otros abogan por un enfoque más creativo, como recurrir al endeudamiento en los mercados.",
-      "cz": "Healey byl vyzván, aby v první zkoušce Burnhamova slibu o hospodářském růstu zaujal odvážný postoj k zadlužování. Někteří chtějí, aby ministr financí využil nově flexibilních fiskálních pravidel – jiní požadují kreativnější přístup, jako je například půjčování si na trzích.",
-      "origin": "guardian"
-    },
-    {
-      "en": "Council wants pubs in London’s Soho and West End to ban standing . Sadiq Khan criticises Westminster council’s ‘anti-growth policies’ after it recommends stopping ‘vertical drinking’",
-      "es": "El Ayuntamiento quiere que los bares del Soho y del West End de Londres prohíban estar de pie. Sadiq Khan critica las «políticas contrarias al crecimiento» del Ayuntamiento de Westminster tras su recomendación de poner fin al «consumo de alcohol de pie».",
-      "cz": "Městská rada chce, aby londýnské hospody v čtvrtích Soho a West End zakázaly pití ve stoje. Sadiq Khan kritizuje „politiku bránící růstu“ městské rady Westminsteru poté, co ta doporučila zakázat „vertikální pití“.",
+      "es": "Se insta a Healey a mostrarse audaz en materia de endeudamiento en la primera prueba de la promesa de crecimiento de Burnham. Algunos quieren que el ministro de Hacienda aproveche las nuevas normas fiscales más flexibles; otros abogan por un enfoque más creativo, como recurrir a los mercados para obtener financiación.",
+      "cz": "Healey byl vyzván, aby v první zkoušce Burnhamova slibu o hospodářském růstu zaujal odvážný postoj k zadlužení. Někteří chtějí, aby ministr financí využil nově flexibilních fiskálních pravidel – jiní požadují kreativnější přístup, jako je například půjčování si na trzích.",
       "origin": "guardian"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "en": "The Holy See Press Office announces Pope Leo XIV will make an apostolic journey to Argentina, Uruguay, and his home country of Peru, in November, marking his first trip to Latin America in his papacy.",
-      "es": "La Oficina de Prensa de la Santa Sede anuncia que el Papa León XIV realizará un viaje apostólico a Argentina, Uruguay y su país natal, Perú, en noviembre, en lo que supondrá su primer viaje a Latinoamérica desde que asumió el papado.",
+      "es": "La Oficina de Prensa de la Santa Sede anuncia que el Papa León XIV realizará un viaje apostólico a Argentina, Uruguay y su país natal, Perú, en noviembre, en lo que supondrá su primer viaje a América Latina desde que asumió el papado.",
       "cz": "Tiskové středisko Svatého stolce oznamuje, že papež Lev XIV. podnikne v listopadu apoštolskou cestu do Argentiny, Uruguaye a své rodné země, Peru, což bude jeho první cesta do Latinské Ameriky během jeho pontifikátu.",
       "origin": "world"
     },
@@ -63,6 +63,12 @@
       "en": "A drone loaded with explosives is found and defused at Leipzig/Halle Airport in Germany, while a cargo Boeing 757 had a collision with another supposed UAV at the same airport.",
       "es": "Se ha hallado y desactivado un dron cargado de explosivos en el aeropuerto de Leipzig/Halle, en Alemania, mientras que un Boeing 757 de carga colisionó con otro supuesto dron en el mismo aeropuerto.",
       "cz": "Na letišti Lipsko/Halle v Německu byl nalezen a zneškodněn dron naložený výbušninami, zatímco na stejném letišti došlo ke srážce nákladního letadla Boeing 757 s dalším údajným bezpilotním letounem.",
+      "origin": "world"
+    },
+    {
+      "en": "Sindh Police say they have questioned multiple individuals and are reviewing newly obtained CCTV footage in their ongoing investigation into the murder of Karachi entrepreneur and Wafflix founder Mir Raza Ali Khan.",
+      "es": "La Policía de Sindh afirma que ha interrogado a varias personas y que está analizando las imágenes de las cámaras de seguridad recién obtenidas en el marco de la investigación en curso sobre el asesinato de Mir Raza Ali Khan, empresario de Karachi y fundador de Wafflix.",
+      "cz": "Policie v Sindhu uvedla, že v rámci probíhajícího vyšetřování vraždy podnikatele z Karáčí a zakladatele společnosti Wafflix, Mira Razy Aliho Khana, vyslechla několik osob a prověřuje nově získané záznamy z bezpečnostních kamer.",
       "origin": "world"
     },
     {
@@ -88,7 +94,7 @@
     "topic": "War on drugs",
     "url": "https://en.wikipedia.org/wiki/War_on_drugs",
     "en": "The war on drugs, sometimes referred to in the 21st century as the war on cartels in contexts of military intervention and counterterrorism, is a global anti-narcotics campaign led by the United States federal government, ramped up after 9/11, including drug prohibition and foreign assistance, with the aim of reducing the illegal drug trade in the US. The initiative's efforts includes policies intended to discourage the production, distribution, and consumption of psychoactive drugs that the participating governments, through United Nations treaties, have made illegal.\nThe term \"war on drugs\" was popularized by the media after a press conference, given on June 17, 1971, during which President Richard Nixon declared drug abuse \"public enemy number one\".",
-    "es": "La guerra contra las drogas, a la que en el siglo XXI se hace referencia en ocasiones como la guerra contra los cárteles en contextos de intervención militar y lucha contra el terrorismo, es una campaña mundial contra los estupefacientes liderada por el Gobierno federal de Estados Unidos, que se intensificó tras el 11-S y que incluye la prohibición de las drogas y la ayuda exterior, con el objetivo de reducir el tráfico ilegal de drogas en EE. UU. Los esfuerzos de esta iniciativa incluyen políticas destinadas a desalentar la producción, la distribución y el consumo de sustancias psicoactivas que los gobiernos participantes, a través de los tratados de las Naciones Unidas, han declarado ilegales.\nEl término «guerra contra las drogas» se popularizó en los medios de comunicación tras una rueda de prensa celebrada el 17 de junio de 1971, durante la cual el presidente Richard Nixon declaró que el abuso de drogas era el «enemigo público número uno».",
+    "es": "La guerra contra las drogas, a la que en el siglo XXI se hace referencia en ocasiones como la guerra contra los cárteles en contextos de intervención militar y lucha contra el terrorismo, es una campaña mundial contra los estupefacientes liderada por el Gobierno federal de Estados Unidos, que se intensificó tras el 11-S y que incluye la prohibición de las drogas y la ayuda exterior, con el objetivo de reducir el tráfico ilegal de drogas en EE. UU. Los esfuerzos de esta iniciativa incluyen políticas destinadas a desalentar la producción, la distribución y el consumo de sustancias psicoactivas que los gobiernos participantes, a través de los tratados de las Naciones Unidas, han declarado ilegales.\nEl término «guerra contra las drogas» se popularizó en los medios de comunicación tras una rueda de prensa celebrada el 17 de junio de 1971, durante la cual el presidente Richard Nixon declaró el abuso de drogas «enemigo público número uno».",
     "cz": "Boj proti drogám, který je v 21. století v souvislosti s vojenskými zásahy a bojem proti terorismu někdy označován jako válka proti kartelům, je globální protidrogová kampaň vedená federální vládou Spojených států, která byla po událostech z 11. září 2001 zintenzivněna a zahrnuje zákaz drog i zahraniční pomoc, s cílem omezit nelegální obchod s drogami v USA. Součástí této iniciativy jsou opatření zaměřená na potlačení výroby, distribuce a konzumace psychoaktivních látek, které zúčastněné vlády na základě smluv Organizace spojených národů prohlásily za nelegální.\nTermín „válka proti drogám“ se v médiích rozšířil po tiskové konferenci konané 17. června 1971, během níž prezident Richard Nixon prohlásil zneužívání drog za „veřejného nepřítele číslo jedna“."
   }
 }
