@@ -7,6 +7,11 @@
       "origin": "cz"
     },
     {
+      "es": "El diputado británico Nigel Farage (Reform UK) conservó su escaño al imponerse al conde Popelnica en las elecciones parciales celebradas en la circunscripción de Clacton-on-Sea.",
+      "cz": "Britský poslanec Nigel Farage (Reform UK) obhájil poslanecký mandát, když zvítězil nad Hrabětem Popelnici v doplňovacích volbách ve volebním obvodu Clacton-on-Sea.",
+      "origin": "cz"
+    },
+    {
       "es": "El Parlamento húngaro ha elegido presidente de Hungría al ex presidente del Tribunal Supremo, András Baku. En una votación secreta, obtuvo 140 votos; la oposición boicoteó la elección.",
       "cz": "Maďarský parlament zvolil bývalého předsedu nejvyššího soudu Andráse Baku prezidentem Maďarska. V&nbsp;tajném hlasování získal 140 hlasů, opozice volbu bojkotovala.",
       "origin": "cz"
@@ -14,11 +19,6 @@
     {
       "es": "En Ostrava ha dado comienzo el encuentro nacional de jóvenes.",
       "cz": "V Ostravě začalo celostátní setkání mládeže.",
-      "origin": "cz"
-    },
-    {
-      "es": "El Tribunal Regional de Hradec Králové ha rehabilitado a Václav Trtík, quien en 1950 permaneció varias semanas detenido por la Seguridad del Estado en relación con el caso del «milagro de Číhošť».",
-      "cz": "Krajský soud v Hradci Králové rehabilitoval Václava Trtíka, který byl v&nbsp;roce 1950 několik týdnů vězněn Státní bezpečností v&nbsp;souvislosti s&nbsp;případem Číhošťského zázraku.",
       "origin": "cz"
     },
     {
@@ -40,21 +40,21 @@
       "origin": "eu"
     },
     {
+      "en": "US long-term borrowing costs rise to 25-year high, as inflation fears hit bond sale – business live. Rolling coverage of the latest and economic news, as US sells 30-year bonds at highest borrowing costs since 2001",
+      "es": "Los costes de financiación a largo plazo de EE. UU. alcanzan su máximo en 25 años, mientras los temores a la inflación afectan a la venta de bonos – Noticias económicas en directo. Cobertura continua de las últimas noticias económicas, mientras EE. UU. vende bonos a 30 años con los costes de financiación más altos desde 2001.",
+      "cz": "Náklady USA na dlouhodobé financování vzrostly na 25leté maximum, protože obavy z inflace zasáhly prodej dluhopisů – ekonomické zpravodajství v přímém přenosu. Průběžné zpravodajství o nejnovějších událostech a ekonomických zprávách, zatímco USA prodávají 30leté dluhopisy za nejvyšší náklady na financování od roku 2001",
+      "origin": "guardian"
+    },
+    {
+      "en": "Engine parts shattered Ryanair window that passenger was partly sucked out of, report says. Preliminary findings show fan blade broke off shortly after takeoff on 10 July flight from Greece to Germany",
+      "es": "Según el informe, unas piezas del motor destrozaron la ventanilla de Ryanair por la que un pasajero quedó parcialmente succionado hacia el exterior. Las conclusiones preliminares indican que una pala del ventilador se desprendió poco después del despegue del vuelo del 10 de julio, que cubría la ruta de Grecia a Alemania.",
+      "cz": "Podle zprávy rozbily části motoru okno letadla společnosti Ryanair, z něhož byl částečně vysát jeden z cestujících. Předběžné závěry ukazují, že se lopatka ventilátoru ulomila krátce po vzletu při letu z Řecka do Německa dne 10. července.",
+      "origin": "guardian"
+    },
+    {
       "en": "Searches for UK homes with air conditioning more than double . Most owners would consider installing aircon as heatwaves lead buyers to focus on ability to stay cool, Rightmove says",
-      "es": "Las búsquedas de viviendas en el Reino Unido con aire acondicionado se han más que duplicado. Según Rightmove, la mayoría de los propietarios se plantearía instalar aire acondicionado, ya que las olas de calor hacen que los compradores se fijen especialmente en la capacidad de mantener la frescura en el hogar.",
+      "es": "Las búsquedas de viviendas en el Reino Unido con aire acondicionado se han más que duplicado. Según Rightmove, la mayoría de los propietarios se plantearía instalar aire acondicionado, ya que las olas de calor hacen que los compradores se fijen especialmente en la capacidad de mantener la frescura en las viviendas.",
       "cz": "Počet vyhledávání nemovitostí ve Velké Británii vybavených klimatizací se více než zdvojnásobil. Podle portálu Rightmove by většina majitelů zvažovala instalaci klimatizace, protože vlny veder vedou kupující k tomu, aby kladli důraz na možnost ochlazení.",
-      "origin": "guardian"
-    },
-    {
-      "en": "Flock Safety tries to curb police abuse of its surveillance cameras after scandals. CEO announces steps after reports that system is used to target immigrants or people seeking out-of-state abortions",
-      "es": "Flock Safety intenta poner freno al uso indebido de sus cámaras de vigilancia por parte de la policía tras los escándalos. El director general anuncia medidas tras las denuncias de que el sistema se utiliza para perseguir a inmigrantes o a personas que acuden a otros estados para abortar.",
-      "cz": "Společnost Flock Safety se po sérii skandálů snaží omezit zneužívání svých bezpečnostních kamer policií. Generální ředitel oznámil opatření poté, co se objevily zprávy, že systém je využíván k pronásledování přistěhovalců nebo osob, které se snaží podstoupit potrat v jiném státě.",
-      "origin": "guardian"
-    },
-    {
-      "en": "BAE Systems to pay $36m penalty after 104 violations of US arms export rules. State department says it has reached administrative settlement with company’s US arm to resolve breaches",
-      "es": "BAE Systems deberá pagar una multa de 36 millones de dólares tras cometer 104 infracciones de la normativa estadounidense sobre exportación de armas. El Departamento de Estado afirma que ha llegado a un acuerdo administrativo con la filial estadounidense de la empresa para resolver dichas infracciones.",
-      "cz": "Společnost BAE Systems zaplatí pokutu ve výši 36 milionů dolarů za 104 porušení amerických předpisů o vývozu zbraní. Ministerstvo zahraničí uvedlo, že dosáhlo správního urovnání s americkou pobočkou společnosti s cílem vyřešit tato porušení.",
       "origin": "guardian"
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "en": "Zambians vote to elect a president and 280 seats of the National Assembly. Incumbent president Hakainde Hichilema is running for re-election to a second term in office.",
-      "es": "Los zambianos acuden a las urnas para elegir presidente y los 280 escaños de la Asamblea Nacional. El actual presidente, Hakainde Hichilema, se presenta a la reelección para un segundo mandato.",
+      "es": "Los zambianos acuden a las urnas para elegir al presidente y los 280 escaños de la Asamblea Nacional. El actual presidente, Hakainde Hichilema, se presenta a la reelección para un segundo mandato.",
       "cz": "Zambijci volí prezidenta a 280 poslanců Národního shromáždění. Dosavadní prezident Hakainde Hichilema kandiduje na znovuzvolení do druhého funkčního období.",
       "origin": "world"
     },
