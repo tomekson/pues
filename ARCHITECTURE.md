@@ -98,6 +98,8 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
   a nemarní se tucet volání do zdi. MyMemory má anonymně 5 000 znaků/den na IP, s e-mailem
   v repo secretu `MYMEMORY_EMAIL` 50 000
 - Google vrací i s `format: 'text'` HTML entity (`&#39;`), překlad se proto ještě unescapuje
+- Klíč žije v GCP projektu `pues-allora-translate` (fakturace `emocio.cz s.r.o.`), omezený jen na
+  Cloud Translation API — na Drive ani Sheets nesáhne, i kdyby unikl z Actions
 - **DeepL** tu byl do srpna 2026, kdy jeho Free tier vyčerpal **lifetime** limit 1M znaků. To se
   přes API nepozná: `/v2/usage` hlásí jen aktuální období, takže tvrdil statisíce volných znaků,
   zatímco každý překlad končil na `456 Quota exceeded`
