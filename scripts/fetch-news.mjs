@@ -292,18 +292,23 @@ const MM_MAIL = process.env.MYMEMORY_EMAIL || '';
 let deeplDead = false;   // DeepL vyčerpal kvótu nebo neuznal klíč — dál ho nezkoušej
 let mmDead = false;      // MyMemory vyčerpal denní limit — dál ho nezkoušej
 
-/* Kvótu zjisti jedním dotazem předem, ať se překlady nemusí desetkrát utnout na 456 Quota exceeded. */
-async function deeplHasQuota() {
+/* Použitelnost DeepL ověř předem jedním dvouznakovým překladem, ať se pak nemusí každý z tuctu
+   paralelních dotazů utnout na 456 Quota exceeded. Na /v2/usage se spolehnout nelze — umí hlásit
+   statisíce volných znaků a překlad přesto odmítnout (vypršelá platba, pozastavený účet). */
+async function deeplUsable() {
   if (!KEY) return false;
   try {
     const r = await fetch(`${deeplBase}/v2/usage`, { headers: { 'Authorization': `DeepL-Auth-Key ${KEY}` } });
-    if (!r.ok) { console.log(`DeepL /usage: HTTP ${r.status} — překládám přes MyMemory.`); return false; }
-    const j = await r.json();
-    const zbyva = j.character_limit - j.character_count;
-    console.log(`DeepL kvóta: ${j.character_count}/${j.character_limit} znaků, zbývá ${zbyva}.`);
-    return zbyva > 5000;
+    if (r.ok) {
+      const j = await r.json();
+      console.log(`DeepL kvóta podle /usage: ${j.character_count}/${j.character_limit} znaků.`);
+    }
+  } catch { /* jen informativní výpis */ }
+  try {
+    await deepl(['ok'], 'EN', 'CS');
+    return true;
   } catch (e) {
-    console.log(`DeepL /usage selhal (${e.message.slice(0, 120)}) — překládám přes MyMemory.`);
+    console.log(`DeepL nepoužitelný (${e.message.slice(0, 140)}) — celý běh překládá MyMemory.`);
     return false;
   }
 }
@@ -378,9 +383,9 @@ async function translate(texts, source, target) {
   return out;
 }
 
-if (KEY && !(await deeplHasQuota())) {
+if (KEY && !(await deeplUsable())) {
   deeplDead = true;
-  engine = 'MyMemory (DeepL bez kvóty)';
+  engine = 'MyMemory (DeepL nedostupný)';
 }
 
 const worldTexts = stories.map(s => s.text);
