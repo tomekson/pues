@@ -27,7 +27,8 @@ a proč to sem záměrně nepatří. Nekopíruj funkce z allory jen proto, že t
 - **Architektura:** viz `ARCHITECTURE.md` — statická PWA, JSON místo databáze, GitHub Actions na
   fetch+překlad zpráv, nula AI/Claude tokenů (na rozdíl od allory tu není žádná interaktivní skill —
   celá appka je pasivní čtečka, pipeline běží sama na cronu)
-- **DEEPL_API_KEY:** repo secret (GitHub Actions), auto-fallback na MyMemory bez klíče/při chybě
+- **GOOGLE_TRANSLATE_API_KEY:** repo secret (GitHub Actions), auto-fallback na MyMemory bez klíče/při chybě.
+  Free tier 500k znaků/měsíc je společný pro ¡pues! i allora (~480k naměřeno) — rezerva je malá
 - **MYMEMORY_EMAIL:** volitelný repo secret — zvedá denní limit MyMemory z 5 000 na 50 000 znaků
 
 ## Auto-memory

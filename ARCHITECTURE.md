@@ -12,7 +12,7 @@
 2. **Nula AI tokenů, natrvalo.** Celá pipeline (fetch, filtr, překlad, TTS) běží bez Claude/AI — jen GitHub
    Actions + free translation API. Na rozdíl od allory tu není žádná "pipeline 2" (Claude Code enrichment):
    ¡pues! nemá lekce ani sessions, které by šlo obohacovat, takže žádná AI vrstva není potřeba vůbec.
-3. **Free tier všeho.** GitHub Pages + GitHub Actions (public repo = zdarma), DeepL API Free (1M znaků/měsíc)
+3. **Free tier všeho.** GitHub Pages + GitHub Actions (public repo = zdarma), Google Cloud Translation (500k znaků/měsíc)
    s automatickým fallbackem na MyMemory, browser TTS (Web Speech API).
 4. **Jen pro Tomka.** Žádný auth, žádný localStorage, žádný progress — appka nemá co ukládat.
 
@@ -21,7 +21,7 @@
 ```
 ┌─────────────────────────────────────────────────────────┐
 │ 1. SBĚR + PŘEKLAD (GitHub Actions cron, denně, 0 tokenů)│
-│    Wikipedia (svět+CZ+EU+kuriozity) → DeepL/MyMemory    │
+│    Wikipedia (svět+CZ+EU+kuriozity) → Google/MyMemory   │
 │    → data/news/daily.json                                │
 ├─────────────────────────────────────────────────────────┤
 │ 2. APP (statická PWA na Pages, 0 tokenů)                 │
@@ -78,7 +78,7 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
     (blokuje válku/konflikty/sport, preferuje ekonomiku/EU/tech/Španělsko)
   - **cs.wikipedia Portál:Aktuality** (CZ, CC BY-SA) — české zprávy
   - **Evropská komise presscorner RSS** (`?language=es` a `?language=cs`) — tiskové zprávy s
-    **oficiálním** překladem do španělštiny a češtiny, DeepL/MyMemory jen jako fallback pro
+    **oficiálním** překladem do španělštiny a češtiny, Google/MyMemory jen jako fallback pro
     nepřeložené položky
   - **The Guardian Open Platform** (`content.guardianapis.com`, sekce business/technology/money) —
     volitelný `GUARDIAN_API_KEY` repo secret; bez klíče se zdroj potichu přeskočí, pipeline nespadne.
@@ -88,13 +88,19 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
 - Filtr témat `data/news-filter.json`: blokuje válku/konflikty/sport/katastrofy a nehody (sekce i
   klíčová slova EN+CZ), preferuje ekonomiku/EU/tech/Španělsko — platí pro všechny zdroje kromě EU
   (tam se blokuje jen `block`, ne sekce) a Guardian
-- Překlad: **DeepL API Free** (`DEEPL_API_KEY` repo secret), auto-fallback na **MyMemory** bez klíče
-  nebo při chybě/limitu — pipeline nikdy nespadne, jen změní `translator` pole ve výstupu
-- Kvóty: použitelnost DeepL se předem ověří jedním dvouznakovým překladem; když neprojde, jde celý
-  běh rovnou přes MyMemory a nemarní se desítka volání na `456 Quota exceeded`. Na `/v2/usage` se
-  spolehnout nelze — umí hlásit statisíce volných znaků a překlad přesto odmítnout, proto je jeho
-  výstup jen v logu. MyMemory má anonymně 5 000 znaků/den na IP, s e-mailem v repo secretu
-  `MYMEMORY_EMAIL` 50 000
+- Překlad: **Google Cloud Translation v2** (`GOOGLE_TRANSLATE_API_KEY` repo secret), auto-fallback
+  na **MyMemory** bez klíče nebo při chybě/limitu — pipeline nikdy nespadne, jen změní pole
+  `translator` ve výstupu
+- Kvóty: free tier Google Translate je **500 000 znaků měsíčně na fakturační účet**, tedy sdílený
+  mezi ¡pues! a allora. Naměřená spotřeba je ~222 k + ~256 k = ~480 k, takže rezerva je jen 4 % —
+  přetečení se účtuje 20 $ za milion znaků. Použitelnost se předem ověří jedním dvouznakovým
+  překladem; když neprojde (vyčerpaná kvóta, neplatný klíč), jde celý běh rovnou přes MyMemory
+  a nemarní se tucet volání do zdi. MyMemory má anonymně 5 000 znaků/den na IP, s e-mailem
+  v repo secretu `MYMEMORY_EMAIL` 50 000
+- Google vrací i s `format: 'text'` HTML entity (`&#39;`), překlad se proto ještě unescapuje
+- **DeepL** tu byl do srpna 2026, kdy jeho Free tier vyčerpal **lifetime** limit 1M znaků. To se
+  přes API nepozná: `/v2/usage` hlásí jen aktuální období, takže tvrdil statisíce volných znaků,
+  zatímco každý překlad končil na `456 Quota exceeded`
 - Když ani jeden překladač nestačí, zprávy bez překladu se zahodí a vydání vyjde kratší; teprve když
   nezbyde ani jedna, `daily.json` se nepřepíše a job skončí chybou
 - Záložní běh v 07:00 UTC se přeskočí, pokud `daily.json` už má dnešní datum — jinak by jeden den
@@ -168,7 +174,7 @@ pues/
 │   ├── news/archive/    ← trvalá historie (index.json + <datum>.json)
 │   └── news-filter.json
 ├── scripts/
-│   └── fetch-news.mjs   ← Wikipedia+EU+Guardian → DeepL/MyMemory → JSON (běží v Actions)
+│   └── fetch-news.mjs   ← Wikipedia+EU+Guardian → Google/MyMemory → JSON (běží v Actions)
 ├── .github/workflows/fetch-news.yml
 ├── CLAUDE.md            ← instrukce pro Opus/Sonnet
 └── ARCHITECTURE.md      ← tento soubor

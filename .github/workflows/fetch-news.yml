@@ -36,7 +36,7 @@ jobs:
       - name: Fetch + translate news
         if: steps.check.outputs.skip != 'true'
         env:
-          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
           GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
           MYMEMORY_EMAIL: ${{ secrets.MYMEMORY_EMAIL }}
         run: node scripts/fetch-news.mjs

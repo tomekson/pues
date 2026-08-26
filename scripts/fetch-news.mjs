@@ -1,11 +1,11 @@
-/* ¡pues! — denní zprávy: Wikipedia Current events (CC BY-SA) → DeepL (EN→ES, EN→CS) → data/news/daily.json
-   Běží v GitHub Actions (Node 20+, bez závislostí). Bez DEEPL_API_KEY jen vypíše, co by přeložil. */
+/* ¡pues! — denní zprávy: Wikipedia Current events (CC BY-SA) → Google Translate (EN→ES, EN→CS) → data/news/daily.json
+   Běží v GitHub Actions (Node 22+, bez závislostí). Bez GOOGLE_TRANSLATE_API_KEY překládá MyMemory. */
 'use strict';
 
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 
 const STORIES_MAX = 5;
-const KEY = process.env.DEEPL_API_KEY || '';
+const KEY = process.env.GOOGLE_TRANSLATE_API_KEY || '';
 
 /* ---- filtr témat (data/news-filter.json, editovatelný bez zásahu do kódu) ---- */
 const FILTER = JSON.parse(readFileSync('data/news-filter.json', 'utf8'));
@@ -282,49 +282,51 @@ if (process.env.DRY_RUN) {
   process.exit(0);
 }
 
-/* ---- 3. překlad: DeepL (pokud je klíč), jinak/při selhání MyMemory ---- */
-const deeplBase = KEY.endsWith(':fx') ? 'https://api-free.deepl.com' : 'https://api.deepl.com';
-const endpoint = `${deeplBase}/v2/translate`;
-let engine = KEY ? 'DeepL' : 'MyMemory';
+/* ---- 3. překlad: Google Cloud Translation (pokud je klíč), jinak/při selhání MyMemory ----
+   DeepL tu byl do srpna 2026, než jeho Free tier vyčerpal lifetime limit 1M znaků. Pozor: DeepL
+   `/v2/usage` na to neupozorní — hlásí jen aktuální období, lifetime počítadlo přes API vidět není. */
+const endpoint = 'https://translation.googleapis.com/language/translate/v2';
+let engine = KEY ? 'Google Translate' : 'MyMemory';
 
 /* MyMemory má anonymně jen 5 000 znaků/den na IP, s e-mailem 50 000 (secret MYMEMORY_EMAIL). */
 const MM_MAIL = process.env.MYMEMORY_EMAIL || '';
-let deeplDead = false;   // DeepL vyčerpal kvótu nebo neuznal klíč — dál ho nezkoušej
+let googleDead = false;  // Google vyčerpal kvótu nebo neuznal klíč — dál ho nezkoušej
 let mmDead = false;      // MyMemory vyčerpal denní limit — dál ho nezkoušej
 
-/* Použitelnost DeepL ověř předem jedním dvouznakovým překladem, ať se pak nemusí každý z tuctu
-   paralelních dotazů utnout na 456 Quota exceeded. Na /v2/usage se spolehnout nelze — umí hlásit
-   statisíce volných znaků a překlad přesto odmítnout (vypršelá platba, pozastavený účet). */
-async function deeplUsable() {
-  if (!KEY) return false;
-  try {
-    const r = await fetch(`${deeplBase}/v2/usage`, { headers: { 'Authorization': `DeepL-Auth-Key ${KEY}` } });
-    if (r.ok) {
-      const j = await r.json();
-      console.log(`DeepL kvóta podle /usage: ${j.character_count}/${j.character_limit} znaků.`);
-    }
-  } catch { /* jen informativní výpis */ }
-  try {
-    await deepl(['ok'], 'EN', 'CS');
-    return true;
-  } catch (e) {
-    console.log(`DeepL nepoužitelný (${e.message.slice(0, 140)}) — celý běh překládá MyMemory.`);
-    return false;
-  }
+/* Google vrací i s `format: 'text'` HTML entity (&#39;, &amp;) — vrať je zpátky na znaky. */
+const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+const unescapeHtml = t => t
+  .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+  .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+  .replace(/&(amp|lt|gt|quot|apos|nbsp);/g, (_, e) => ENTITIES[e]);
+
+async function google(texts, source, target) {
+  const r = await fetch(`${endpoint}?key=${encodeURIComponent(KEY)}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      q: texts,
+      source: source.toLowerCase(),
+      target: target.toLowerCase(),
+      format: 'text',
+    }),
+  });
+  if (!r.ok) throw new Error(`Google ${source}→${target}: HTTP ${r.status} ${(await r.text()).slice(0, 200)}`);
+  const j = await r.json();
+  return j.data.translations.map(t => unescapeHtml(t.translatedText));
 }
 
-async function deepl(texts, source, target) {
-  const r = await fetch(endpoint, {
-    method: 'POST',
-    headers: {
-      'Authorization': `DeepL-Auth-Key ${KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ text: texts, source_lang: source, target_lang: target }),
-  });
-  if (!r.ok) throw new Error(`DeepL ${source}→${target}: HTTP ${r.status} ${await r.text()}`);
-  const j = await r.json();
-  return j.translations.map(t => t.text);
+/* Použitelnost ověř předem jedním dvouznakovým překladem, ať se pak nemusí každý z tuctu
+   paralelních dotazů utnout na vyčerpanou kvótu nebo neplatný klíč. */
+async function googleUsable() {
+  if (!KEY) return false;
+  try {
+    await google(['ok'], 'EN', 'CS');
+    return true;
+  } catch (e) {
+    console.log(`Google Translate nepoužitelný (${e.message.slice(0, 200)}) — celý běh překládá MyMemory.`);
+    return false;
+  }
 }
 
 /* MyMemory bere max ~500 znaků na dotaz → delší texty dělíme po větách */
@@ -361,13 +363,13 @@ async function myMemory(text, source, target) {
    Jinak by jediná vyčerpaná kvóta shodila celý běh a nevzniklo by žádné vydání. */
 async function translate(texts, source, target) {
   if (!texts.length) return [];
-  if (KEY && !deeplDead) {
+  if (KEY && !googleDead) {
     try {
-      return await deepl(texts, source, target);
+      return await google(texts, source, target);
     } catch (e) {
-      if (/HTTP (401|403|429|456|45[0-9])/.test(e.message)) deeplDead = true;
-      console.log(`DeepL selhal (${e.message.slice(0, 120)}), přepínám na MyMemory.`);
-      engine = 'MyMemory (DeepL fallback)';
+      if (/HTTP (400|401|403|429)/.test(e.message)) googleDead = true;
+      console.log(`Google Translate selhal (${e.message.slice(0, 160)}), přepínám na MyMemory.`);
+      engine = 'MyMemory (Google fallback)';
     }
   }
   const out = [];
@@ -383,9 +385,9 @@ async function translate(texts, source, target) {
   return out;
 }
 
-if (KEY && !(await deeplUsable())) {
-  deeplDead = true;
-  engine = 'MyMemory (DeepL nedostupný)';
+if (KEY && !(await googleUsable())) {
+  googleDead = true;
+  engine = 'MyMemory (Google nedostupný)';
 }
 
 const worldTexts = stories.map(s => s.text);
