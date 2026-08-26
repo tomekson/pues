@@ -5,6 +5,11 @@ on:
     - cron: "30 4 * * *"   # denně ~06:30 Prahy (letní čas)
     - cron: "0 7 * * *"    # záložní pokus ~09:00 Prahy — GitHub scheduled runs mívají zpoždění i několik hodin
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Přegenerovat dnešní vydání, i když už existuje"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -26,7 +31,10 @@ jobs:
         run: |
           dnes=$(TZ=Europe/Prague date +%F)
           mame=$(node -e "try{process.stdout.write(require('./data/news/daily.json').date||'')}catch(e){}")
-          if [ "$dnes" = "$mame" ]; then
+          if [ "${{ inputs.force }}" = "true" ]; then
+            echo "force=true, generuji znovu."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          elif [ "$dnes" = "$mame" ]; then
             echo "Vydání pro $dnes už existuje, přeskakuji."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
