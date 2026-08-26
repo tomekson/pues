@@ -102,7 +102,9 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
   Cloud Translation API — na Drive ani Sheets nesáhne, i kdyby unikl z Actions
 - **DeepL** tu byl do srpna 2026, kdy jeho Free tier vyčerpal **lifetime** limit 1M znaků. To se
   přes API nepozná: `/v2/usage` hlásí jen aktuální období, takže tvrdil statisíce volných znaků,
-  zatímco každý překlad končil na `456 Quota exceeded`
+  zatímco každý překlad končil na `456 Quota exceeded`. Secret `DEEPL_API_KEY` v repu zůstává, ale
+  nikdo ho nečte — v kódu ani ve workflow už na něj není odkaz. Secrety v GitHubu jsou write-only,
+  takže je nelze zakomentovat ani přejmenovat; jediná alternativa k ponechání je smazat je
 - Když ani jeden překladač nestačí, zprávy bez překladu se zahodí a vydání vyjde kratší; teprve když
   nezbyde ani jedna, `daily.json` se nepřepíše a job skončí chybou
 - Záložní běh v 07:00 UTC se přeskočí, pokud `daily.json` už má dnešní datum — jinak by jeden den
