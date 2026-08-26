@@ -283,8 +283,30 @@ if (process.env.DRY_RUN) {
 }
 
 /* ---- 3. překlad: DeepL (pokud je klíč), jinak/při selhání MyMemory ---- */
-const endpoint = KEY.endsWith(':fx') ? 'https://api-free.deepl.com/v2/translate' : 'https://api.deepl.com/v2/translate';
+const deeplBase = KEY.endsWith(':fx') ? 'https://api-free.deepl.com' : 'https://api.deepl.com';
+const endpoint = `${deeplBase}/v2/translate`;
 let engine = KEY ? 'DeepL' : 'MyMemory';
+
+/* MyMemory má anonymně jen 5 000 znaků/den na IP, s e-mailem 50 000 (secret MYMEMORY_EMAIL). */
+const MM_MAIL = process.env.MYMEMORY_EMAIL || '';
+let deeplDead = false;   // DeepL vyčerpal kvótu nebo neuznal klíč — dál ho nezkoušej
+let mmDead = false;      // MyMemory vyčerpal denní limit — dál ho nezkoušej
+
+/* Kvótu zjisti jedním dotazem předem, ať se překlady nemusí desetkrát utnout na 456 Quota exceeded. */
+async function deeplHasQuota() {
+  if (!KEY) return false;
+  try {
+    const r = await fetch(`${deeplBase}/v2/usage`, { headers: { 'Authorization': `DeepL-Auth-Key ${KEY}` } });
+    if (!r.ok) { console.log(`DeepL /usage: HTTP ${r.status} — překládám přes MyMemory.`); return false; }
+    const j = await r.json();
+    const zbyva = j.character_limit - j.character_count;
+    console.log(`DeepL kvóta: ${j.character_count}/${j.character_limit} znaků, zbývá ${zbyva}.`);
+    return zbyva > 5000;
+  } catch (e) {
+    console.log(`DeepL /usage selhal (${e.message.slice(0, 120)}) — překládám přes MyMemory.`);
+    return false;
+  }
+}
 
 async function deepl(texts, source, target) {
   const r = await fetch(endpoint, {
@@ -316,28 +338,49 @@ function sentenceChunks(text, max = 440) {
 async function myMemory(text, source, target) {
   const out = [];
   for (const chunk of sentenceChunks(text)) {
-    const u = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(chunk)}&langpair=${source.toLowerCase()}|${target.toLowerCase()}`;
+    const u = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(chunk)}&langpair=${source.toLowerCase()}|${target.toLowerCase()}`
+      + (MM_MAIL ? `&de=${encodeURIComponent(MM_MAIL)}` : '');
     const r = await fetch(u);
     const j = await r.json();
+    if (j.quotaFinished || Number(j.responseStatus) === 429) {
+      mmDead = true;
+      throw new Error(`MyMemory: vyčerpaný denní limit — ${j.responseDetails || 'quota finished'}`);
+    }
     if (!j.responseData || j.responseStatus !== 200) throw new Error(`MyMemory ${source}→${target}: ${JSON.stringify(j.responseStatus)} ${j.responseDetails || ''}`);
     out.push(j.responseData.translatedText);
   }
   return out.join(' ');
 }
 
+/* Nikdy nevyhazuje: text, který se nepodařilo přeložit, vrátí jako null a volající ho zahodí.
+   Jinak by jediná vyčerpaná kvóta shodila celý běh a nevzniklo by žádné vydání. */
 async function translate(texts, source, target) {
   if (!texts.length) return [];
-  if (KEY) {
+  if (KEY && !deeplDead) {
     try {
       return await deepl(texts, source, target);
     } catch (e) {
+      if (/HTTP (401|403|429|456|45[0-9])/.test(e.message)) deeplDead = true;
       console.log(`DeepL selhal (${e.message.slice(0, 120)}), přepínám na MyMemory.`);
       engine = 'MyMemory (DeepL fallback)';
     }
   }
   const out = [];
-  for (const t of texts) out.push(await myMemory(t, source, target));
+  for (const t of texts) {
+    if (mmDead) { out.push(null); continue; }
+    try {
+      out.push(await myMemory(t, source, target));
+    } catch (e) {
+      console.log(`MyMemory selhal (${e.message.slice(0, 160)}) — zprávu vynechávám.`);
+      out.push(null);
+    }
+  }
   return out;
+}
+
+if (KEY && !(await deeplHasQuota())) {
+  deeplDead = true;
+  engine = 'MyMemory (DeepL bez kvóty)';
 }
 
 const worldTexts = stories.map(s => s.text);
@@ -364,19 +407,30 @@ const euItems = euRaw.map(e => ({
 }));
 
 /* ---- 4. zapiš JSON — české zprávy napřed ---- */
+/* Položky, kterým chybí překlad (vyčerpaná kvóta), zahoď — kratší vydání je lepší než spadlý běh. */
+const allStories = [
+  ...czItems.map((item, i) => ({ es: czEs[i], cz: item.text, origin: 'cz' })),
+  ...euItems.map(e => ({ en: e.en, es: e.es, cz: e.cz, origin: 'eu' })),
+  ...guardianItems.map((en, i) => ({ en, es: guardianEs[i], cz: guardianCz[i], origin: 'guardian' })),
+  ...stories.map((s, i) => ({ en: s.text, es: es[i], cz: cz[i], origin: 'world' })),
+  ...dykItems.map((en, i) => ({ en, es: dykEs[i], cz: dykCz[i], origin: 'dyk' })),
+];
+const okStories = allStories.filter(s => s.es && s.cz);
+if (okStories.length < allStories.length) {
+  console.log(`Zahozeno ${allStories.length - okStories.length} zpráv bez překladu (vyčerpaná kvóta překladače).`);
+}
+if (!okStories.length) {
+  console.error('Nepřeložila se ani jedna zpráva — data/news/daily.json nechávám beze změny.');
+  process.exit(1);
+}
+
 const out = {
   date: praha,
   source: 'Wikipedia: Portál:Aktuality + Portal:Current events (CC BY-SA 4.0)',
   sourceUrl: `https://en.wikipedia.org/wiki/${page.replaceAll(' ', '_')}`,
   translator: engine,
-  stories: [
-    ...czItems.map((item, i) => ({ es: czEs[i], cz: item.text, origin: 'cz' })),
-    ...euItems.map(e => ({ en: e.en, es: e.es, cz: e.cz, origin: 'eu' })),
-    ...guardianItems.map((en, i) => ({ en, es: guardianEs[i], cz: guardianCz[i], origin: 'guardian' })),
-    ...stories.map((s, i) => ({ en: s.text, es: es[i], cz: cz[i], origin: 'world' })),
-    ...dykItems.map((en, i) => ({ en, es: dykEs[i], cz: dykCz[i], origin: 'dyk' })),
-  ],
-  article: article ? {
+  stories: okStories,
+  article: (article && artEs[0] && artCz[0]) ? {
     topic: article.topic,
     url: `https://en.wikipedia.org/wiki/${article.topic.replaceAll(' ', '_')}`,
     en: article.en,

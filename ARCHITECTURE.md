@@ -90,6 +90,13 @@ GitHub Actions workflow `.github/workflows/fetch-news.yml` + `scripts/fetch-news
   (tam se blokuje jen `block`, ne sekce) a Guardian
 - Překlad: **DeepL API Free** (`DEEPL_API_KEY` repo secret), auto-fallback na **MyMemory** bez klíče
   nebo při chybě/limitu — pipeline nikdy nespadne, jen změní `translator` pole ve výstupu
+- Kvóty: před překladem se jedním dotazem na DeepL `/v2/usage` zjistí zbývající kvóta; při vyčerpání
+  jde všechno rovnou přes MyMemory a nemarní se desítka volání na `456 Quota exceeded`. MyMemory má
+  anonymně 5 000 znaků/den na IP, s e-mailem v repo secretu `MYMEMORY_EMAIL` 50 000
+- Když ani jeden překladač nestačí, zprávy bez překladu se zahodí a vydání vyjde kratší; teprve když
+  nezbyde ani jedna, `daily.json` se nepřepíše a job skončí chybou
+- Záložní běh v 07:00 UTC se přeskočí, pokud `daily.json` už má dnešní datum — jinak by jeden den
+  spotřeboval kvótu překladače dvakrát
 - Archiv: po zápisu `daily.json` se stejná data uloží i do `data/news/archive/<datum>.json` a
   upsertnou do `archive/index.json` — `daily.json` se dál přepisuje denně, archiv ne
 - Commit z workflow zároveň drží scheduled cron naživu (60denní auto-disable při neaktivitě repa)

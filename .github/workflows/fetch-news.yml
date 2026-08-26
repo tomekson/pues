@@ -13,19 +13,36 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
+
+      # Záložní běh v 07:00 UTC nespouštěj, když ranní běh dnešní vydání už vytvořil —
+      # jinak podruhé zbytečně spotřebuje kvótu překladače.
+      - name: Hotovo pro dnešek?
+        id: check
+        run: |
+          dnes=$(TZ=Europe/Prague date +%F)
+          mame=$(node -e "try{process.stdout.write(require('./data/news/daily.json').date||'')}catch(e){}")
+          if [ "$dnes" = "$mame" ]; then
+            echo "Vydání pro $dnes už existuje, přeskakuji."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Fetch + translate news
+        if: steps.check.outputs.skip != 'true'
         env:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
           GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
+          MYMEMORY_EMAIL: ${{ secrets.MYMEMORY_EMAIL }}
         run: node scripts/fetch-news.mjs
 
       - name: Commit daily.json
+        if: steps.check.outputs.skip != 'true'
         run: |
           git config user.name "pues-bot"
           git config user.email "actions@github.com"

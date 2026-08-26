@@ -28,6 +28,7 @@ a proč to sem záměrně nepatří. Nekopíruj funkce z allory jen proto, že t
   fetch+překlad zpráv, nula AI/Claude tokenů (na rozdíl od allory tu není žádná interaktivní skill —
   celá appka je pasivní čtečka, pipeline běží sama na cronu)
 - **DEEPL_API_KEY:** repo secret (GitHub Actions), auto-fallback na MyMemory bez klíče/při chybě
+- **MYMEMORY_EMAIL:** volitelný repo secret — zvedá denní limit MyMemory z 5 000 na 50 000 znaků
 
 ## Auto-memory
 
