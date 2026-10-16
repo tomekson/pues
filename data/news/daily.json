@@ -1,13 +1,35 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "source": "Wikipedia: Portál:Aktuality + Portal:Current events (CC BY-SA 4.0)",
-  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_15",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_16",
   "translator": "Google Translate",
   "stories": [
     {
-      "es": "El Premio Nobel de Economía fue otorgado a Robert Ernest Hall y Michael Woodford por \"los fundamentos microeconómicos de la estabilización macroeconómica\".",
-      "cz": "Nobelovu pamětní cenu za ekonomii získali Robert Ernest Hall a Michael Woodford za „mikroekonomické základy makroekonomické stabilizace“.",
+      "es": "Ya se ha llevado a cabo la demolición de la estructura más alta de la República Checa, el par de transmisores Liblice B cerca de Český Brod.",
+      "cz": "Proběhla demolice nejvyšší stavby v Česku, dvojice vysílačů Liblice B u Českého Brodu.",
       "origin": "cz"
+    },
+    {
+      "es": "El Papa León XIV fue sometido a una cirugía de pulmón. La operación transcurrió sin complicaciones.",
+      "cz": "Papež Lev XIV. podstoupil operaci plic. Proběhla bez komplikací.",
+      "origin": "cz"
+    },
+    {
+      "es": "El obispo Marek Forgáč se convirtió en el nuevo arzobispo de Košice.",
+      "cz": "Novým košickým arcibiskupem se stal biskup Marek Forgáč.",
+      "origin": "cz"
+    },
+    {
+      "en": "Steady progress on the One Europe, One Market roadmap. In their second review of the joint declaration and roadmap, designed to boost economic growth, the EU institutions reaffirmed their commitment to timely delivery.",
+      "es": "Avances constantes en la hoja de ruta «Una Europa, un mercado». En su segunda revisión de la declaración conjunta y la hoja de ruta, diseñadas para impulsar el crecimiento económico, las instituciones de la UE reafirmaron su compromiso con la entrega oportuna.",
+      "cz": "Stálý pokrok v plánu „Jedna Evropa, jeden trh“. Ve svém druhém přezkumu společného prohlášení a plánu, jejichž cílem je podpořit hospodářský růst, orgány EU znovu potvrdily svůj závazek včasného plnění.",
+      "origin": "eu"
+    },
+    {
+      "en": "Commission launches RAISE pledging initiative to boost AI support for researchers across Europe. Today, at the European AI in Science Summit in Dublin, the European Commission launched the RAISE (Resource for AI Science in Europe) pledging initiative for AI in Science Enablers.",
+      "es": "La Comisión lanza la iniciativa de compromiso RAISE para impulsar el apoyo a la IA para los investigadores de toda Europa. Hoy, en la Cumbre Europea de IA en la Ciencia celebrada en Dublín, la Comisión Europea lanzó la iniciativa de compromiso RAISE (Recursos para la Ciencia de la IA en Europa) para los facilitadores de la IA en la ciencia.",
+      "cz": "Komise spouští darovací iniciativu RAISE na posílení podpory umělé inteligence pro výzkumníky v celé Evropě. Evropská komise dnes na Evropském summitu o umělé inteligenci ve vědě v Dublinu zahájila darovací iniciativu RAISE (Resource for AI Science in Europe) na podporu aktiv pro umělou inteligenci ve vědě.",
+      "origin": "eu"
     },
     {
       "en": "Main messages from the Tripartite Social Summit. EU leaders and social partners met in Brussels for the Tripartite Social Summit, a twice-yearly forum for dialogue that brings together the leaders of the EU institutions and the European social partners.",
@@ -16,75 +38,63 @@
       "origin": "eu"
     },
     {
-      "en": "Commission awards six projects making lasting contributions for Europe's cohesion at REGIOSTARS ceremony *. Six outstanding EU-funded projects, and the people behind them, were honored last night in Brussels at the 2026 REGIOSTARS Awards, held as part of the 24th European Week of Regions and Cities.",
-      "es": "La Comisión premia seis proyectos que contribuyen de forma duradera a la cohesión de Europa en la ceremonia REGIOSTARS*. Seis proyectos destacados financiados por la UE, junto con las personas que los impulsaron, fueron homenajeados anoche en Bruselas en la ceremonia de los Premios REGIOSTARS 2026, celebrada en el marco de la 24.ª Semana Europea de las Regiones y Ciudades.",
-      "cz": "Komise na slavnostním ceremoniálu REGIOSTARS udělila šesti projektům, které trvale přispívají k soudržnosti Evropy*. Šest vynikajících projektů financovaných EU a lidé, kteří za nimi stojí, byli včera večer oceněni v Bruselu na udílení cen REGIOSTARS 2026, které se konalo v rámci 24. Evropského týdne regionů a měst.",
-      "origin": "eu"
-    },
-    {
-      "en": "Eurobarometer survey highlights growing use of AI in European companies. European businesses rely increasingly on artificial intelligence (AI). That is what the results of the latest Eurobarometer survey showed, published today.",
-      "es": "La encuesta del Eurobarómetro destaca el creciente uso de la IA en las empresas europeas. Las empresas europeas dependen cada vez más de la inteligencia artificial (IA). Así lo revelan los resultados de la última encuesta del Eurobarómetro, publicada hoy.",
-      "cz": "Průzkum Eurobarometru zdůrazňuje rostoucí využívání umělé inteligence v evropských společnostech. Evropské podniky se stále více spoléhají na umělou inteligenci (AI). Ukázaly to výsledky nejnovějšího průzkumu Eurobarometru, který byl dnes zveřejněn.",
-      "origin": "eu"
-    },
-    {
-      "en": "Chancellor John Healey pledges to protect ‘resilience’ of UK economy after growth beats forecasts in August – business live. John Healey is speaking to UK journalists at the IMF annual meeting in Bangkok now",
-      "es": "El ministro de Hacienda, John Healey, se compromete a proteger la «resiliencia» de la economía británica tras el crecimiento superado las previsiones en agosto – noticias económicas en directo. John Healey habla ahora con periodistas británicos en la reunión anual del FMI en Bangkok.",
-      "cz": "Ministr financí John Healey slibuje ochranu „odolnosti“ britské ekonomiky poté, co růst v srpnu překonal prognózy – živé vysílání. John Healey nyní hovoří s britskými novináři na výročním zasedání MMF v Bangkoku.",
+      "en": "Bank shares drop as John Healey prepares to raise taxes on the banking sector in the budget – business live. Rolling coverage of the latest economic and financial news",
+      "es": "Las acciones bancarias caen mientras John Healey se prepara para aumentar los impuestos al sector bancario en el presupuesto – noticias económicas en directo. Cobertura continua de las últimas noticias económicas y financieras.",
+      "cz": "Akcie bank klesají, John Healey se chystá v rozpočtu zvýšit daně pro bankovní sektor – živé zpravodajství. Průběžné zpravodajství o nejnovějších ekonomických a finančních zprávách.",
       "origin": "guardian"
     },
     {
-      "en": "Key US voters say economy is getting worse ahead of midterms, exclusive poll finds. Nearly 61% believe country is in recession and 65% of independents say economy is worse, according to new Harris poll",
-      "es": "Según una encuesta exclusiva, votantes clave de EE. UU. afirman que la economía está empeorando antes de las elecciones de mitad de mandato. Casi el 61% cree que el país está en recesión y el 65% de los independientes afirma que la economía está peor, según una nueva encuesta de Harris.",
-      "cz": "Exkluzivní průzkum ukazuje, že klíčoví američtí voliči tvrdí, že se ekonomika před volbami do poloviny volebního období zhoršuje. Téměř 61 % respondentů se domnívá, že země je v recesi, a 65 % nezávislých voličů tvrdí, že ekonomika se zhoršuje, jak vyplývá z nového průzkumu společnosti Harris.",
+      "en": "Ofgem could force energy suppliers to pay rivals if they lure customers with cheaper deals. Regulator for Great Britain weighs up reintroducing market stabilisation charge to prevent firms going bust",
+      "es": "Ofgem podría obligar a los proveedores de energía a pagar a sus rivales si atraen clientes con ofertas más baratas. El regulador de Gran Bretaña sopesa la posibilidad de reintroducir la tasa de estabilización del mercado para evitar la quiebra de las empresas.",
+      "cz": "Ofgem by mohl donutit dodavatele energie platit konkurentům, pokud nalákají zákazníky levnějšími nabídkami. Regulátor pro Velkou Británii zvažuje znovuzavedení poplatku za stabilizaci trhu, aby zabránil krachu firem.",
       "origin": "guardian"
     },
     {
-      "en": "Tech market sell-off deepens amid fears over US inflation and AI debt. Chip makers and tech investors such as Samsung and SoftBank plunge as global investors fret over potential interest rate hikes",
-      "es": "La caída del mercado tecnológico se agudiza en medio de los temores por la inflación en EE. UU. y la deuda derivada de la IA. Fabricantes de chips e inversores tecnológicos como Samsung y SoftBank se desploman ante la preocupación de los inversores globales por posibles subidas de los tipos de interés.",
-      "cz": "Výprodej na technologickém trhu se prohlubuje uprostřed obav z inflace v USA a dluhu v oblasti umělé inteligence. Výrobci čipů a technologickí investoři, jako jsou Samsung a SoftBank, klesají, protože globální investoři se obávají možného zvýšení úrokových sazeb.",
+      "en": "Repairing Brexit economic damage should be Burnham’s top priority, business chief says. Shevaun Haviland argues PM is right to revisit Labour’s EU red lines as current trading relationship is bad for business",
+      "es": "Reparar el daño económico del Brexit debería ser la máxima prioridad de Burnham, afirma un líder empresarial. Shevaun Haviland argumenta que el primer ministro tiene razón al reconsiderar las líneas rojas del Partido Laborista respecto a la UE, ya que la actual relación comercial es perjudicial para las empresas.",
+      "cz": "Náprava ekonomických škod způsobených Brexitem by měla být pro Burnham nejvyšší prioritou, říká šéfka pro obchod. Shevaun Haviland tvrdí, že premiér má pravdu, když se vrací k červeným liniím labouristů ohledně EU, protože současné obchodní vztahy jsou pro podnikání špatné.",
       "origin": "guardian"
     },
     {
-      "en": "The New Yalu River Bridge, a road cable-stayed bridge connecting Dandong, Liaoning Province, China, and Sinuiju, North Korea on the border between both countries, opens following a 12-year delay.",
-      "es": "El nuevo puente sobre el río Yalu, un puente atirantado que conecta Dandong, en la provincia china de Liaoning, con Sinuiju, en Corea del Norte, en la frontera entre ambos países, se inaugura tras un retraso de 12 años.",
-      "cz": "Nový most přes řeku Jalu, silniční zavěšený most spojující Dandong v provincii Liao-ning v Číně a Sinuiju v Severní Koreji na hranici mezi oběma zeměmi, se otevírá po 12letém zpoždění.",
+      "en": "The European Central Bank authorizes UniCredit to raise its stake in Commerzbank above 30% without an upper limit, allowing the Italian bank to proceed toward taking control of the German lender.",
+      "es": "El Banco Central Europeo autoriza a UniCredit a aumentar su participación en Commerzbank por encima del 30% sin límite máximo, lo que permite al banco italiano avanzar hacia la toma de control de la entidad financiera alemana.",
+      "cz": "Evropská centrální banka povolila UniCredit navýšit svůj podíl v Commerzbank nad 30 % bez horního limitu, což italské bance umožní převzít kontrolu nad německou bankou.",
       "origin": "world"
     },
     {
-      "en": "A court in New Delhi, India, remands Cockroach Janta Party spokespeople Saurav Das and Ashutosh Ranka in custody for five days after police detained them for entering the restricted Jantar Mantar protest site.",
-      "es": "Un tribunal de Nueva Delhi, India, ha ordenado la detención preventiva durante cinco días de Saurav Das y Ashutosh Ranka, portavoces del Partido Janta de la Cucaracha, después de que la policía los detuviera por entrar en la zona restringida de protestas de Jantar Mantar.",
-      "cz": "Soud v indickém Novém Dillí poslal mluvčí strany Cockroach Janta Saurava Dase a Ashutoshe Ranku do vazby na pět dní poté, co je policie zadržela za vstup do uzavřeného místa protestu Jantar Mantar.",
+      "en": "The New Yalu River Bridge connecting Dandong, China, and Sinuiju, North Korea, opens following a 12-year delay.",
+      "es": "El nuevo puente sobre el río Yalu, que conecta Dandong (China) con Sinuiju (Corea del Norte), se inaugura tras un retraso de 12 años.",
+      "cz": "Nový most přes řeku Jalu spojující čínský Dandong a severokorejský Sinuiju byl otevřen po 12letém zpoždění.",
       "origin": "world"
     },
     {
-      "en": "Turkish opposition-leaning and independent news channel Halk TV goes offline as it is raided by police and new administrators are appointed by the government.",
-      "es": "El canal de noticias turco Halk TV, independiente y afín a la oposición, deja de estar disponible tras una redada policial y el nombramiento de nuevos administradores por parte del gobierno.",
-      "cz": "Turecký opoziční a nezávislý zpravodajský kanál Halk TV byl po policejní razii a jmenování nových správců vládou odstaven.",
+      "en": "Argentine police arrest at least 25 people after clashes during a university funding protest in Buenos Aires, while eight police officers are injured.",
+      "es": "La policía argentina arrestó al menos a 25 personas tras enfrentamientos durante una protesta por la financiación de una universidad en Buenos Aires, y ocho agentes resultaron heridos.",
+      "cz": "Argentinská policie zatkla po střetech během protestu proti financování univerzit v Buenos Aires nejméně 25 lidí, přičemž osm policistů bylo zraněno.",
       "origin": "world"
     },
     {
-      "en": "President Claudia Sheinbaum signs a decree banning violent content on social media to protect minors under the age of 18.",
-      "es": "La presidenta Claudia Sheinbaum firma un decreto que prohíbe el contenido violento en las redes sociales para proteger a los menores de 18 años.",
-      "cz": "Prezidentka Claudia Sheinbaumová podepsala dekret zakazující násilný obsah na sociálních sítích na ochranu nezletilých mladších 18 let.",
+      "en": "Northern Irish politician and former Democratic Unionist Party leader Jeffrey Donaldson is sentenced to 15 years in prison for child sexual abuse and rape. The offences occurred between 1985 and 2008.",
+      "es": "El político norirlandés y exlíder del Partido Unionista Democrático, Jeffrey Donaldson, ha sido condenado a 15 años de prisión por abuso sexual infantil y violación. Los delitos ocurrieron entre 1985 y 2008.",
+      "cz": "Severoirský politik a bývalý lídr Demokratické unionistické strany Jeffrey Donaldson byl odsouzen k 15 letům vězení za sexuální zneužívání dětí a znásilnění. K trestným činům došlo v letech 1985 až 2008.",
       "origin": "world"
     },
     {
-      "en": "The oldest known shipwreck in the world (2700–2400 BC) is excavated in Kekova, Turkey.",
-      "es": "El naufragio más antiguo conocido en el mundo (2700-2400 a. C.) se encuentra excavado en Kekova, Turquía.",
-      "cz": "Nejstarší známý vrak lodi na světě (2700–2400 př. n. l.) byl vykopán v Kekově v Turecku.",
+      "en": "Astronomers discover the first green star according to a study published by RAS Techniques and Instruments.",
+      "es": "Según un estudio publicado por RAS Techniques and Instruments, los astrónomos han descubierto la primera estrella verde.",
+      "cz": "Astronomové objevili první zelenou hvězdu podle studie publikované RAS Techniques and Instruments.",
       "origin": "world"
     },
     {
-      "en": "Did you know that tomato soup cake became popular during the Great Depression?",
-      "es": "¿Sabías que el pastel de sopa de tomate se popularizó durante la Gran Depresión?",
-      "cz": "Věděli jste, že rajčatový koláč se stal populárním během Velké hospodářské krize?",
+      "en": "Did you know that the Trump administration has designated an Italian email provider as a terrorist group?",
+      "es": "¿Sabías que la administración Trump ha designado a un proveedor de correo electrónico italiano como grupo terrorista?",
+      "cz": "Věděli jste, že Trumpova administrativa označila italského poskytovatele e-mailových služeb za teroristickou skupinu?",
       "origin": "dyk"
     },
     {
-      "en": "Did you know that a 14-year-old from Aberystwyth shaved his head to raise money for Latch Wales in support of a friend with kidney cancer?",
-      "es": "¿Sabías que un joven de 14 años de Aberystwyth se afeitó la cabeza para recaudar fondos para Latch Wales en apoyo de un amigo que padece cáncer de riñón?",
-      "cz": "Věděli jste, že čtrnáctiletý chlapec z Aberystwythu si oholil hlavu, aby vybral peníze pro Latch Wales na podporu kamaráda s rakovinou ledvin?",
+      "en": "Did you know that a Cuban cigar factory was named after a union leader who was murdered there?",
+      "es": "¿Sabías que una fábrica de puros cubana recibió su nombre en honor a un líder sindical que fue asesinado allí?",
+      "cz": "Věděli jste, že kubánská továrna na doutníky byla pojmenována po odborovém předákovi, který tam byl zavražděn?",
       "origin": "dyk"
     }
   ],
