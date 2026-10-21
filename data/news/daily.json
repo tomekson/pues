@@ -1,69 +1,95 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "source": "Wikipedia: Portál:Aktuality + Portal:Current events (CC BY-SA 4.0)",
-  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_20",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_21",
   "translator": "Google Translate",
   "stories": [
     {
-      "en": "EU and New Caledonia sign strategic partnership on sustainable raw materials. Today, the European Commission and the government of New Caledonia signed a Memorandum of Understanding (MoU) establishing a strategic partnership on sustainable raw materials value chains.",
-      "es": "La UE y Nueva Caledonia firman una asociación estratégica sobre materias primas sostenibles. La Comisión Europea y el Gobierno de Nueva Caledonia han firmado hoy un memorando de entendimiento por el que se establece una asociación estratégica sobre cadenas de valor sostenibles de materias primas.",
-      "cz": "EU a Nová Kaledonie podepsaly strategické partnerství v oblasti udržitelných surovin. Evropská komise a vláda Nové Kaledonie dnes podepsaly memorandum o porozumění, kterým se zakládá strategické partnerství v oblasti udržitelných hodnotových řetězců surovin.",
+      "es": "Los votantes de la provincia canadiense de Alberta rechazaron en referéndum los intentos de lograr la independencia de la provincia.",
+      "cz": "Voliči v kanadské provincii Alberta odmítli v referendu snahy o nezávislost provincie.",
+      "origin": "cz"
+    },
+    {
+      "es": "El Programa Mundial de Alimentos (PMA) ha suspendido la ayuda humanitaria a 500.000 personas en la Franja de Gaza debido a la falta de financiación.",
+      "cz": "Světový potravinový program (WFT) kvůli nedostatku financí zastavil humanitární pomoc pro 500 000 lidí v Pásmu Gazy.",
+      "origin": "cz"
+    },
+    {
+      "es": "Un tribunal de Mombasa, Kenia, ha declarado culpable a Paul Mackenzie, líder de la secta Good News International Ministries, del asesinato de 190 niños en el bosque de Shakahola.",
+      "cz": "Soud v keňské Mombase uznal Paula Mackenzieho, vůdce sekty Good News International Ministries, vinným z vraždy 190 dětí v lese Shakahola.",
+      "origin": "cz"
+    },
+    {
+      "es": "Japón ha enviado la sonda Martian Moons eXploration (MMX) para estudiar Fobos, una luna de Marte.",
+      "cz": "Japonsko vyslalo sondu Martian Moons eXploration (MMX) k výzkumu Phobosu měsíce planety Mars.",
+      "origin": "cz"
+    },
+    {
+      "en": "Commission welcomes political agreement on the future organic rulebook. The European Commission welcomes today's agreement between the European Parliament and the Council to amend certain production, labelling and certification rules, as well as rules on trade with non-EU countries, in the organic sector.",
+      "es": "La Comisión celebra el acuerdo político sobre el futuro reglamento de agricultura ecológica. La Comisión Europea acoge con satisfacción el acuerdo alcanzado hoy entre el Parlamento Europeo y el Consejo para modificar determinadas normas de producción, etiquetado y certificación, así como las normas relativas al comercio con países no pertenecientes a la UE, en el sector ecológico.",
+      "cz": "Komise vítá politickou dohodu o budoucím souboru pravidel pro ekologickou produkci. Evropská komise vítá dnešní dohodu mezi Evropským parlamentem a Radou o změně některých pravidel pro produkci, označování a certifikaci, jakož i pravidel pro obchod se zeměmi mimo EU v odvětví ekologické produkce.",
       "origin": "eu"
     },
     {
-      "en": "Andorra and San Marino sign Association Agreement to move closer to the EU. Today, the Commission signed an Association Agreement with Andorra and San Marino, bringing both countries closer to the EU and establishing a clear and comprehensive framework for deeper economic and institutional integration.",
-      "es": "Andorra y San Marino firman Acuerdo de Asociación para acercarse a la UE. La Comisión ha firmado hoy un Acuerdo de Asociación con Andorra y San Marino, que acerca a ambos países a la UE y establece un marco claro y global para una integración económica e institucional más profunda.",
-      "cz": "Andorra a San Marino podepsaly dohodu o přidružení s cílem přiblížit se EU. Komise dnes podepsala dohodu o přidružení s Andorrou a San Marinem, která obě země přibližuje EU a vytváří jasný a komplexní rámec pro hlubší hospodářskou a institucionální integraci.",
+      "en": "EU sets out a new Strategy for the Arctic. Today, the European Commission and the High Representative of the Union for Foreign Affairs and Security Policy presented a new Strategy for the Arctic.",
+      "es": "La UE presenta una nueva estrategia para el Ártico. Hoy, la Comisión Europea y el Alto Representante de la Unión para Asuntos Exteriores y Política de Seguridad presentaron una nueva estrategia para el Ártico.",
+      "cz": "EU stanoví novou strategii pro Arktidu. Evropská komise a vysoká představitelka Unie pro zahraniční věci a bezpečnostní politiku dnes představily novou strategii pro Arktidu.",
       "origin": "eu"
     },
     {
-      "en": "Commission invests €3.4 billion in net-zero technology projects. Today, the European Commission has selected 77 European net-zero technology projects to receive funding support worth €3.4 billion under the second call of the Innovation Fund, launched in December 2025.",
-      "es": "La Comisión invierte 3 400 millones de euros en proyectos de tecnologías de cero emisiones netas.",
-      "cz": "Komise investuje 3,4 miliardy eur do projektů technologií pro nulové čisté emise. Evropská komise dnes vybrala 77 evropských technologických projektů pro nulové čisté emise, které získají finanční podporu v hodnotě 3,4 miliardy eur v rámci druhé výzvy Inovačního fondu, která byla zahájena v prosinci 2025.",
+      "en": "Speech by President von der Leyen at the European Parliament plenary debate on the conclusions of the European Council meeting of 15-16 October 2026. President Metsola, dear Roberta, President Costa, dear António, Honourable Members, We have had a long and dense European Council. Let me touch on two of the ma...",
+      "es": "Discurso de la presidenta von der Leyen en el debate plenario del Parlamento Europeo sobre las conclusiones de la reunión del Consejo Europeo del 15 y 16 de octubre de 2026. Presidenta Metsola, querida Roberta, presidente Costa, querido António, honorables diputados: Hemos tenido un Consejo Europeo largo e intenso. Permítanme abordar dos de los puntos más importantes...",
+      "cz": "Projev předsedkyně Ursuly von der Leyen na plenárním zasedání Evropského parlamentu o závěrech zasedání Evropské rady ve dnech 15. a 16. října 2026. Pane prezidente Metsolo, vážená Roberto, pane prezidente Costo, vážený pane António, vážení poslanci, měli jsme dlouhé a intenzivní zasedání Evropské rady. Dovolte mi, abych se dotkl dvou hlavních...",
       "origin": "eu"
     },
     {
-      "en": "Andorra and San Marino each sign an association agreement with the European Union.",
-      "es": "Andorra y San Marino firman cada una un acuerdo de asociación con la Unión Europea.",
-      "cz": "Andorra a San Marino podepsaly s Evropskou unií dohodu o přidružení.",
+      "en": "French police arrest a 34-year old man for the arson attack on the Hôtel de Ville in Limoges.",
+      "es": "La policía francesa detiene a un hombre de 34 años por el incendio provocado en el ayuntamiento de Limoges.",
+      "cz": "Francouzská policie zatkla 34letého muže za žhářský útok na hotel Hôtel de Ville v Limoges.",
       "origin": "world"
     },
     {
-      "en": "A judge in Miami-Dade County, Florida, United States, issues a no-bail bond arrest warrant for former Cuban president Raúl Castro after Florida attorney general James Uthmeier charged Castro with conspiracy to commit first-degree murder by directing spies to infiltrate Brothers to the Rescue and ordering the attack on their planes in 1996.",
-      "es": "Un juez del condado de Miami-Dade, Florida, Estados Unidos, emitió una orden de arresto sin derecho a fianza contra el expresidente cubano Raúl Castro, luego de que el fiscal general de Florida, James Uthmeier, lo acusara de conspiración para cometer asesinato en primer grado por ordenar a espías que se infiltraran en la organización Hermanos al Rescate y ordenar el ataque a sus aviones en 1996.",
-      "cz": "Soudce v okrese Miami-Dade na Floridě ve Spojených státech vydal zatykač bez možnosti propuštění na kauci na bývalého kubánského prezidenta Raúla Castra poté, co floridský generální prokurátor James Uthmeier obvinil Castra ze spiknutí za účelem vraždy prvního stupně tím, že v roce 1996 nařídil špionům infiltrovat organizaci Brothers to Rescue a nařídil útok na jejich letadla.",
+      "en": "Pakistan arrests a man for selling fake stamps in the United States that resulted in a $126 million loss to the U.S. Postal Service.",
+      "es": "Pakistán arrestó a un hombre por vender sellos falsificados en Estados Unidos, lo que provocó una pérdida de 126 millones de dólares para el Servicio Postal de Estados Unidos.",
+      "cz": "Pákistán zatkl muže za prodej falešných známek ve Spojených státech, což vedlo k škodě pro americkou poštovní službu ve výši 126 milionů dolarů.",
       "origin": "world"
     },
     {
-      "en": "A car deliberately strikes independent Australian MP Helen Haines outside her office in Wangaratta, Victoria, leaving her in critical condition and without a leg. Police arrest the driver, while Haines is airlifted to a hospital.",
-      "es": "Un automóvil atropelló deliberadamente a la diputada independiente australiana Helen Haines frente a su oficina en Wangaratta, Victoria, dejándola en estado crítico y sin una pierna. La policía arrestó al conductor, mientras que Haines fue trasladada en helicóptero a un hospital.",
-      "cz": "Auto úmyslně srazilo nezávislou australskou poslankyni Helen Hainesovou před její kanceláří ve Wangarattě ve státě Victoria. Helen Hainesová je v kritickém stavu a bez nohy. Policie zatkla řidičku, zatímco Hainesová byla letecky transportována do nemocnice.",
+      "en": "JAXA launches the Martian Moons eXploration spacecraft from the Tanegashima Space Center toward Phobos aboard an H3 rocket, aiming to collect at least 10 grams of surface material from the Martian moon and return the samples to Earth in 2031.",
+      "es": "La JAXA lanza la nave espacial Martian Moons eXploration desde el Centro Espacial de Tanegashima hacia Fobos a bordo de un cohete H3, con el objetivo de recolectar al menos 10 gramos de material de la superficie de la luna marciana y traer las muestras de regreso a la Tierra en 2031.",
+      "cz": "JAXA vypustí z vesmírného střediska Tanegašima směrem k Phobosu sondu Martian Moons eXploration na palubě rakety H3 s cílem shromáždit alespoň 10 gramů povrchového materiálu z marťanského měsíce a v roce 2031 vrátit vzorky na Zemi.",
       "origin": "world"
     },
     {
-      "en": "Albertans vote on ten referendums, including one to decide if Alberta should seek separation from Canada.",
-      "es": "Los habitantes de Alberta votan en diez referendos, incluido uno para decidir si Alberta debe buscar la separación de Canadá.",
-      "cz": "Obyvatelé Alberty hlasují v deseti referendech, včetně jednoho, které se bude rozhodovat o tom, zda by se Alberta měla odtrhnout od Kanady.",
+      "en": "Nigeria announces its first case of Ebola virus in the epidemic.",
+      "es": "Nigeria anuncia su primer caso de virus del Ébola en el marco de la epidemia.",
+      "cz": "Nigérie oznamuje první případ viru Ebola v průběhu epidemie.",
       "origin": "world"
     },
     {
-      "en": "Did you know that the Sanda Island Lighthouse was built in three \"steps\" against a cliff face, a design that is unique in Scotland?",
-      "es": "¿Sabías que el faro de la isla de Sanda fue construido en tres \"escalones\" contra la pared de un acantilado, un diseño único en Escocia?",
-      "cz": "Věděli jste, že maják na ostrově Sanda byl postaven ve třech „krocích“ na útesu, což je ve Skotsku unikátní design?",
+      "en": "Libya's eastern-based House of Representatives approves a 2019 maritime boundary agreement with Turkey and repeals two 2020 decisions that rejected the accord.",
+      "es": "La Cámara de Representantes de Libia, con sede en el este del país, aprueba un acuerdo de delimitación marítima de 2019 con Turquía y revoca dos decisiones de 2020 que rechazaban dicho acuerdo.",
+      "cz": "Libyjská Sněmovna reprezentantů se sídlem ve východní části země schválila dohodu o námořní hranici s Tureckem z roku 2019 a zrušila dvě rozhodnutí z roku 2020, která dohodu zamítla.",
+      "origin": "world"
+    },
+    {
+      "en": "Did you know that a man made a gigantic cross with letters visible from in the air?",
+      "es": "¿Sabías que un hombre hizo una cruz gigantesca con letras visibles desde el aire?",
+      "cz": "Věděli jste, že muž vytvořil obrovský kříž s písmeny viditelnými ze vzduchu?",
       "origin": "dyk"
     },
     {
-      "en": "Did you know that Bert Matter, the organist at the Walburgiskerk in Zutphen for 33 years, composed minimal music?",
-      "es": "¿Sabías que Bert Matter, organista de la iglesia Walburgiskerk de Zutphen durante 33 años, compuso música minimalista?",
-      "cz": "Věděli jste, že Bert Matter, varhaník ve Walburgiskerku v Zutphenu po dobu 33 let, skládal minimalistickou hudbu?",
+      "en": "Did you know that historians do not know the name of the first queen of Jerusalem?",
+      "es": "¿Sabías que los historiadores desconocen el nombre de la primera reina de Jerusalén?",
+      "cz": "Věděli jste, že historici neznají jméno první jeruzalémské královny?",
       "origin": "dyk"
     }
   ],
   "article": {
-    "topic": "1996 shootdown of Brothers to the Rescue aircraft",
-    "url": "https://en.wikipedia.org/wiki/1996_shootdown_of_Brothers_to_the_Rescue_aircraft",
-    "en": "On 24 February 1996, a Cuban Air Force Mikoyan MiG-29UB shot down two unarmed Cessna 337 Skymaster aircraft operated by Brothers to the Rescue, an organization opposed to the Cuban government. The Organization of American States (OAS) reported that no warning was given; Cuban government sources said \"These people knew what they were doing. They were warned\", and that the aircraft had entered Cuban airspace. All the occupants of the aircraft were killed: Carlos Costa, Armando Alejandre, Jr., Mario de la Peña, and Pablo Morales. A third Cessna involved escaped. Previous similar flights had released propaganda leaflets over Cuba.",
-    "es": "El 24 de febrero de 1996, un Mikoyan MiG-29UB de la Fuerza Aérea Cubana derribó dos avionetas Cessna 337 Skymaster desarmadas, operadas por Hermanos al Rescate, una organización opositora al gobierno cubano. La Organización de los Estados Americanos (OEA) informó que no se dio ninguna advertencia; fuentes del gobierno cubano declararon: «Estas personas sabían lo que hacían. Fueron advertidos», y que las aeronaves habían ingresado al espacio aéreo cubano. Todos los ocupantes de las aeronaves murieron: Carlos Costa, Armando Alejandre Jr., Mario de la Peña y Pablo Morales. Una tercera Cessna involucrada logró escapar. Vuelos similares anteriores habían lanzado panfletos de propaganda sobre Cuba.",
-    "cz": "Dne 24. února 1996 sestřelil kubánský letoun MiG-29UB dva neozbrojené letouny Cessna 337 Skymaster, které provozovala organizace Bratři na záchranu (Brothers to the Rescue), jež se stavěla proti kubánské vládě. Organizace amerických států (OAS) uvedla, že nebylo vydáno žádné varování; zdroje z kubánské vlády uvedly, že „tito lidé věděli, co dělají. Byli varováni“ a že letadlo vstoupilo do kubánského vzdušného prostoru. Všichni cestující na palubě letadla zahynuli: Carlos Costa, Armando Alejandre Jr., Mario de la Peña a Pablo Morales. Třetí zapojený letoun Cessna unikl. Při předchozích podobných letech byly nad Kubou vypuštěny propagandistické letáky."
+    "topic": "17 October riots",
+    "url": "https://en.wikipedia.org/wiki/17_October_riots",
+    "en": "On 17 October 2026, nationwide unrest in France regarding rising living costs, fuel prices, public services, education, and other issues escalated as student organisations joined protests against the cost of living, spearheaded by the yellow vests movement. Interior Minister Laurent Nuñez said 110 marches drew 550,000 participants, including 110,000 in Paris; organisers estimated 800,000.\nWhile initial protests and demonstrations throughout September and October had been conducted peacefully, recurrent violence climaxed across the country on the weekend of 17 October. Thousands of rioters and vandals exploited the tense situation to loot shops, set fires, and attack public buildings and police, resulting in what have been widely described as the worst riots in French history post-May 68.",
+    "es": "El 17 de octubre de 2026, la agitación social en Francia se intensificó debido al aumento del costo de vida, los precios del combustible, los servicios públicos, la educación y otros problemas. Organizaciones estudiantiles se sumaron a las protestas contra el costo de vida, lideradas por el movimiento de los chalecos amarillos. El ministro del Interior, Laurent Nuñez, declaró que 110 marchas congregaron a 550.000 participantes, incluyendo 110.000 en París; los organizadores estimaron la participación en 800.000.\n\nSi bien las protestas y manifestaciones iniciales durante septiembre y octubre se desarrollaron pacíficamente, la violencia recurrente alcanzó su punto álgido en todo el país el fin de semana del 17 de octubre. Miles de alborotadores y vándalos aprovecharon la tensa situación para saquear tiendas, provocar incendios y atacar edificios públicos y a la policía, lo que resultó en lo que se ha descrito como los peores disturbios en la historia de Francia desde mayo del 68.",
+    "cz": "Dne 17. října 2026 se ve Francii vystupňovaly celostátní nepokoje týkající se rostoucích životních nákladů, cen pohonných hmot, veřejných služeb, vzdělávání a dalších otázek, když se studentské organizace připojily k protestům proti životním nákladům, v čele s hnutím žlutých vest. Ministr vnitra Laurent Nuñez uvedl, že 110 pochodů přilákalo 550 000 účastníků, včetně 110 000 v Paříži; organizátoři odhadovali 800 000.\nZatímco počáteční protesty a demonstrace v průběhu září a října probíhaly pokojně, o víkendu 17. října vyvrcholilo opakované násilí v celé zemi. Tisíce výtržníků a vandalů zneužily napjaté situace k rabování obchodů, zakládání požárů a útokům na veřejné budovy a policii, což vedlo k tomu, co bylo všeobecně označováno za nejhorší nepokoje ve francouzské historii po květnu 68."
   }
 }
