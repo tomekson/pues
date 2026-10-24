@@ -1,13 +1,25 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "source": "Wikipedia: Portál:Aktuality + Portal:Current events (CC BY-SA 4.0)",
-  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_23",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_24",
   "translator": "Google Translate",
   "stories": [
     {
-      "es": "Los votantes de la provincia canadiense de Alberta rechazaron en referéndum los intentos de lograr la independencia de la provincia.",
-      "cz": "Voliči v kanadské provincii Alberta odmítli v referendu snahy o nezávislost provincie.",
+      "es": "Dos vulnerabilidades críticas en el lenguaje de programación PHP provocaron una interrupción global del servicio de internet.",
+      "cz": "Dvě kritické zranitelnosti programovacího jazyka PHP způsobily globální výpadek internetových služeb.",
       "origin": "cz"
+    },
+    {
+      "en": "Commission proposes stronger recognition of European heritage sites*. The European Commission has proposed to renew and reinforce the legal framework of the European Heritage Label.",
+      "es": "La Comisión propone un mayor reconocimiento de los sitios del patrimonio europeo*. La Comisión Europea ha propuesto renovar y reforzar el marco jurídico del Sello de Patrimonio Europeo.",
+      "cz": "Komise navrhuje větší uznání pamětihodností evropského dědictví*. Evropská komise navrhla obnovit a posílit právní rámec označení „Evropské dědictví“.",
+      "origin": "eu"
+    },
+    {
+      "en": "EU announces an additional €22.5 million to reinforce humanitarian assistance in Yemen. The European Commission is releasing €22.5 million in humanitarian aid to Yemen, in addition to the €87.",
+      "es": "La UE anuncia 22,5 millones de euros adicionales para reforzar la ayuda humanitaria en Yemen.",
+      "cz": "EU oznámila další 22,5 milionu eur na posílení humanitární pomoci v Jemenu. Kromě 87,5 milionu eur, které byly dříve přiděleny na rok 2026, uvolňuje Evropská komise do Jemenu humanitární pomoc ve výši 22,5 milionu eur na řešení důsledků obnovené eskalace konfliktu a kritických potřeb milionů lidí.",
+      "origin": "eu"
     },
     {
       "en": "Commission welcomes commitments of Coca-Cola, Nestlé, and Danone to modify recycling claims on plastic bottles.",
@@ -16,65 +28,41 @@
       "origin": "eu"
     },
     {
-      "en": "Commission greenlights Germany's final payment request for €6 billion under NextGenerationEU. Today, the European Commission positively assessed Germany's fourth and final payment request worth €6 billion under the Recovery and Resilience Facility (RRF), the centrepiece of NextGenerationEU.",
-      "es": "La Comisión da luz verde a la solicitud de pago final de Alemania por valor de 6.000 millones de euros en el marco de NextGenerationEU. Hoy, la Comisión Europea ha evaluado positivamente la cuarta y última solicitud de pago de Alemania por valor de 6.000 millones de euros en el marco del Mecanismo de Recuperación y Resiliencia (RRF), la pieza central de NextGenerationEU.",
-      "cz": "Komise schválila poslední žádost Německa o platbu ve výši 6 miliard eur v rámci programu NextGenerationEU. Evropská komise dnes kladně posoudila čtvrtou a zároveň poslední žádost Německa o platbu v hodnotě 6 miliard eur v rámci nástroje na podporu oživení a odolnosti (RRF), který je ústředním prvkem programu NextGenerationEU.",
-      "origin": "eu"
-    },
-    {
-      "en": "Speech by Commissioner Lahbib at the Resilient Europe Conference. When you arrived today, I hope you looked up at the roof of this palace. Four stone statues stand along the top. They represent the four elements: fire, water, ...",
-      "es": "Discurso del Comisario Lahbib en la Conferencia Europa Resiliente. Espero que, al llegar hoy, hayan alzado la vista hacia el tejado de este palacio. Cuatro estatuas de piedra se alzan en la cima. Representan los cuatro elementos: fuego, agua, ...",
-      "cz": "Projev komisaře Lahbiba na konferenci Odolná Evropa. Doufám, že když jste dnes přijel, podíval jste se na střechu tohoto paláce. Na vrcholu stojí čtyři kamenné sochy. Představují čtyři živly: oheň, vodu,...",
-      "origin": "eu"
-    },
-    {
-      "en": "The European Parliament awards its 2026 Sakharov Prize to the International Criminal Court and its officials for their work in global justice and upholding international law.",
-      "es": "El Parlamento Europeo otorga su Premio Sájarov 2026 a la Corte Penal Internacional y a sus funcionarios por su labor en favor de la justicia global y la defensa del derecho internacional.",
-      "cz": "Evropský parlament uděluje Sacharovovu cenu za rok 2026 Mezinárodnímu trestnímu soudu a jeho úředníkům za jejich práci v oblasti globální spravedlnosti a dodržování mezinárodního práva.",
+      "en": "The Eagle's Nest in Germany is lit on fire. A suspect is arrested.",
+      "es": "El Nido del Águila en Alemania es incendiado. Un sospechoso es arrestado.",
+      "cz": "Orlí hnízdo v Německu je zapáleno. Podezřelý je zatčen.",
       "origin": "world"
     },
     {
-      "en": "Canada and Turkey open negotiations for a free trade agreement during Canadian prime minister Mark Carney's visit to Ankara.",
-      "es": "Canadá y Turquía inician negociaciones para un acuerdo de libre comercio durante la visita del primer ministro canadiense, Mark Carney, a Ankara.",
-      "cz": "Kanada a Turecko zahájily jednání o dohodě o volném obchodu během návštěvy kanadského premiéra Marka Carneyho v Ankaře.",
+      "en": "The Australian Government imposes financial sanctions and travel bans on two North Koreans and sanctions two companies accused of supporting fraudulent overseas information technology work that funds North Korea's weapons programs.",
+      "es": "El Gobierno australiano impone sanciones financieras y prohibiciones de viaje a dos norcoreanos y sanciona a dos empresas acusadas de apoyar trabajos fraudulentos de tecnología de la información en el extranjero que financian los programas de armamento de Corea del Norte.",
+      "cz": "Australská vláda uvalila finanční sankce a zákaz cestování na dva Severokorejce a sankcionovala dvě společnosti obviněné z podpory podvodných zahraničních prací v oblasti informačních technologií, které financují severokorejské zbrojní programy.",
       "origin": "world"
     },
     {
-      "en": "A Guatemalan court sentences seven former police officers to prison terms of up to 60 years for offenses related to the 2024 torture and killing of a gay couple at a police station.",
-      "es": "Un tribunal guatemalteco condenó a siete ex policías a penas de prisión de hasta 60 años por delitos relacionados con la tortura y el asesinato de una pareja homosexual en una comisaría en 2024.",
-      "cz": "Guatemalský soud odsoudil sedm bývalých policistů k trestům odnětí svobody až na 60 let za trestné činy související s mučením a vraždou homosexuálního páru na policejní stanici v roce 2024.",
+      "en": "The Greek parliament approves a law banning children under 15 from using social media from January 1, 2027, requiring age verification and penalties for platforms that fail to comply.",
+      "es": "El parlamento griego aprueba una ley que prohíbe a los menores de 15 años el uso de las redes sociales a partir del 1 de enero de 2027, y que exige la verificación de la edad y establece sanciones para las plataformas que no cumplan con la normativa.",
+      "cz": "Řecký parlament schválil zákon, který od 1. ledna 2027 zakazuje dětem mladším 15 let používání sociálních médií. Zákon vyžaduje ověření věku a sankce pro platformy, které jej nedodrží.",
       "origin": "world"
     },
     {
-      "en": "Ecuadorian opposition leader and former presidential candidate Luisa González is arrested over allegations of money laundering in campaign financing.",
-      "es": "La líder de la oposición ecuatoriana y excandidata presidencial Luisa González ha sido arrestada por acusaciones de lavado de dinero en la financiación de su campaña electoral.",
-      "cz": "Ekvádorská opoziční vůdkyně a bývalá prezidentská kandidátka Luisa Gonzálezová byla zatčena kvůli obvinění z praní špinavých peněz při financování kampaně.",
-      "origin": "world"
-    },
-    {
-      "en": "The Finnish Government grants Posiva an operating license for the Onkalo spent nuclear fuel repository in Eurajoki, making it the world's first licensed deep geological disposal facility for spent nuclear fuel.",
-      "es": "El Gobierno finlandés concede a Posiva una licencia de explotación para el depósito de combustible nuclear gastado de Onkalo en Eurajoki, convirtiéndolo en la primera instalación de almacenamiento geológico profundo autorizada del mundo para combustible nuclear gastado.",
-      "cz": "Finská vláda udělila společnosti Posiva provozní licenci pro úložiště vyhořelého jaderného paliva Onkalo v Eurajoki, čímž se z něj stalo první licencované hlubinné geologické úložiště vyhořelého jaderného paliva na světě.",
-      "origin": "world"
-    },
-    {
-      "en": "Did you know that Jodie Foster walked off the set when Swiss director Nicolas Gessner called for a nude scene?",
-      "es": "¿Sabías que Jodie Foster abandonó el plató cuando el director suizo Nicolas Gessner pidió una escena de desnudo?",
-      "cz": "Věděli jste, že Jodie Foster odešla z natáčení, když švýcarský režisér Nicolas Gessner požadoval nahé scény?",
+      "en": "Did you know that Swiss artist Yves Netzhammer co-designed a postage stamp that looked and smelled like chocolate?",
+      "es": "¿Sabías que el artista suizo Yves Netzhammer codiseñó un sello postal que tenía el aspecto y el olor del chocolate?",
+      "cz": "Věděli jste, že švýcarský umělec Yves Netzhammer se podílel na návrhu poštovní známky, která vypadala a voněla jako čokoláda?",
       "origin": "dyk"
     },
     {
-      "en": "Did you know that the music video for Thundercat and Mac Miller's \"She Knows Too Much\" consists of several animated mediums?",
-      "es": "¿Sabías que el videoclip de \"She Knows Too Much\" de Thundercat y Mac Miller está compuesto por varios medios animados?",
-      "cz": "Věděli jste, že hudební video k písni „She Knows Too Much“ od Thundercata a Maca Millera se skládá z několika animovaných médií?",
+      "en": "Did you know that ... that, hours before the opening match of the 2026 Jaffna Kings season, the franchise's co-owner was arrested in Colombo over match-fixing allegations?",
+      "es": "¿Sabías que... que, horas antes del partido inaugural de la temporada 2026 de los Jaffna Kings, el copropietario de la franquicia fue arrestado en Colombo por acusaciones de amaño de partidos?",
+      "cz": "Věděli jste, že... že jen několik hodin před úvodním zápasem sezóny Jaffna Kings v roce 2026 byl spolumajitel klubu zatčen v Kolombu kvůli obvinění z manipulace s výsledky zápasů?",
       "origin": "dyk"
     }
   ],
   "article": {
-    "topic": "Canada–Turkey relations",
-    "url": "https://en.wikipedia.org/wiki/Canada–Turkey_relations",
-    "en": "Canada and Turkey have maintained diplomatic relations since 1943. Both countries are members of the G20, NATO, Organization for Economic Co-operation and Development, Organization for Security and Co-operation in Europe, United Nations and the World Trade Organization.",
-    "es": "Canadá y Turquía mantienen relaciones diplomáticas desde 1943. Ambos países son miembros del G20, la OTAN, la Organización para la Cooperación y el Desarrollo Económicos, la Organización para la Seguridad y la Cooperación en Europa, las Naciones Unidas y la Organización Mundial del Comercio.",
-    "cz": "Kanada a Turecko udržují diplomatické vztahy od roku 1943. Obě země jsou členy G20, NATO, Organizace pro hospodářskou spolupráci a rozvoj, Organizace pro bezpečnost a spolupráci v Evropě, Organizace spojených národů a Světové obchodní organizace."
+    "topic": "Australia–North Korea relations",
+    "url": "https://en.wikipedia.org/wiki/Australia–North_Korea_relations",
+    "en": "Australia–North Korea relations (Korean: 오스트랄리아-조선민주주의인민공화국 관계) refers to the existing bilateral relationship between Australia and North Korea. Relations were officially established on 31 July 1974 when Australia extended diplomatic recognition to North Korea under the Whitlam government. Overall, relations have been stressed and at times, tense, due to Australia's historical involvement in the Korean War and military alliance with the United States, and contemporary disputes such as North Korea's nuclear weapons program and accusations of human rights abuses by both sides.\nThere have been several brief periods of direct diplomatic engagement, most notably during the 1970s and the 1990s and early 2000s.",
+    "es": "Las relaciones entre Australia y Corea del Norte (en coreano: 오스트랄리아-조선민주주의인민공화국 관계) se refieren a la relación bilateral existente entre Australia y Corea del Norte. Estas relaciones se establecieron oficialmente el 31 de julio de 1974, cuando Australia otorgó reconocimiento diplomático a Corea del Norte bajo el gobierno de Whitlam. En general, las relaciones han sido tensas y, en ocasiones, conflictivas, debido a la participación histórica de Australia en la Guerra de Corea y su alianza militar con Estados Unidos, así como a disputas contemporáneas como el programa de armas nucleares de Corea del Norte y las acusaciones de violaciones de derechos humanos por ambas partes.\n\nHa habido varios períodos breves de acercamiento diplomático directo, especialmente durante las décadas de 1970, 1990 y principios de la década de 2000.",
+    "cz": "Vztahy mezi Austrálií a Severní Koreou (korejsky: 오스트랄리아-조선민주주의인민공화국 관계) označují stávající bilaterální vztahy mezi Austrálií a Severní Koreou. Vztahy byly oficiálně navázány 31. července 1974, kdy Austrálie za vlády Whitlama uznala Severní Koreu diplomaticky. Celkově byly vztahy napjaté a občas i napjaté kvůli historickému zapojení Austrálie do korejské války a vojenské alianci se Spojenými státy a současným sporům, jako je severokorejský jaderný program a obvinění z porušování lidských práv na obou stranách.\nDošlo k několika krátkým obdobím přímé diplomatické spolupráce, zejména v 70. a 90. letech 20. století a na začátku roku 2000."
   }
 }
