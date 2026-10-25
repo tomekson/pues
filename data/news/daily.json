@@ -1,68 +1,57 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "source": "Wikipedia: Portál:Aktuality + Portal:Current events (CC BY-SA 4.0)",
-  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_24",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_October_25",
   "translator": "Google Translate",
   "stories": [
     {
-      "es": "Dos vulnerabilidades críticas en el lenguaje de programación PHP provocaron una interrupción global del servicio de internet.",
-      "cz": "Dvě kritické zranitelnosti programovacího jazyka PHP způsobily globální výpadek internetových služeb.",
-      "origin": "cz"
-    },
-    {
-      "en": "Commission proposes stronger recognition of European heritage sites*. The European Commission has proposed to renew and reinforce the legal framework of the European Heritage Label.",
-      "es": "La Comisión propone un mayor reconocimiento de los sitios del patrimonio europeo*. La Comisión Europea ha propuesto renovar y reforzar el marco jurídico del Sello de Patrimonio Europeo.",
-      "cz": "Komise navrhuje větší uznání pamětihodností evropského dědictví*. Evropská komise navrhla obnovit a posílit právní rámec označení „Evropské dědictví“.",
-      "origin": "eu"
-    },
-    {
-      "en": "EU announces an additional €22.5 million to reinforce humanitarian assistance in Yemen. The European Commission is releasing €22.5 million in humanitarian aid to Yemen, in addition to the €87.",
-      "es": "La UE anuncia 22,5 millones de euros adicionales para reforzar la ayuda humanitaria en Yemen.",
-      "cz": "EU oznámila další 22,5 milionu eur na posílení humanitární pomoci v Jemenu. Kromě 87,5 milionu eur, které byly dříve přiděleny na rok 2026, uvolňuje Evropská komise do Jemenu humanitární pomoc ve výši 22,5 milionu eur na řešení důsledků obnovené eskalace konfliktu a kritických potřeb milionů lidí.",
-      "origin": "eu"
-    },
-    {
-      "en": "Commission welcomes commitments of Coca-Cola, Nestlé, and Danone to modify recycling claims on plastic bottles.",
-      "es": "La Comisión acoge con satisfacción los compromisos de Coca-Cola, Nestlé y Danone de modificar las declaraciones de reciclaje de botellas de plástico.",
-      "cz": "Komise vítá závazky společností Coca-Cola, Nestlé a Danone upravit požadavky na recyklaci plastových lahví.",
-      "origin": "eu"
-    },
-    {
-      "en": "The Eagle's Nest in Germany is lit on fire. A suspect is arrested.",
-      "es": "El Nido del Águila en Alemania es incendiado. Un sospechoso es arrestado.",
-      "cz": "Orlí hnízdo v Německu je zapáleno. Podezřelý je zatčen.",
+      "en": "At least 25,000 people gather in Madrid, Spain, in support of the country's state pension fund as it could significantly weaken following the general election in November.",
+      "es": "Al menos 25.000 personas se congregan en Madrid, España, para mostrar su apoyo al fondo estatal de pensiones del país, que podría debilitarse significativamente tras las elecciones generales de noviembre.",
+      "cz": "Nejméně 25 000 lidí se shromáždilo v Madridu ve Španělsku na podporu státního penzijního fondu, který by po listopadových volbách mohl výrazně oslabit.",
       "origin": "world"
     },
     {
-      "en": "The Australian Government imposes financial sanctions and travel bans on two North Koreans and sanctions two companies accused of supporting fraudulent overseas information technology work that funds North Korea's weapons programs.",
-      "es": "El Gobierno australiano impone sanciones financieras y prohibiciones de viaje a dos norcoreanos y sanciona a dos empresas acusadas de apoyar trabajos fraudulentos de tecnología de la información en el extranjero que financian los programas de armamento de Corea del Norte.",
-      "cz": "Australská vláda uvalila finanční sankce a zákaz cestování na dva Severokorejce a sankcionovala dvě společnosti obviněné z podpory podvodných zahraničních prací v oblasti informačních technologií, které financují severokorejské zbrojní programy.",
+      "en": "Western Sydney Airport in New South Wales, Australia, commences passenger operations as the Greater Sydney's second airport.",
+      "es": "El aeropuerto de Western Sydney, en Nueva Gales del Sur, Australia, comienza sus operaciones de pasajeros como el segundo aeropuerto del área metropolitana de Sídney.",
+      "cz": "Letiště Western Sydney v Novém Jižním Walesu v Austrálii zahajuje provoz osobní dopravy jako druhé letiště v oblasti Velkého Sydney.",
       "origin": "world"
     },
     {
-      "en": "The Greek parliament approves a law banning children under 15 from using social media from January 1, 2027, requiring age verification and penalties for platforms that fail to comply.",
-      "es": "El parlamento griego aprueba una ley que prohíbe a los menores de 15 años el uso de las redes sociales a partir del 1 de enero de 2027, y que exige la verificación de la edad y establece sanciones para las plataformas que no cumplan con la normativa.",
-      "cz": "Řecký parlament schválil zákon, který od 1. ledna 2027 zakazuje dětem mladším 15 let používání sociálních médií. Zákon vyžaduje ověření věku a sankce pro platformy, které jej nedodrží.",
+      "en": "Survivors of sexual abuse by Catholic clergy reach a settlement with the Archdiocese of New York in the United States, which will see the archdiocese paying at least $250,000 to around 1,300 plaintiffs, totaling over $800 million.",
+      "es": "Sobrevivientes de abusos sexuales por parte del clero católico llegaron a un acuerdo con la Arquidiócesis de Nueva York en los Estados Unidos, por el cual la arquidiócesis pagará al menos 250.000 dólares a alrededor de 1.300 demandantes, lo que suma un total de más de 800 millones de dólares.",
+      "cz": "Oběti sexuálního zneužívání ze strany katolických duchovních dosáhly s arcidiecézí New York ve Spojených státech dohody, v jejímž rámci arcidiecéze vyplatí nejméně 250 000 dolarů přibližně 1 300 žalobcům, což představuje celkovou částku přesahující 800 milionů dolarů.",
       "origin": "world"
     },
     {
-      "en": "Did you know that Swiss artist Yves Netzhammer co-designed a postage stamp that looked and smelled like chocolate?",
-      "es": "¿Sabías que el artista suizo Yves Netzhammer codiseñó un sello postal que tenía el aspecto y el olor del chocolate?",
-      "cz": "Věděli jste, že švýcarský umělec Yves Netzhammer se podílel na návrhu poštovní známky, která vypadala a voněla jako čokoláda?",
+      "en": "A student protest in Barcelona, Spain, ends in riots, looting and clashes with the police.",
+      "es": "Una protesta estudiantil en Barcelona, España, termina en disturbios, saqueos y enfrentamientos con la policía.",
+      "cz": "Studentský protest v Barceloně ve Španělsku skončil nepokoji, rabováním a střety s policií.",
+      "origin": "world"
+    },
+    {
+      "en": "Citizens of Brazil vote in the second electoral round for the next President of Brazil.",
+      "es": "Los ciudadanos de Brasil votan en la segunda vuelta electoral para elegir al próximo presidente de Brasil.",
+      "cz": "Občané Brazílie volí ve druhém kole voleb příštího prezidenta Brazílie.",
+      "origin": "world"
+    },
+    {
+      "en": "Did you know that sea balls are also known by a word for \"wild goat fur\" because they look like hairballs regurgitated by goats?",
+      "es": "¿Sabías que las bolas de mar también se conocen con un término que significa \"pelo de cabra salvaje\" porque parecen bolas de pelo regurgitadas por las cabras?",
+      "cz": "Věděli jste, že mořské kuličky jsou také známé pod názvem „kožešina divoké kozy“, protože vypadají jako chlupaté kuličky vyvrhnuté kozami?",
       "origin": "dyk"
     },
     {
-      "en": "Did you know that ... that, hours before the opening match of the 2026 Jaffna Kings season, the franchise's co-owner was arrested in Colombo over match-fixing allegations?",
-      "es": "¿Sabías que... que, horas antes del partido inaugural de la temporada 2026 de los Jaffna Kings, el copropietario de la franquicia fue arrestado en Colombo por acusaciones de amaño de partidos?",
-      "cz": "Věděli jste, že... že jen několik hodin před úvodním zápasem sezóny Jaffna Kings v roce 2026 byl spolumajitel klubu zatčen v Kolombu kvůli obvinění z manipulace s výsledky zápasů?",
+      "en": "Did you know that Swiss filmmaker Kurt Gloor final film was about prison inmates and people with disabilities on a trekking tour?",
+      "es": "¿Sabías que la última película del cineasta suizo Kurt Gloor trataba sobre presos y personas con discapacidad en una excursión de senderismo?",
+      "cz": "Věděli jste, že poslední film švýcarského filmaře Kurta Gloora byl o vězních a lidech s postižením na turistickém výletě?",
       "origin": "dyk"
     }
   ],
   "article": {
-    "topic": "Australia–North Korea relations",
-    "url": "https://en.wikipedia.org/wiki/Australia–North_Korea_relations",
-    "en": "Australia–North Korea relations (Korean: 오스트랄리아-조선민주주의인민공화국 관계) refers to the existing bilateral relationship between Australia and North Korea. Relations were officially established on 31 July 1974 when Australia extended diplomatic recognition to North Korea under the Whitlam government. Overall, relations have been stressed and at times, tense, due to Australia's historical involvement in the Korean War and military alliance with the United States, and contemporary disputes such as North Korea's nuclear weapons program and accusations of human rights abuses by both sides.\nThere have been several brief periods of direct diplomatic engagement, most notably during the 1970s and the 1990s and early 2000s.",
-    "es": "Las relaciones entre Australia y Corea del Norte (en coreano: 오스트랄리아-조선민주주의인민공화국 관계) se refieren a la relación bilateral existente entre Australia y Corea del Norte. Estas relaciones se establecieron oficialmente el 31 de julio de 1974, cuando Australia otorgó reconocimiento diplomático a Corea del Norte bajo el gobierno de Whitlam. En general, las relaciones han sido tensas y, en ocasiones, conflictivas, debido a la participación histórica de Australia en la Guerra de Corea y su alianza militar con Estados Unidos, así como a disputas contemporáneas como el programa de armas nucleares de Corea del Norte y las acusaciones de violaciones de derechos humanos por ambas partes.\n\nHa habido varios períodos breves de acercamiento diplomático directo, especialmente durante las décadas de 1970, 1990 y principios de la década de 2000.",
-    "cz": "Vztahy mezi Austrálií a Severní Koreou (korejsky: 오스트랄리아-조선민주주의인민공화국 관계) označují stávající bilaterální vztahy mezi Austrálií a Severní Koreou. Vztahy byly oficiálně navázány 31. července 1974, kdy Austrálie za vlády Whitlama uznala Severní Koreu diplomaticky. Celkově byly vztahy napjaté a občas i napjaté kvůli historickému zapojení Austrálie do korejské války a vojenské alianci se Spojenými státy a současným sporům, jako je severokorejský jaderný program a obvinění z porušování lidských práv na obou stranách.\nDošlo k několika krátkým obdobím přímé diplomatické spolupráce, zejména v 70. a 90. letech 20. století a na začátku roku 2000."
+    "topic": "Flamingo Revolution",
+    "url": "https://en.wikipedia.org/wiki/Flamingo_Revolution",
+    "en": "The Flamingo Revolution (Albanian: Revolucioni i Flamingove) is a decentralised social movement and series of protests primarily against the Government of Albania. The initial protests took place in Baks-Rrjoll on 2 February 2026 when residents protested against the planned Blue Borgo resort and disputed land ownership. A major wave of protests followed on 16 May at Zvërnec, near the Narta Lagoon, over preparatory works and proposed luxury tourism developments linked to the Sazan Island and Zvërnec resort project, backed by American investor Jared Kushner. Violence against protesters near the Zvërnec project site on 30 May triggered further demonstrations in Tirana the following day.",
+    "es": "La Revolución Flamingo (en albanés: Revolucioni i Flamingove) es un movimiento social descentralizado y una serie de protestas dirigidas principalmente contra el Gobierno de Albania. Las protestas iniciales tuvieron lugar en Baks-Rrjoll el 2 de febrero de 2026, cuando los residentes protestaron contra el proyecto del complejo turístico Blue Borgo y la disputa por la propiedad de los terrenos. Una importante ola de protestas se produjo el 16 de mayo en Zvërnec, cerca de la laguna de Narta, por las obras preparatorias y los proyectos de turismo de lujo vinculados al complejo turístico de la isla Sazan y Zvërnec, respaldado por el inversor estadounidense Jared Kushner. La violencia contra los manifestantes cerca del emplazamiento del proyecto de Zvërnec el 30 de mayo desencadenó nuevas manifestaciones en Tirana al día siguiente.",
+    "cz": "Flamingo Revolution (albánsky: Revolucioni i Flamingove) je decentralizované sociální hnutí a série protestů primárně proti albánské vládě. První protesty se konaly v Baks-Rrjoll 2. února 2026, kdy obyvatelé protestovali proti plánovanému resortu Blue Borgo a zpochybňovali vlastnictví pozemků. Velká vlna protestů následovala 16. května ve Zvërnecu poblíž laguny Narta kvůli přípravným pracím a navrhovaným luxusním turistickým developerským projektům spojeným s projektem ostrova Sazan a resortu Zvërnec, který podporoval americký investor Jared Kushner. Násilí páchané na protestujících poblíž místa projektu Zvërnec 30. května vyvolalo následující den další demonstrace v Tiraně."
   }
 }
